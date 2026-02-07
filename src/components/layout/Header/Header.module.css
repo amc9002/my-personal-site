@@ -1,0 +1,74 @@
+.headerWrapper {
+  width: 100%;
+  background: #f7f5f5;
+}
+
+.headerContent {
+  /* Гэта робіць шырыню хэдэра такой жа, як у твайго тэксту */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 800px; /* Супадае з цэнтрам твайго main */
+  margin: 0 auto;
+  padding: 1.5rem 0; /* Прыбіраем бакавыя падынгі, каб лагатып стаяў строга па лініі тэксту */
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #111;
+  white-space: nowrap; /* Каб імя не пераносілася */
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.95rem;
+  position: relative; /* Для пазіцыянавання лініі */
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Пачатковая шырыня лініі */
+  height: 2px;
+  background-color: #111;
+  transition: width 0.3s ease; /* Плыўнае пашырэнне */
+}
+
+/* Стыль для актыўнай старонкі */
+.active {
+  color: #111;
+}
+
+.active::after {
+  width: 100%; /* Пашыраем лінію на ўсю шырыню спасылкі */
+}
+
+.navLink:hover {
+  color: #111;
+}
+
+/* Мабільная версія: калі экран меншы за 800px, дадаем падынгі па баках */
+@media (max-width: 840px) {
+  .headerContent {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.langSection {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}

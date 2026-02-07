@@ -1,0 +1,62 @@
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 800px) 1fr;
+  width: 100%;
+  padding: 0 0 4rem 0; /* Верхні падынг цяпер 0 */
+}
+
+/* Усе прамыя нашчадкі (section, div, h1) ідуць у цэнтр */
+.mainContainer > * {
+  grid-column: 2;
+}
+
+/* Стылізацыя тэксту БЕЗ неабходнасці дадаваць класы ў кожным блоку */
+
+.mainContainer h1 {
+  font-size: 2rem; /* Менш за Hero, але больш за h2 */
+  margin-top: 4rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  color: #111;
+}
+
+.hero + section h1:first-of-type,
+.mainContainer section:first-of-type h1:first-of-type {
+  margin-top: 1rem !important;
+}
+
+.mainContainer h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.mainContainer h1,
+.mainContainer h2 {
+  font-weight: 400; /* Было 600 ці 700, стала танчэй */
+  letter-spacing: -0.01em;
+}
+
+.mainContainer p {
+  max-width: 65ch; /* Ідэальная шырыня для чытання */
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.mainContainer ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mainContainer li {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+/* Адступы паміж вялікімі лагічнымі блокамі */
+.mainContainer section {
+  margin-bottom: 5rem;
+}

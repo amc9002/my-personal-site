@@ -1,0 +1,58 @@
+.hero {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 180px; /* Вузкая паласа як на ўзоры */
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  /* Паўтараем сетку Main: 1fr | 800px | 1fr */
+  grid-template-columns: 1fr minmax(0, 800px) 1fr;
+  margin-bottom: 1rem !important;
+}
+
+.overlay {
+  grid-column: 1 / -1;
+  background: rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-columns: inherit; /* Успадкоўваем сетку ад .hero */
+  align-items: center; /* Тэкст па цэнтры вертыкалі палосы */
+}
+
+.heroContent {
+  grid-column: 2; /* Тэкст ідзе строга ў цэнтральную калонку */
+  padding: 0 1rem; /* Каб супадала з падынгам кантэнту ніжэй */
+  text-align: left;
+}
+
+.heroTitle {
+  color: #ffffff !important;
+  font-size: 2.5rem !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.heroSubtitle {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.1rem !important;
+  font-weight: 300 !important;
+  margin: 0.2rem 0 0 0 !important;
+}
+
+.textSide {
+  flex: 1;
+  text-align: left; /* Тэкст цяпер злева */
+}
+
+.photoSide {
+  display: flex;
+  align-items: flex-end;
+}
+
+.photo {
+  height: 180px; /* Фота будзе крыху выступаць ці ўпісвацца ў палосу */
+  width: auto;
+  border-radius: 4px;
+  /* shadow для эфекту глыбіні */
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}

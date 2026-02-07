@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "Andrej Cieraškoŭ",
+    "subtitle": "Your problem is my challenge"
+  },
+  "whatIDo": {
+    "title": "What I Do",
+    "items": [
+      "Help solve complex technical problems",
+      "Analyze unstable or sophisticated systems",
+      "Develop problem-solving concepts using TRIZ",
+      "Design system architecture with a focus on long-term reliability"
+    ]
+  },
+  "howIThink": {
+    "title": "My Perspective",
+    "description": [
+      "System failure, like any disaster, is caused by a coincidence of several factors.",
+      "The vast majority of failures result from not considering the system as a whole,",
+      "either during the design or development stages."
+    ],
+    "link": "Engineer's Insight"
+  },
+  "projects": {
+    "title": "Projects",
+    "info": [
+      "Selected projects and technical cases will appear here shortly.",
+      "In the meantime, feel free to contact me to discuss an idea or a problem."
+    ],
+    "link": "View Case Studies"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "description": [
+      "If you are facing a technical problem that is hard to structure or fix — write to me.",
+      "I am always open to complex tasks and interesting proposals."
+    ],
+    "link": "Contact Me"
+  }
+}

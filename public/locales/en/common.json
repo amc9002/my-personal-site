@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "home": "Home",
+    "howIThink": "How I Think",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}

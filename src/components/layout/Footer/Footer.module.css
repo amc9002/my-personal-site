@@ -1,0 +1,36 @@
+.footerWrapper {
+  width: 100%;
+  background-color: #f7f5f5;
+  border-top: 1px solid #eee;
+  padding: 3rem 0;
+  margin-top: auto; /* Калі кантэнту мала, футар будзе знізу */
+}
+
+.footerContent {
+  max-width: 800px; /* Супадае з хэдэрам і тэкстам */
+  margin: 0 auto;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.footerContent p {
+  margin: 0.5rem 0;
+}
+
+.links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footerLink {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footerLink:hover {
+  color: #007bff;
+}

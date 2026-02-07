@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "Andrej Cieraškoŭ",
+    "subtitle": "Twoje techniczne wyzwania, moje rozwiązania"
+  },
+  "whatIDo": {
+    "title": "Czym się zajmuję",
+    "items": [
+      "Pomagam rozwiązywać złożone problemy techniczne",
+      "Analizuję skomplikowane lub niestabilne systemy",
+      "Opracowuję koncepcje rozwiązywania problemów z użyciem TRIZ",
+      "Projektuję architekturę systemów z naciskiem na długofalową niezawodność"
+    ]
+  },
+  "howIThink": {
+    "title": "Moje Spojrzenie",
+    "description": [
+      "Awaria systemu, jak każda katastrofa, jest wynikiem zbiegu kilku czynników.",
+      "Przeważająca większość awarii wynika z braku postrzegania systemu jako całości,",
+      "zarówno na etapie projektowania, jak i rozwoju."
+    ],
+    "link": "Opinia inżyniera"
+  },
+  "projects": {
+    "title": "Projekty",
+    "info": [
+      "Wybrane projekty i studia przypadków pojawią się tutaj wkrótce.",
+      "Tymczasem zapraszam do kontaktu, aby omówić pomysł lub problem."
+    ],
+    "link": "Zobacz case studies"
+  },
+  "contacts": {
+    "title": "Kontakt",
+    "description": [
+      "Jeśli mierzysz się z problemem technicznym, który trudno zrealizować lub naprawić — napisz do mnie.",
+      "Jestem zawsze otwarty na ambitne zadania i ciekawe propozycje."
+    ],
+    "link": "Skontaktuj się ze mną"
+  }
+}
