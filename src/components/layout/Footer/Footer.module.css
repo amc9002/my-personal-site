@@ -1,36 +1,26 @@
 .footerWrapper {
   width: 100%;
-  background-color: #f7f5f5;
-  border-top: 1px solid #eee;
+  /* Зменім на больш цёмны ці кантрастны, каб вырашыць тваю праблему №2 */
+  background-color: #222;
+  color: #ccc;
   padding: 3rem 0;
-  margin-top: auto; /* Калі кантэнту мала, футар будзе знізу */
+  margin-top: auto;
+
+  /* Цэнтруеш гэтак жа, як секцыю */
+  display: grid;
+  grid-template-columns: 1fr min(800px, 90%) 1fr;
 }
 
 .footerContent {
-  max-width: 800px; /* Супадае з хэдэрам і тэкстам */
-  margin: 0 auto;
+  grid-column: 2;
   text-align: center;
-  color: #888;
-  font-size: 0.9rem;
-}
-
-.footerContent p {
-  margin: 0.5rem 0;
-}
-
-.links {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
 }
 
 .footerLink {
-  color: #666;
+  color: #aaa;
   text-decoration: none;
-  transition: color 0.2s;
 }
 
 .footerLink:hover {
-  color: #007bff;
+  color: #fff; /* Белы пры навядзенні на цёмным фоне */
 }

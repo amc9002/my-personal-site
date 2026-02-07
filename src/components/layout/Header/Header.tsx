@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
-import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import LanguageSwitcher from "../../ui/LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
 export const Header = () => {

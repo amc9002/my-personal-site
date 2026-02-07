@@ -30,11 +30,11 @@
 }
 
 .section {
-  margin-bottom: 4rem !important; /* Часова дадаем !important, каб праверыць, ці ўплывае */
+  margin-bottom: 0;
+  padding-bottom: 5rem;
 }
 
 .section h1 {
-  border-bottom: 1px solid #eee; /* Дадаем лінію для візуальнага раздзелу */
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
 }
@@ -44,7 +44,6 @@
 .section li {
   margin-top: 0 !important;
   margin-bottom: 0.3rem !important; /* Той самы водступ, які ты выбраў для li */
-  line-height: 1.6;
 }
 
 /* Прыбіраем лішні водступ у самога спіса, каб ён не дадаваўся да апошняга li */
