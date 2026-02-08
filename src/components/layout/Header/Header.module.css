@@ -4,14 +4,13 @@
 }
 
 .headerContent {
-  /* Гэта робіць шырыню хэдэра такой жа, як у твайго тэксту */
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   max-width: 800px; /* Супадае з цэнтрам твайго main */
   margin: 0 auto;
-  padding: 1.5rem 0; /* Прыбіраем бакавыя падынгі, каб лагатып стаяў строга па лініі тэксту */
+  padding: 0.5rem 0; /* Прыбіраем бакавыя падынгі, каб лагатып стаяў строга па лініі тэксту */
 }
 
 .logo {

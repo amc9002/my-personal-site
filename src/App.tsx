@@ -8,7 +8,7 @@ import Home from "./pages/Home/Home";
 import HowIThink from "./pages/HowIThink/HowIThink";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
-import Contacts from "./pages/Contacts";
+import Contacts from "./pages/Contacts/Contacts";
 import { Route, Routes } from "react-router-dom";
 
 function App() {

@@ -1,0 +1,103 @@
+.contactSection {
+  /* Мінімальныя падынгі, каб упісацца ў экран */
+  padding-top: 0.5rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  margin: 0;
+  line-height: 1;
+  font-size: 2.2rem;
+}
+
+.photoContainer img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  filter: grayscale(20%);
+  border: 1px solid #ddd;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* Невялікі пад'ём тэксту, каб ён візуальна стаў у лінію з шапкай загалоўка */
+  margin-top: -0.2rem;
+}
+
+.contactLead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  font-style: italic;
+  color: #333;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.linkLabel {
+  width: 100px;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.linkList a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.linkList a:hover {
+  border-bottom-color: #111;
+}
+
+@media (max-width: 700px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .sidebar {
+    align-items: center;
+  }
+  .content {
+    margin-top: 0;
+    text-align: center;
+  }
+  .linkList li {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

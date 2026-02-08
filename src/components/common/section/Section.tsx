@@ -9,6 +9,7 @@ interface SectionProps {
   items?: string[];
   link?: string;
   linkText?: string;
+  children?: React.ReactNode;
   image?: string;
   footer?: string;
   index: number;
@@ -24,8 +25,10 @@ const Section: React.FC<SectionProps> = ({
   image,
   footer,
   index,
+  children,
 }) => {
-  if (!items.length && !title && !description && !footer) return null;
+  if (!items.length && !title && !description && !footer && !children)
+    return null;
 
   const isAlt = index % 2 !== 0;
 
@@ -46,6 +49,7 @@ const Section: React.FC<SectionProps> = ({
           ) : (
             items.map((text, i) => <p key={i}>{text}</p>)
           )}
+          {children}
           {footer && <p className={styles.footerText}>{footer}</p>}
           {link && linkText && (
             <Link to={link} className={styles.moreLink}>
