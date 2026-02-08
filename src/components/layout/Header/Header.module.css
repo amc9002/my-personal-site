@@ -142,31 +142,74 @@
 /* Мабільная версія */
 @media (max-width: 768px) {
   .headerContent {
-    flex-direction: column; /* Ставім лагатып і меню адзін пад адным */
-    align-items: flex-start; /* Прыціскаем усё да левага краю */
-    padding: 1rem 1.5rem;
-    gap: 1rem;
-  }
-
-  .nav {
-    flex-wrap: wrap; /* Дазваляем спасылкам пераносіцца на новы радок */
-    gap: 0.8rem;
-    width: 100%;
+    flex-direction: row; /* Вяртаем у радок */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
   }
 
   .logo {
-    font-size: 1.2rem; /* Трохі павялічым для зручнасці на тэлефоне */
-    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    text-align: left;
+    z-index: 10; /* Каб лагатып быў паверх усяго */
+  }
+
+  .burger {
+    display: block; /* Паказваем кнопку */
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #111;
+  }
+
+  .nav {
+    /* Замест display: none выкарыстоўваем камбінацыю для анімацыі */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #f7f5f5;
+    padding: 0 20px; /* Падынг зверху/знізу прыбярэм у закрытым стане */
+
+    /* Магія плаўнасці */
+    overflow: hidden;
+    max-height: 0; /* Меню сціснута ў нуль */
+    opacity: 0; /* Цалкам празрыстае */
+    transition: all 0.4s ease-in-out; /* Плаўны пераход для ўсіх уласцівасцяў */
+    z-index: 100;
+  }
+
+  /* Стыль, які актывуецца пры націсканні */
+  .navOpen {
+    max-height: 500px; /* Дастатковая вышыня, каб улезлі ўсе пункты */
+    opacity: 1; /* Становіцца бачным */
+    padding: 20px; /* Вяртаем падынгі */
   }
 
   .navLink {
-    font-size: 0.85rem; /* Трохі паменшым, каб больш улазіла ў радок */
-    padding: 0.3rem 0;
+    /* Дадамо невялікую затрымку з'яўлення тэксту для эфекту */
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-out;
   }
 
-  .langSection {
-    margin-left: 0; /* Прыбіраем водступ злева на мабільным */
-    margin-top: 0.5rem;
-    width: 100%;
+  .navOpen .navLink {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+/* Дадамо стыль для будучай кнопкі меню */
+.menuButton {
+  display: block;
+  background: #111;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
 }

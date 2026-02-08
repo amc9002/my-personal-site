@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 import LanguageSwitcher from "../../ui/LanguageSwitcher/LanguageSwitcher";
@@ -5,7 +6,9 @@ import { useTranslation } from "react-i18next";
 import Hero from "../../common/hero/Hero";
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useTranslation("common");
+
   const navItems = [
     { path: "/", label: t("nav.home") },
     { path: "/how-i-think", label: t("nav.howIThink") },
@@ -22,12 +25,23 @@ export const Header = () => {
             Andrej Cieraškoŭ
           </NavLink>
 
-          <nav className={styles.nav}>
+          {/* 1. Кнопка-бургер. Яна з'явіцца толькі на мабільных дзякуючы CSS */}
+          <button
+            className={styles.burger}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Menu"
+          >
+            {isMenuOpen ? "✕" : "☰"}
+          </button>
+
+          {/* 2. Дадаем клас styles.navOpen, калі ісMenuOpen === true */}
+          <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ""}`}>
             {navItems.map((item) => (
               <NavLink
                 key={item.path}
                 to={item.path}
-                // Калі спасылка актыўная, React Router дадасць клас active
+                // 3. Закрываем меню пры кліку на спасылку
+                onClick={() => setIsMenuOpen(false)}
                 className={({ isActive }) =>
                   isActive
                     ? `${styles.navLink} ${styles.active}`
@@ -37,7 +51,7 @@ export const Header = () => {
                 {item.label}
               </NavLink>
             ))}
-            {/* Цыкл map па пунктах меню */}
+
             <div className={styles.langSection}>
               <LanguageSwitcher />
             </div>
