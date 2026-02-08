@@ -60,3 +60,13 @@
 .textContent > *:last-child {
   margin-bottom: 0;
 }
+
+.footerText {
+  margin-top: 2rem !important; /* Force, калі глабальныя стылі ціснуць */
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05); /* Лёгкая рыска для аддзялення */
+  font-style: italic;
+  font-size: larger;
+  font-weight: bold;
+  color: #555;
+}

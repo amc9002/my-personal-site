@@ -5,7 +5,7 @@ import { Footer } from "./components/layout/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
-import HowIThink from "./pages/HowIThink";
+import HowIThink from "./pages/HowIThink/HowIThink";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";

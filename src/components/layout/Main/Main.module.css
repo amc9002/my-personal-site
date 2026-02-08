@@ -1,17 +1,17 @@
 .mainContainer {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr min(800px, 92%) 1fr;
   padding: 0;
 }
 
-/* Стылізацыя тэксту БЕЗ неабходнасці дадаваць класы ў кожным блоку */
+.mainContainer > * {
+  grid-column: 2;
+}
 
-.mainContainer h1 {
-  font-size: 2rem; /* Менш за Hero, але больш за h2 */
-  margin-top: 4rem;
-  padding-bottom: 0.5rem;
-  color: #111;
+.mainContainer > section,
+.mainContainer > .hero {
+  grid-column: 1 / -1;
 }
 
 .hero + section h1:first-of-type,
@@ -19,38 +19,23 @@
   margin-top: 1rem !important;
 }
 
-.mainContainer h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-top: 3.5rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
+.mainContainer > div {
+  grid-column: 2;
+  width: 100%;
 }
 
-.mainContainer h1,
-.mainContainer h2 {
-  font-weight: 400; /* Было 600 ці 700, стала танчэй */
-  letter-spacing: -0.01em;
-}
-
-.mainContainer p {
-  max-width: 65ch; /* Ідэальная шырыня для чытання */
-  margin-bottom: 1.25rem;
-  font-size: 1.1rem;
-  line-height: 1.65;
-}
-
-.mainContainer ul {
-  padding-left: 1.5rem;
-  margin-bottom: 1.5rem;
+.mainContainer > section {
+  grid-column: 1 / -1;
 }
 
 .mainContainer li {
-  margin-bottom: 0.6rem;
-  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Адступы паміж вялікімі лагічнымі блокамі */
-.mainContainer section {
-  margin-bottom: 5rem;
+.mainContainer li:last-child {
+  margin-bottom: 0;
+}
+
+.mainContainer section:last-of-type {
+  margin-bottom: 0;
 }
