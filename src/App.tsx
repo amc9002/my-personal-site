@@ -2,9 +2,9 @@ import { Suspense } from "react"; // Дадалі толькі гэта
 import { Header } from "./components/layout/Header/Header";
 import Main from "./components/layout/Main/Main";
 import { Footer } from "./components/layout/Footer/Footer";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/ui/ScrollToTop";
 
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import HowIThink from "./pages/HowIThink/HowIThink";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";

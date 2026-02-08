@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 import LanguageSwitcher from "../../ui/LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import Hero from "../../common/hero/Hero";
 
 export const Header = () => {
   const { t } = useTranslation("common");
@@ -14,33 +15,39 @@ export const Header = () => {
   ];
 
   return (
-    <header className={styles.headerWrapper}>
-      <div className={styles.headerContent}>
-        <NavLink to="/" className={styles.logo}>
-          Andrej Cieraškoŭ
-        </NavLink>
+    <>
+      <header className={styles.headerWrapper}>
+        <div className={styles.headerContent}>
+          <NavLink to="/" className={styles.logo}>
+            Andrej Cieraškoŭ
+          </NavLink>
 
-        <nav className={styles.nav}>
-          {navItems.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              // Калі спасылка актыўная, React Router дадасць клас active
-              className={({ isActive }) =>
-                isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
-              }
-            >
-              {item.label}
-            </NavLink>
-          ))}
           <nav className={styles.nav}>
-            {/* Цыкл map па пунктах меню */}
-            <div className={styles.langSection}>
-              <LanguageSwitcher />
-            </div>
+            {navItems.map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                // Калі спасылка актыўная, React Router дадасць клас active
+                className={({ isActive }) =>
+                  isActive
+                    ? `${styles.navLink} ${styles.active}`
+                    : styles.navLink
+                }
+              >
+                {item.label}
+              </NavLink>
+            ))}
+            <nav className={styles.nav}>
+              {/* Цыкл map па пунктах меню */}
+              <div className={styles.langSection}>
+                <LanguageSwitcher />
+              </div>
+            </nav>
           </nav>
-        </nav>
-      </div>
-    </header>
+        </div>
+      </header>
+
+      <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
+    </>
   );
 };

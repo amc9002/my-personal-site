@@ -1,0 +1,29 @@
+.hero {
+  grid-column: 1 / -1;
+  /* Тут застаюцца толькі стылі для Hero, калі яны яшчэ не ў Hero.module.css */
+}
+
+/* Прыбіраем лішнія адступы паміж секцыямі на галоўнай, 
+   бо падынгі ўжо ёсць у самім Section */
+.container {
+  width: 100%;
+}
+
+/* Калі на галоўнай табе трэба нешта спецыфічнае для кнопак, 
+   якіх няма ў Section */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  border: 1px solid #333;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff;
+}

@@ -5,5 +5,10 @@
     "about": "About Me",
     "projects": "Projects",
     "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Andrej Cieraškoŭ",
+    "subtitle": "Your technical problems — my solution"
   }
 }

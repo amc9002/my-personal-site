@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Section from "../../components/blocks/common/section/Section"; // Шлях да твайго ўніверсальнага кампанента
+import Section from "../../components/common/section/Section"; // Шлях да твайго ўніверсальнага кампанента
 import styles from "./HowIThink.module.css"; // Калі патрэбныя спецыфічныя стылі для гэтай старонкі
 
 interface Role {

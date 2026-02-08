@@ -5,5 +5,10 @@
     "about": "O mnie",
     "projects": "Projekty",
     "contact": "Kontakty"
+  },
+
+  "hero": {
+    "title": "Andrej Cieraškoŭ",
+    "subtitle": "Wyzwania techniczne — skuteczne rozwiązania"
   }
 }

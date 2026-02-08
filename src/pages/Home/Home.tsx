@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next";
-import Hero from "./hero/Hero";
-import Section from "../common/section/Section";
+import Section from "../../components/common/section/Section"; // Шлях да твайго ўніверсальнага кампанента
 
-const Intro = () => {
+const Home = () => {
   const { t } = useTranslation("home");
 
   const getArray = (key: string): string[] => {
@@ -12,7 +11,6 @@ const Intro = () => {
 
   return (
     <>
-      <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
       <Section
         index={0}
         title={t("whatIDo.title")}
@@ -39,4 +37,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default Home;

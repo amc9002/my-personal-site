@@ -1,0 +1,66 @@
+{
+  "introduction": {
+    "title": "My Approach: Engineering Mindset",
+    "text": [
+      "I work with technical problems at the systems level. I am not interested in temporary 'patches' or isolated failures, but in why systems behave the way they do; why problems return despite correct actions, and where hidden contradictions are embedded in the initial assumptions.",
+      "This page is not a service list or a resume. It is a brief explanation of how I think as an engineer and in which situations this way of thinking brings results."
+    ]
+  },
+  "engineerVsExecutor": {
+    "title": "Engineer vs. Executor",
+    "text": "One of the most frequent sources of technical failure is the blurred line between roles.",
+    "roles": [
+      {
+        "name": "Executor",
+        "description": "works at the implementation level: follows procedures, executes predefined steps and implementations of decisions made by someone else."
+      },
+      {
+        "name": "Engineer",
+        "description": "works at the level of models and solutions: defines how the system should work, understands interactions between components, and evaluates consequences even before implementation begins."
+      }
+    ],
+    "footer": "These are not 'higher' or 'lower' levels of the same job. These are different professions with different responsibilities."
+  },
+  "whyProblemsComeBack": {
+    "title": "Why Problems Return",
+    "text": "When a problem recurs repeatedly, it is rarely a matter of poor execution. Recurring failures usually signal:",
+    "points": [
+      "a flawed initial assumption",
+      "ignoring a specific operating mode",
+      "conflict between subsystems",
+      "mismatch between project intent and real-world operating conditions"
+    ],
+    "summary": "Replacing parts or more diligently repeating past steps may temporarily hide a symptom, but the system will remain unstable. From an engineer's perspective, chronic problems are a signal: the system model is incomplete or incorrect. Resolving such issues requires stepping back, not 'increasing the pressure'."
+  },
+  "systemsLiveBetweenDisciplines": {
+    "title": "Systems Live Between Disciplines",
+    "example": "The most expensive technical problems often have no single 'owner'. A common case: mechanics see no faults, electricians confirm signals are present, and software works according to specification. Yet, the system as a whole does not work.",
+    "conclusion": "These problems live between domains, not within them. Therefore, they cannot be solved by a single narrow specialist. What is needed is someone who does not defend 'their territory' but tries to understand the whole."
+  },
+  "toolsAreNotThePoint": {
+    "title": "Tools Are Not the Point",
+    "text": "Engineering is not defined by tools. Code, mechanics, automation, AI—these are only means of implementation. An engineer does not need to memorize every syntax nuance or exact torque specs for every bolt.",
+    "responsibilities": [
+      "Knowing where to find reliable information",
+      "Separating signal from noise",
+      "Identifying the core issue and verifying if a solution works within the context of the entire system"
+    ],
+    "footer": "Modern tools do not replace the engineer—they amplify the quality of their decisions, both good and bad."
+  },
+  "whenThisWayOfThinkingHelps": {
+    "title": "When This Approach Helps",
+    "cases": [
+      "a problem returns despite multiple fixes",
+      "specialists from different profiles provide contradictory explanations",
+      "everything is correct on paper, but the system fails in practice",
+      "there is a need to expand functionality, improve performance, or reduce costs",
+      "it is necessary to build a system with entirely new functionality",
+      "decisions must be made under conditions of incomplete or inaccurate data"
+    ],
+    "footer": "In such situations, an analysis of the interaction between the system, its subsystems, and the environment is essential."
+  },
+  "closing": {
+    "text": "I am interested in building logical and reliable systems, not hunting for symptoms. If this approach resonates with you— feel free to reach out. Sometimes, a single precise analysis is enough to stop a long chain of chronic problems.",
+    "items": []
+  }
+}

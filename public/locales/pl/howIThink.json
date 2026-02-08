@@ -1,0 +1,66 @@
+{
+  "introduction": {
+    "title": "Moje podejście: myślenie inżynieryjne",
+    "text": [
+      "Pracuję z problemami technicznymi na poziomie systemów. Nie interesują mnie tymczasowe „łatki” ani izolowane awarie, lecz to, dlaczego systemy zachowują się w określony sposób; dlaczego problemy powracają mimo prawidłowych działań i gdzie w początkowych założeniach kryją się sprzeczności.",
+      "Ta strona to nie lista usług ani życiorys. To krótkie wyjaśnienie tego, jak myślę jako inżynier i w jakich sytuacjach taki sposób myślenia przynosi realne rezultaty."
+    ]
+  },
+  "engineerVsExecutor": {
+    "title": "Inżynier vs Wykonawca",
+    "text": "Jednym z najczęstszych źródeł niepowodzeń technicznych jest zatarcia granicy między rolami.",
+    "roles": [
+      {
+        "name": "Wykonawca",
+        "description": "pracuje na poziomie realizacji: przestrzega procedur, wykonuje z góry określone kroki i wdrożenia decyzji podjętych przez kogoś innego."
+      },
+      {
+        "name": "Inżynier",
+        "description": "pracuje na poziomie modeli i rozwiązań: określa, jak system ma działać, rozumie interakcje między komponentami i ocenia skutki jeszcze przed rozpoczęciem realizacji."
+      }
+    ],
+    "footer": "To nie są „wyższe” i „niższe” poziomy tej samej pracy. To różne zawody o różnej odpowiedzialności."
+  },
+  "whyProblemsComeBack": {
+    "title": "Dlaczego problemy powracają",
+    "text": "Jeśli problem powtarza się wielokrotnie, rzadko jest to kwestia złego wykonania. Powtarzające się awarie zazwyczaj sygnalizują:",
+    "points": [
+      "błędne założenie początkowe",
+      "ignorowanie określonego trybu pracy",
+      "konflikt między podsystemami",
+      "rozbieżność między koncepcją projektu a realnymi warunkami eksploatacji"
+    ],
+    "summary": "Wymiana części lub staranniejsze powtarzanie poprzednich kroków może tymczasowo ukryć symptom, ale system pozostanie niestabilny. Z punktu widzenia inżyniera chroniczne problemy to sygnał: model systemu jest niepełny lub błędny. Rozwiązanie takich kwestii wymaga kroku w tył, a nie „zwiększenia nacisku”."
+  },
+  "systemsLiveBetweenDisciplines": {
+    "title": "Systemy żyją między dyscyplinami",
+    "example": "Najkosztowniejsze problemy techniczne często nie mają jednego „właściciela”. Typowy przypadek: mechanicy nie widzą usterek, elektrycy potwierdzają obecność sygnałów, a oprogramowanie działa zgodnie ze specyfikacją. Jednak system jako całość — nie działa.",
+    "conclusion": "Problemy te żyją między domenami, a nie wewnątrz nich. Dlatego nie da się ich rozwiązać siłami jednego wąskiego specjalisty. Potrzebny jest ktoś, kto nie broni „własnego terytorium”, lecz stara się zrozumieć całość."
+  },
+  "toolsAreNotThePoint": {
+    "title": "Narzędzia to nie istota",
+    "text": "Inżynieria nie jest definiowana przez narzędzia. Kod, mechanika, automatyka, sztuczna inteligencja — to tylko środki realizacji. Inżynier nie musi pamiętać każdego niuansu składni czy dokładnych momentów dokręcania wszystkich śrub.",
+    "responsibilities": [
+      "Wiedzieć, gdzie znaleźć wiarygodne informacje",
+      "Oddzielać sygnał od szumu",
+      "Wyodrębniać to, co najważniejsze i sprawdzać, czy rozwiązanie działa w kontekście całego systemu"
+    ],
+    "footer": "Współczesne narzędzia nie zastępują inżyniera — wzmacniają jakość jego decyzji, zarówno dobrych, jak i złych."
+  },
+  "whenThisWayOfThinkingHelps": {
+    "title": "Kiedy to podejście pomaga",
+    "cases": [
+      "problem powraca mimo wielokrotnych napraw",
+      "specjaliści z różnych dziedzin podają sprzeczne wyjaśnienia",
+      "na papierze wszystko się zgadza, ale w praktyce system zawodzi",
+      "należy rozszerzyć funkcjonalność systemu, poprawić jego parametry lub obniżyć koszty",
+      "konieczne jest zbudowanie systemu o zupełnie nowej funkcjonalności",
+      "decyzje muszą być podejmowane w warunkach niepełnych lub niedokładnych danych"
+    ],
+    "footer": "W takich sytuacjach niezbędna jest analiza interakcji systemu z podsystemami i otoczeniem."
+  },
+  "closing": {
+    "text": "Interesuje mnie budowanie logicznych i niezawodnych systemów, a nie leczenie symptomów. Jeśli takie podejście Państwu odpowiada — zapraszam do kontaktu. Czasem jedna trafna analiza wystarczy, by przerwać długi łańcuch chronicznych problemów.",
+    "items": []
+  }
+}
