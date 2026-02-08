@@ -37,12 +37,10 @@ export const Header = () => {
                 {item.label}
               </NavLink>
             ))}
-            <nav className={styles.nav}>
-              {/* Цыкл map па пунктах меню */}
-              <div className={styles.langSection}>
-                <LanguageSwitcher />
-              </div>
-            </nav>
+            {/* Цыкл map па пунктах меню */}
+            <div className={styles.langSection}>
+              <LanguageSwitcher />
+            </div>
           </nav>
         </div>
       </header>
