@@ -1,6 +1,7 @@
 import React, { type CSSProperties } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Section.module.css";
+import typoStyles from "../../../styles/typography.module.css";
 
 interface SectionProps {
   className?: string;
@@ -56,9 +57,10 @@ const Section: React.FC<SectionProps> = ({
         ${className || ""}`}
       style={sectionStyle}
     >
-      <div className={styles.container}>
+      {bgImage && <div className={styles.mobileImage} style={{ backgroundImage: `url(${bgImage})` }} />}
+      <div className="container">
         {/* Калі ёсць фон, ахінаем тэкст у glassCard */}
-        <div className={bgImage ? styles.glassCard : styles.textContent}>
+        <div className={`${bgImage ? styles.glassCard : styles.textContent} ${typoStyles.prose}`}>
           <h1>{title}</h1>
           {description && <p className={styles.description}>{description}</p>}
 

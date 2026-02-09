@@ -1,20 +1,48 @@
+.container {
+  position: relative; /* Каб спіс пазіцыянаваўся адносна гэтай кропкі */
+  display: inline-block;
+  margin-left: 20px; /* Твой водступ ад лагатыпа */
+}
+
+.activeToggle {
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 3px;
+  min-width: 45px;
+}
+
+.dropdown {
+  position: absolute; /* Выпадалка "вісіць" у паветры */
+  top: 100%; /* Дакладна пад кнопкай */
+  right: 0;   /* Прыціснута да правага краю */
+  background: #f7f5f5; /* Твой колер хэдэра */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column; /* Мовы ў слупок */
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
 .langBtn {
   cursor: pointer;
-  padding: 2px 6px;
-  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border: none; /* Прыбіраем рамкі ўнутры спіса */
   background: none;
   font-size: 0.8rem;
-  border-radius: 3px;
-  transition: border-color 0.2s;
-  margin-left: 5px;
+  text-align: center;
+  transition: background 0.2s;
 }
 
 .langBtn:hover {
-  border-color: #333;
+  background-color: #eee;
 }
 
 .active {
-  border-color: #333;
+  background-color: #e0e0e0;
   font-weight: bold;
-  background-color: #f0f0f0;
 }

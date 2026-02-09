@@ -3,28 +3,29 @@ import styles from "./Hero.module.css";
 import { useLocation } from "react-router-dom";
 
 interface HeroProps {
+  label: string;
   title: string;
   subtitle: string;
 }
 
-const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
+const Hero: React.FC<HeroProps> = ({ label, title, subtitle }) => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   return (
-    <section
-      className={`${styles.hero} ${!isHomePage ? styles.heroCompact : ""}`}
-    >
+    <section className={`${styles.hero} ${!isHomePage ? styles.heroCompact : ""}`}>
       <div className={styles.overlay}>
-        <div className={styles.heroContent}>
-          <div className={styles.textSide}>
-            <h1 className={styles.heroTitle}>{title}</h1>
-            <p className={styles.heroSubtitle}>{subtitle}</p>
+        {/* Выкарыстоўваем наш глабальны кантэйнер! */}
+        <div className="container">
+          <div className={styles.heroContent}>
+            <div className={styles.textSide}>
+              {/* Дадаем надпіс вышэй за імя */}
+              <span className={styles.label}>{label}</span>
+              <h1 className={styles.heroTitle}>{title}</h1>
+              <p className={styles.heroSubtitle}>{subtitle}</p>
+            </div>
           </div>
-          {/* <div className={styles.photoSide}>
-          <img src={myPhoto} alt="Andrej Cieraškoŭ" className={styles.photo} />
-        </div> */}
         </div>
-      </div>
+      </div> 
     </section>
   );
 };

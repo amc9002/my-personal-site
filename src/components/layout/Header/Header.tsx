@@ -17,49 +17,54 @@ export const Header = () => {
     { path: "/contact", label: t("nav.contact") },
   ];
 
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <>
       <header className={styles.headerWrapper}>
         <div className={styles.headerContent}>
-          <NavLink to="/" className={styles.logo}>
+          <NavLink to="/" className={styles.logo} onClick={closeMenu}>
             Andrej Cieraškoŭ
           </NavLink>
 
-          {/* 1. Кнопка-бургер. Яна з'явіцца толькі на мабільных дзякуючы CSS */}
-          <button
-            className={styles.burger}
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Menu"
-          >
-            {isMenuOpen ? "✕" : "☰"}
-          </button>
+          {/* Блок для мабільных: мова + бургер */}
+          <div className={styles.mobileControls}>
+            <div onClick={closeMenu}>
+              <LanguageSwitcher />
+            </div>
+            <button
+              className={styles.burger}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Menu"
+            >
+              {isMenuOpen ? "✕" : "☰"}
+            </button>
+          </div>
 
-          {/* 2. Дадаем клас styles.navOpen, калі ісMenuOpen === true */}
+          {/* Навігацыя */}
           <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ""}`}>
             {navItems.map((item) => (
               <NavLink
                 key={item.path}
                 to={item.path}
-                // 3. Закрываем меню пры кліку на спасылку
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
                 className={({ isActive }) =>
-                  isActive
-                    ? `${styles.navLink} ${styles.active}`
-                    : styles.navLink
+                  isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
                 }
               >
                 {item.label}
               </NavLink>
             ))}
 
-            <div className={styles.langSection}>
+            {/* Блок для дэсктопа: толькі мова */}
+            <div className={styles.desktopLang}>
               <LanguageSwitcher />
             </div>
           </nav>
         </div>
       </header>
 
-      <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
+      <Hero label={t("hero.label")} title={t("hero.title")} subtitle={t("hero.subtitle")} />
     </>
   );
 };

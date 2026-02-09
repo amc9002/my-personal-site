@@ -1,11 +1,12 @@
+/*Header.module.css*/
 .section {
-  grid-column: 1 / -1 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Вось гэта апусціць наш кантэйнер да нізу */
+  padding-bottom: var(--space-l); /* Дадаем адступ знізу з нашых зменных */
   width: 100%;
-  display: grid;
-  /* Дадаем min-height для секцый з фонам */
   min-height: 100vh;
-  grid-template-columns: 1fr min(800px, 92%) 1fr;
-  padding: 0; /* Прыбіраем тут, пераносім у overlay */
+  padding: 0; 
   margin-bottom: 0 !important;
   background-attachment: fixed;
   background-size: cover;
@@ -13,41 +14,25 @@
   position: relative;
 }
 
-/* Новы стыль для overlay, які не ламае сетку */
 .overlay {
-  grid-column: 1 / -1; /* Займае ўсе тры калонкі секцыі */
-  display: grid;
-  grid-template-columns: inherit; /* Капіюе сетку бацькі */
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 80px 0;
-}
-
-.container {
-  grid-column: 2; /* Цяпер ён зноў строга па цэнтры */
-  display: flex;
-  flex-direction: column; /* Каб загаловак і glassCard ішлі адзін пад адным */
-  align-items: stretch;
-  gap: 0;
+  /* Дадаем цёмны колер як запасны варыянт */
+  background: rgba(0, 0, 0, 0.5); 
+  padding: var(--space-l) 0;
 }
 
 .glassCard {
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(15px); /* Для Safari */
+  background: var(--color-glass-bg);
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
-  border: 1px dotted rgba(255, 255, 255, 0.2);
+  border: 1px dotted var(--color-glass-border);
   border-radius: 8px;
-  padding: 3rem;
-  color: #fff; /* Тэкст робім белым для кантрасту */
+  padding: var(--space-m); 
+  color: #fff;
 }
 
 .section.withBg {
-  display: grid;
-  grid-template-columns: 1fr min(800px, 92%) 1fr;
-
   margin-top: 4rem !important;
-
   border-radius: 12px; /* Трохі павялічым для эфекту карткі */
   overflow: hidden;
   align-items: end;
@@ -159,70 +144,47 @@
   content: " →";
 }
 
-/* Адаптацыя для мабільных уладжанняў */
+.mobileImage {
+  display: none; /* Схавана па змаўчанні */
+}
+
+/* ПОЎНЫ БЛОК АДАПТАЦЫІ ДЛЯ МАБІЛЬНЫХ */
 @media (max-width: 768px) {
-  body .section.withBg {
-    display: flex;
-    flex-direction: column;
-    height: auto !important;
-    min-height: 0 !important;
-    background-image: none !important;
-    margin-bottom: 2rem !important;
-    width: 100% !important;
+  :root {
+    --space-l: 2rem; /* На тэлефоне адступ будзе меншым, каб кантэнт не выпадаў за экран */
   }
 
-  /* Аб'яднаны блок для малюнка */
-  body .section.withBg::before {
-    content: "";
-    display: block;
+  .section.withBg {
+    background-image: none !important; /* Прыбіраем фон, каб не было белага на белым */
+    background-color: var(--color-light); 
+    height: auto;
+    min-height: 0;
+    padding-bottom: 0;
+  }
+
+  .mobileImage {
+    display: block; /* Паказваем малюнак */
     width: 100%;
-    height: 250px;
-    background-image: var(--bg-image);
+    height: 250px; /* Фіксаваная вышыня для мабільнага "банэра" */
     background-size: cover;
     background-position: center;
-    border-radius: 12px 12px 0 0;
-    /* Гэты цень робіць мяккі пераход да тэксту */
-    box-shadow: inset 0 -30px 30px -10px #111;
   }
 
-  /* Аб'яднаны блок для фону тэксту */
-  body .overlay {
-    background: #111 !important;
-    padding: 30px 20px 40px !important; /* Гэта дасць палі па баках */
-    grid-column: 1 / -1;
-    display: block !important;
-    width: 100% !important;
-    box-sizing: border-box;
-    border-top: 2px solid #333;
-    border-radius: 0 0 12px 12px;
+  .glassCard {
+    /* Ператвараем "шкло" ў звычайны блок на белым фоне */
+    background: transparent;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border: none;
+    color: var(--color-dark); /* Тэкст становіцца цёмным */
+    padding: var(--space-m) 0;
   }
 
-  body .glassCard {
-    background: transparent !important;
-    -webkit-backdrop-filter: none !important;
-    backdrop-filter: none !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  .textContent h1 {
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-    line-height: 1.2;
-    color: #fff !important;
-  }
-
-  .textContent p,
-  .textContent li {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.95) !important;
-    text-align: left;
-  }
-
-  .textContent ul {
-    padding-left: 1.2rem;
-    margin-bottom: 1.5rem;
+  /* Фарбуем тэкст унутры ў цёмны, бо фону больш няма */
+  .glassCard h1, 
+  .glassCard p, 
+  .glassCard li {
+    color: var(--color-dark) !important;
+    text-shadow: none;
   }
 }
