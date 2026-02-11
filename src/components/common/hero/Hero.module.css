@@ -1,7 +1,7 @@
 /*Hero.module.css*/
 .hero {
   width: 100%;
-  background-image: url("../../../assets/Hero_background.png");
+  background-image: url("../../../assets/Hero_Background.png");
   background-size: cover;
   background-position: center;
   position: relative;
