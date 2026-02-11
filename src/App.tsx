@@ -5,7 +5,8 @@ import { Footer } from "./components/layout/Footer/Footer";
 import ScrollToTop from "./components/ui/ScrollToTop";
 
 import Home from "./pages/Home/Home";
-import HowIThink from "./pages/HowIThink/HowIThink";
+import Philosophy from "./pages/Philosophy/Philosophy"; // Імпартуй філасофію, як і астатнія старонкі
+import Methodology from "./pages/Methodology/Methodology";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts/Contacts";
@@ -21,7 +22,8 @@ function App() {
         <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/how-i-think" element={<HowIThink />} />
+            <Route path="/philosophy" element={<Philosophy />} />
+            <Route path="/methodology" element={<Methodology />} />
             <Route path="/about" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contacts />} />

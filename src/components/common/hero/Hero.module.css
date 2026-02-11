@@ -6,13 +6,24 @@
   background-position: center;
   position: relative;
   overflow: hidden;
-  margin-bottom: var(--space-m);
+  margin-bottom: 2.5rem; /* Даем больш месца знізу для тэксту */
+  display: flex; /* Для вертыкальнага цэнтравання */
+  flex-direction: column;
 }
 
 /* Кампактны варыянт для ўнутраных старонак */
 .heroCompact {
-  height: 100px;
+  height: auto !important; /* Дазваляем блоку пашырацца пад тэкст */
+  min-height: unset !important;
 }
+
+.heroCompact .label {
+font-size: 1rem !important; /* Паменшаны памер */
+  padding-left: 3rem !important; /* Карэкціроўка водступу замест адмоўнага margin */
+  letter-spacing: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+
 
 .heroCompact .heroTitle {
   font-size: 1.8rem !important;
@@ -23,10 +34,19 @@
 }
 
 .overlay {
+  flex: 1; /* Займае ўсю вышыню бацькі */
+  display: flex;
+  align-items: center; /* Цэнтраванне па вертыкалі */
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
-  /* Даем паветра замест жорсткай вышыні */
-  padding: var(--space-l) 0; 
+  padding: 3rem 0;
+}
+
+.heroCompact .overlay {
+  padding: 1.5rem 0; 
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .heroContent {
@@ -63,10 +83,6 @@
   margin-top: 1.5rem;
 }
 
-.heroCompact .overlay {
-  padding: var(--space-m) 0;
-}
-
 .heroCompact .heroTitle {
   font-size: 2rem;
 }
@@ -92,16 +108,35 @@
 @media (max-width: 768px) {
   .hero {
     margin-top: 0 !important; /* Гэта прыцісне Hero да хэдэра */
-    margin-bottom: -2rem; /* Каб не было дзіркі знізу */
+    margin-bottom: 1.5rem; /* Каб не было дзіркі знізу */
     border-radius: 0; /* На мабільным лепш без закругленняў зверху, каб шчыльна прылягала */
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
 
+  .heroCompact {
+    min-height: 80px;
+  } 
+
+  .heroCompact .overlay {
+    padding: 1.2rem 0; /* Фіксаваны ўнутраны водступ для ўсіх моў */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heroCompact .label {
+      padding-left: 4rem !important;
+    }
+
+  .heroCompact .heroTitle {
+      font-size: 1.5rem !important;
+      padding-left: 1rem !important;
+    }
+
   .label {
     font-size: 0.75rem;
     letter-spacing: 0.4rem;
-    /* Мяняем тут: */
     color: #ffffff !important; 
     opacity: 0.9; /* Трохі прыглушым, каб не "рэзала" вочы */
     margin-bottom: 1rem;

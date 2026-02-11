@@ -1,176 +1,25 @@
 .headerWrapper {
   width: 100%;
   background: #f7f5f5;
-}
-
-.headerContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  max-width: 800px; /* Супадае з цэнтрам твайго main */
-  margin: 0 auto;
-  padding: 0.5rem 0; /* Прыбіраем бакавыя падынгі, каб лагатып стаяў строга па лініі тэксту */
-}
-
-.logo {
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: #111;
-  white-space: nowrap; /* Каб імя не пераносілася */
-}
-
-.nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.navLink {
-  text-decoration: none;
-  color: #666;
-  font-size: 0.95rem;
-  position: relative; /* Для пазіцыянавання лініі */
-  padding: 0.5rem 0;
-  transition: color 0.3s ease;
-}
-
-.navLink::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0; /* Пачатковая шырыня лініі */
-  height: 2px;
-  background-color: #111;
-  transition: width 0.3s ease; /* Плыўнае пашырэнне */
-}
-
-/* Стыль для актыўнай старонкі */
-.active {
-  color: #111;
-}
-
-.active::after {
-  width: 100%; /* Пашыраем лінію на ўсю шырыню спасылкі */
-}
-
-.navLink:hover {
-  color: #111;
-}
-
-/* Мабільная версія: калі экран меншы за 800px, дадаем падынгі па баках */
-@media (max-width: 840px) {
-  .headerContent {
-    padding: 1rem 1.5rem;
-  }
-}
-
-.langSection {
-  margin-left: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.headerWrapper {
-  width: 100%;
-  background: #f7f5f5;
-}
-
-.headerContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  max-width: 800px; /* Супадае з цэнтрам твайго main */
-  margin: 0 auto;
-  padding: 0.5rem 0; /* Прыбіраем бакавыя падынгі, каб лагатып стаяў строга па лініі тэксту */
-}
-
-.logo {
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: #111;
-  white-space: nowrap; /* Каб імя не пераносілася */
-}
-
-.nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.navLink {
-  text-decoration: none;
-  color: #666;
-  font-size: 0.95rem;
-  position: relative; /* Для пазіцыянавання лініі */
-  padding: 0.5rem 0;
-  transition: color 0.3s ease;
-}
-
-.navLink::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0; /* Пачатковая шырыня лініі */
-  height: 2px;
-  background-color: #111;
-  transition: width 0.3s ease; /* Плыўнае пашырэнне */
-}
-
-/* Стыль для актыўнай старонкі */
-.active {
-  color: #111;
-}
-
-.active::after {
-  width: 100%; /* Пашыраем лінію на ўсю шырыню спасылкі */
-}
-
-.navLink:hover {
-  color: #111;
-}
-
-.desktopLang {
-  margin-left: 20px;
-  display: flex;
-  align-items: center;
-}
-
-/* Дадамо стыль для будучай кнопкі меню */
-.menuButton {
-  display: block;
-  background: #111;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  cursor: pointer;
-}
-
-/* --- 1. АГУЛЬНЫЯ ДЭСКТОПНЫЯ СТЫЛІ --- */
-.headerWrapper {
-  width: 100%;
-  background: #f7f5f5;
   border-bottom: 1px solid rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .headerContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 800px;
+  max-width: 1100px; /* Трохі павялічым, каб улезлі ўсе 6 пунктаў */
   margin: 0 auto;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1.5rem;
 }
 
 .logo {
   font-size: 1.1rem;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: none !important; /* Прыбіраем падкрэсліванне */
   color: #111;
   white-space: nowrap;
 }
@@ -178,70 +27,55 @@
 .nav {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.8rem; /* Оптимальна для 6 пунктаў */
 }
 
 .navLink {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #666;
-  font-size: 0.95rem;
+  font-size: 0.9rem; /* Трохі паменшым шрыфт, каб не было цесна */
+  font-weight: 500;
   position: relative;
   padding: 0.5rem 0;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .active { color: #111; }
 .active::after {
   content: "";
   position: absolute;
-  bottom: 0; left: 0;
-  width: 100%; height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
   background-color: #111;
 }
 
-/* Элементы, якія мы па чарзе хаваем */
+/* Хаваем мабільныя кантролы на дэсктопе */
 .mobileControls {
-  display: none !important; /* На дэсктопе заўсёды схавана */
+  display: none !important;
 }
 
 .desktopLang {
-  margin-left: 20px;
   display: flex;
   align-items: center;
+  margin-left: 1rem;
 }
 
-/* --- 2. МАБІЛЬНАЯ ВЕРСІЯ (Толькі адзін блок!) --- */
-@media (max-width: 768px) {
-  /* Паказваем мабільны блок з мовай і бургерам */
+/* --- МАБІЛЬНАЯ ВЕРСІЯ --- */
+@media (max-width: 1024px) { /* Павялічваем парог, бо меню стала вельмі шырокім */
+  .nav {
+    display: none; /* Хаваем асноўнае меню раней */
+  }
+
   .mobileControls {
     display: flex !important;
     align-items: center;
-    gap: 15px;
-    z-index: 110;
+    gap: 1rem;
   }
 
-  .headerWrapper {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  /* Хаваем мову ўнутры спіса спасылак */
-  .desktopLang {
-    display: none !important;
-  }
-
-  .burger {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #111;
-    padding: 0;
-    line-height: 1;
-  }
-
-  .nav {
+  .navOpen {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -249,24 +83,8 @@
     left: 0;
     width: 100%;
     background: #f7f5f5;
-    padding: 0;
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-    z-index: 100;
-  }
-
-  .navOpen {
-    max-height: 500px;
-    opacity: 1;
-    padding: 20px;
+    padding: 1.5rem;
+    gap: 1rem;
     border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-
-  .navLink {
-    width: 100%;
-    padding: 12px 0;
-    font-size: 1.1rem;
   }
 }

@@ -1,0 +1,12 @@
+{
+  "methodology": {
+    "title": "How I Work",
+    "description": "My approach is built on a combination of engineering precision and effective communication.",
+    "steps": [
+      "Analysis and decomposition: breaking down a complex problem into manageable parts.",
+      "Design: creating an architecture that works for the long term.",
+      "Implementation and testing: ensuring quality at every stage."
+    ],
+    "footer": "This is a living process that adapts to specific tasks."
+  }
+}

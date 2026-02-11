@@ -8,7 +8,7 @@ i18n
   .init({
     lng: "be", // Фіксуем мову для тэсту
     fallbackLng: "be",
-    ns: ["common", "home"],
+    ns: ["common", "home", "methodology"],
     defaultNS: "common",
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",

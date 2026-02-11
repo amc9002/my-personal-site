@@ -1,14 +1,14 @@
 import { useTranslation } from "react-i18next";
 import Section from "../../components/common/section/Section"; // Шлях да твайго ўніверсальнага кампанента
-import styles from "./HowIThink.module.css"; // Калі патрэбныя спецыфічныя стылі для гэтай старонкі
+import styles from "./Philosophy.module.css"; // Калі патрэбныя спецыфічныя стылі для гэтай старонкі
 
 interface Role {
   name: string;
   description: string;
 }
 
-const HowIThink = () => {
-  const { t } = useTranslation("howIThink");
+const Philosophy = () => {
+  const { t } = useTranslation("philosophy");
 
   const getArray = (key: string): string[] => {
     const res = t(key, { returnObjects: true });
@@ -58,4 +58,4 @@ const HowIThink = () => {
   );
 };
 
-export default HowIThink;
+export default Philosophy;

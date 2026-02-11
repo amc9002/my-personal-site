@@ -1,0 +1,12 @@
+{
+  "methodology": {
+    "title": "Jak pracuję",
+    "description": "Moje podejście opiera się na połączeniu precyzji inżynierskiej oraz skutecznej komunikacji.",
+    "steps": [
+      "Analiza i dekompozycja: rozkładam złożone problemy na części możliwe do zarządzania.",
+      "Projektowanie: tworzę architekturę, która sprawdza się w perspektywie długofalowej.",
+      "Implementacja i testowanie: gwarantuję jakość na każdym etapie."
+    ],
+    "footer": "Jest to proces żywy, który dostosowuje się do konkretnych zadań."
+  }
+}

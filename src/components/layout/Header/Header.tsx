@@ -11,7 +11,8 @@ export const Header = () => {
 
   const navItems = [
     { path: "/", label: t("nav.home") },
-    { path: "/how-i-think", label: t("nav.howIThink") },
+    { path: "/philosophy", label: t("nav.philosophy") },
+    { path: "/methodology", label: t("nav.methodology") },
     { path: "/about", label: t("nav.about") },
     { path: "/projects", label: t("nav.projects") },
     { path: "/contact", label: t("nav.contact") },

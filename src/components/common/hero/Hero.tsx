@@ -14,14 +14,12 @@ const Hero: React.FC<HeroProps> = ({ label, title, subtitle }) => {
   return (
     <section className={`${styles.hero} ${!isHomePage ? styles.heroCompact : ""}`}>
       <div className={styles.overlay}>
-        {/* Выкарыстоўваем наш глабальны кантэйнер! */}
         <div className="container">
           <div className={styles.heroContent}>
             <div className={styles.textSide}>
-              {/* Дадаем надпіс вышэй за імя */}
               <span className={styles.label}>{label}</span>
               <h1 className={styles.heroTitle}>{title}</h1>
-              <p className={styles.heroSubtitle}>{subtitle}</p>
+              {isHomePage && <p className={styles.heroSubtitle}>{subtitle}</p>}
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Section from "../../components/common/section/Section"; // Шлях да твайго ўніверсальнага кампанента
 import whatIDoBg from "../../assets/engineer-desk.png";
-import howIThinkBg from "../../assets/automatic_line.png";
+import philosophyBg from "../../assets/automatic_line.png";
 import ProjectsBg from "../../assets/kulman.png";
 import ContactsBg from "../../assets/invite.png";
 
@@ -23,11 +23,11 @@ const Home = () => {
       />
       <Section
         index={1}
-        title={t("howIThink.title")}
-        items={getArray("howIThink.description")}
-        bgImage={howIThinkBg}
-        link="/how-i-think"
-        linkText={t("howIThink.link")}
+        title={t("philosophy.title")}
+        items={getArray("philosophy.description")}
+        bgImage={philosophyBg}
+        link="/philosophy"
+        linkText={t("philosophy.link")}
       />
       <Section
         index={2}

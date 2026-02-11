@@ -1,7 +1,8 @@
 {
   "nav": {
     "home": "Главная",
-    "howIThink": "Мой взгляд",
+    "philosophy": "Философия",
+    "methodology": "Мой подход",
     "about": "Обо мне",
     "projects": "Проекты",
     "contact": "Контакты"
