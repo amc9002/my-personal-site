@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import Section from "../../components/common/section/Section"; // Шлях да твайго ўніверсальнага кампанента
-import whatIDoBg from "../../assets/engineer-desk.png";
-import philosophyBg from "../../assets/automatic_line.png";
-import ProjectsBg from "../../assets/kulman.png";
-import ContactsBg from "../../assets/invite.png";
+import whatIDoBg from "../../assets/Engineer Desk_BW.png";
+import philosophyBg from "../../assets/Engineer near Automatic Line.png";
+import ProjectsBg from "../../assets/Engineer Designs.png";
+import ContactsBg from "../../assets/Notebook.png";
 
 const Home = () => {
   const { t } = useTranslation("home");

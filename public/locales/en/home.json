@@ -13,7 +13,7 @@
     ]
   },
   "philosophy": {
-    "title": "My Perspective",
+    "title": "My Philosophy",
     "description": [
       "System failure, like any disaster, is caused by a coincidence of several factors.",
       "The vast majority of failures result from not considering the system as a whole,",
@@ -22,9 +22,9 @@
     "link": "Engineer's Insight"
   },
   "projects": {
-    "title": "Projects",
+    "title": "Interesting Cases",
     "info": [
-      "Selected projects and technical cases will appear here shortly.",
+      "Selected technical cases will appear here shortly.",
       "In the meantime, feel free to contact me to discuss an idea or a problem."
     ],
     "link": "View Case Studies"

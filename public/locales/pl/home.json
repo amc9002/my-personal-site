@@ -13,7 +13,7 @@
     ]
   },
   "philosophy": {
-    "title": "Moje Spojrzenie",
+    "title": "Moja filozofia",
     "description": [
       "Awaria systemu, jak każda katastrofa, jest wynikiem zbiegu kilku czynników.",
       "Przeważająca większość awarii wynika z braku postrzegania systemu jako całości,",
@@ -24,7 +24,7 @@
   "projects": {
     "title": "Projekty",
     "info": [
-      "Wybrane projekty i studia przypadków pojawią się tutaj wkrótce.",
+      "Wybrana studia przypadków pojawią się tutaj wkrótce.",
       "Tymczasem zapraszam do kontaktu, aby omówić pomysł lub problem."
     ],
     "link": "Zobacz case studies"

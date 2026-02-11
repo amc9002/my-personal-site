@@ -1,7 +1,7 @@
 /*Hero.module.css*/
 .hero {
   width: 100%;
-  background-image: url("../../../assets/hero-background.png");
+  background-image: url("../../../assets/Hero_background.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -78,7 +78,8 @@ font-size: 1rem !important; /* Паменшаны памер */
 
 .heroSubtitle {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-style: italic;
   font-weight: 300;
   margin-top: 1.5rem;
 }
