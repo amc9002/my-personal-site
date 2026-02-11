@@ -65,7 +65,7 @@ font-size: 1rem !important; /* Паменшаны памер */
   text-transform: uppercase;
   margin-bottom: 0.8rem;
   opacity: 0.9;
-  padding-left: 3rem; /* Каб супадала з падынгам загалоўка */
+  padding-left: 1rem; /* Каб супадала з падынгам загалоўка */
 }
 
 .heroTitle {
@@ -141,11 +141,11 @@ font-size: 1rem !important; /* Паменшаны памер */
     color: #ffffff !important; 
     opacity: 0.9; /* Трохі прыглушым, каб не "рэзала" вочы */
     margin-bottom: 1rem;
-    padding-left: 4rem;
+    padding-left: 2rem;
   }
 
   .heroTitle {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     line-height: 1.1;
     margin-bottom: 0.8rem;
     padding-left: 1.5rem;
@@ -157,6 +157,7 @@ font-size: 1rem !important; /* Паменшаны памер */
     max-width: 90%; /* Каб тэкст не расцягваўся на ўвесь экран і лепш чытаўся */
     margin: 0 auto;
     opacity: 0.9;
+    padding-left: -7rem !important; /* Карэкціроўка водступу для цэнтравання */
   }
 
   .overlay {
