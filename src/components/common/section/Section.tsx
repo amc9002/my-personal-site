@@ -16,8 +16,24 @@ interface SectionProps {
   bgImage?: string;
   bgPosition?: string;
   bgSize?: string;
+  cardPosition?: { top?: string; bottom?: string; left?: string; right?: string };
+  cardWidth?: string;
+  cardMaxWidth?: string;
   index: number;
 }
+
+const parseText = (text: string) => {
+  // Шукаем тэгі <b>...</b> альбо <strong>...</strong>
+  const parts = text.split(/(<b>.*?<\/b>|<strong>.*?<\/strong>)/gi);
+  return parts.map((part, index) => {
+    if (part.toLowerCase().startsWith('<b>') || part.toLowerCase().startsWith('<strong')) {
+      // Прыбіраем тэгі і ахінаем у React-тэг
+      const content = part.replace(/<\/?(b|strong)>/gi, '');
+      return <strong key={index}>{content}</strong>;
+    }
+    return part;
+  });
+};
 
 const Section: React.FC<SectionProps> = ({
   className,
@@ -30,6 +46,9 @@ const Section: React.FC<SectionProps> = ({
   footer,
   index,
   children,
+  cardPosition,
+  cardWidth,
+  cardMaxWidth,
   bgImage,
   bgPosition = "center", // Па змаўчанні цэнтраванне фона
   bgSize = "cover", // Па змаўчанні пакрыццё фона
@@ -40,14 +59,18 @@ const Section: React.FC<SectionProps> = ({
   const isAlt = index % 2 !== 0;
 
   // Калі ёсць bgImage, ствараем аб'ект стыляў для фона
-  const sectionStyle: CSSProperties = bgImage
-    ? ({
+  const sectionStyle: CSSProperties = {
+    ...(bgImage ? {
         "--bg-image": `url(${bgImage})`,
         "--bg-pos": bgPosition || "center center",
-        "--bg-size": bgSize || "cover",
-        // Перадаем пазіцыю ў CSS-зменную
-      } as CSSProperties)
-    : {};
+        "--bg-size": bgSize || "cover"} : {}),
+        "--card-top": cardPosition?.top || "auto",
+        "--card-bottom": cardPosition?.bottom || "16vh",
+        "--card-left": cardPosition?.left || "auto",
+        "--card-right": cardPosition?.right || "auto",
+        "--card-width": cardWidth || "auto",
+        "--card-max-width": cardMaxWidth || "750",
+      } as CSSProperties;
 
   return (
     <section
@@ -67,7 +90,7 @@ const Section: React.FC<SectionProps> = ({
           {items.length > 3 ? (
             <ul>
               {items.map((item, i) => (
-                <li key={i}>{item}</li>
+                <li key={i}>{parseText(item)}</li>
               ))}
             </ul>
           ) : (

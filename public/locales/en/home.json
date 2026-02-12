@@ -1,7 +1,17 @@
 {
-  "hero": {
-    "title": "Andrej Cieraškoŭ",
-    "subtitle": "Your problem is my challenge"
+  "whenIAmNeeded": {
+    "title": "I'm needed when:",
+    "items": [
+      "- <b>Repair is more expensive than downtime:</b> budget for standard solutions exceeds common sense",
+      "- <b>Problem-bumerang:</b> You're repairing the same node for the third time in a year",
+      "- <b>Deadlock compromise:</b> A choice is required between 'fast', 'high quality', and 'cheap'",
+      "- <b>Dead zone:</b> specialists say 'everything is fine', but there's no result",
+      "- <b>Path to the unknown:</b> you need to create something that doesn't have an instruction yet",
+      "- <b>Modernization without procurement:</b> expanding the capabilities of existing equipment or adding new functions",
+      "- <b>Adaptability:</b> adapting systems to new, unplanned working conditions"
+    ],
+    "footer": "My method: stop the pressure and think differently.",
+    "link": "TRIZ Engineer's Philosophy"
   },
   "whatIDo": {
     "title": "What I Do",

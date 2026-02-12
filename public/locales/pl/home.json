@@ -1,7 +1,17 @@
 {
-  "hero": {
-    "title": "Andrej Cieraškoŭ",
-    "subtitle": "Twoje techniczne wyzwania, moje rozwiązania"
+  "whenIAmNeeded": {
+    "title": "Jestem Ci potrzebny, jeśli:",
+    "items": [
+      "- <b>Naprawa jest droższa niż przestój:</b> budżet na standardowe rozwiązania przekracza zdrowy rozsądek",
+      "- <b>Problem-bumerang:</b> naprawiasz ten sam węzeł po raz trzeci w ciągu roku",
+      "- <b>Zawieszenie compromisu:</b> wymagany wybór między 'szybko', 'wysoka jakość' i 'tanie'",
+      "- <b>Strefa martwa:</b> specjaliści mówią 'wszystko jest w porządku', ale nie ma rezultatu",
+      "- <b>Ścieżka do nieznanego:</b> musisz stworzyć coś, czego jeszcze nie ma instrukcji",
+      "- <b>Modernizacja bez zakupów:</b> rozszerzanie możliwości istniejącego wyposażenia lub dodawanie nowych funkcji",
+      "- <b>Adaptacyjność:</b> dostosowywanie systemów do nowych, nieplanowanych warunków pracy"
+    ],
+    "footer": "Mój sposób działania: zatrzymaj nacisk i myśl inaczej.",
+    "link": "Philosofia inżyniera TRIZ"
   },
   "whatIDo": {
     "title": "Czym się zajmuję",

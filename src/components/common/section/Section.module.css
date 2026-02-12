@@ -12,6 +12,14 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: hidden;
+}
+
+.section .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Дазваляе выкарыстоўваць flex для выраўноўвання, калі не зададзены каардынаты */
 }
 
 .overlay {
@@ -22,13 +30,42 @@
 }
 
 .glassCard {
-  background: var(--color-glass-bg);
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - var(--card-bottom) - 10vh);
+  /* Уключаем унутраную пракрутку */
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Каб палоса пракруткі была акуратнай (для Chrome/Safari) */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-glass-border) transparent;
+
+  background: var(--color-glass-bg) !important;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   border: 1px dotted var(--color-glass-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  padding: var(--space-m); 
-  color: #fff;
+  padding: var(--space-m);
+  
+  /* Дэсктопнае пазіцыянаванне */
+  position: absolute;
+  top: var(--card-top);
+  bottom: var(--card-bottom);
+  left: var(--card-left);
+  right: var(--card-right);
+  width: var(--card-width);
+  max-width: var(--card-max-width);
+  z-index: 2;
+}
+
+/* Стылізацыя скролбара для Webkit */
+.glassCard::-webkit-scrollbar {
+  width: 4px;
+}
+.glassCard::-webkit-scrollbar-thumb {
+  background-color: var(--color-glass-border);
+  border-radius: 10px;
 }
 
 .section.withBg {
@@ -48,6 +85,7 @@
 
   /* Дадаем цень, каб падкрэсліць разрыў */
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  isolation: isolate;
 }
 
 /* Калі мы ўнутры шкла, фарбуем тэкст у белы */
@@ -159,12 +197,17 @@
     --space-l: 2rem; /* На тэлефоне адступ будзе меншым, каб кантэнт не выпадаў за экран */
   }
 
+  section {
+    min-height: 0 !important; /* Прыбіраем прымусовую вышыню экрана */
+    justify-content: flex-start !important; /* Скідаем прыцісканне да нізу */
+    padding-bottom: 0 !important; /* Прыбіраем ніжні адступ */
+  }
+
   .section.withBg {
-    background-image: none !important; /* Прыбіраем фон, каб не было белага на белым */
-    background-color: var(--color-light); 
-    height: auto;
-    min-height: 0;
-    padding-bottom: 0;
+    margin-top: 0 !important;
+    height: auto !important;
+    padding-bottom: 0 !important; /* Прыбіраем 10vh, якія засталіся з дэсктопа */
+    display: block; /* Пераводзім у звычайны паток для прадказальнага росту ўніз */
   }
 
   .mobileImage {
@@ -177,12 +220,12 @@
 
   .glassCard {
     /* Ператвараем "шкло" ў звычайны блок на белым фоне */
-    background: transparent;
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
-    border: none;
-    color: var(--color-dark); /* Тэкст становіцца цёмным */
-    padding: var(--space-m) 0;
+    position: static !important;
+    width: 100% !important;
+    max-height: none !important; /* ВАЖНА: Прыбіраем абмежаванне вышыні і скрол */
+    overflow-y: visible !important; /* Тэкст проста расцягвае картку ўніз */
+    margin: 0 !important;
+    padding: var(--space-m) 1rem !important; /* Дадаем бакавыя адступы для тэксту */
   }
 
   /* Фарбуем тэкст унутры ў цёмны, бо фону больш няма */
