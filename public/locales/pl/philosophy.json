@@ -30,7 +30,9 @@
       "- konflikt między podsystemami",
       "- niezgodność koncepcji projektu z rzeczywistymi warunkami eksploatacji"
     ],
-    "summary": "Wymiana części lub staranniejsze powtarzanie poprzednich kroków może tymczasowo ukryć symptom, ale system pozostanie niestabilny. Z punktu widzenia inżyniera chroniczne problemy są sygnałem: model systemu jest niepełny lub błędny. Rozwiązanie takich kwestii wymaga kroku w tył, a nie „zwiększenia nacisku”."
+    "footer": "TRIZ — it is not a magic formula, but a systematic approach to problem-solving. It helps identify and resolve contradictions that are usually overlooked in traditional analysis.",
+    "link": "https://pl.wikipedia.org/wiki/TRIZ",
+    "linktext": "Dowiedz się więcej o TRIZ"
   },
   "toolsAreNotThePoint": {
     "title": "Narzędzia to nie sedno",

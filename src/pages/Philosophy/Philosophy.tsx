@@ -47,6 +47,8 @@ const Philosophy = () => {
         items={getArray("TrizEngineering.points")}
         footer={t("TrizEngineering.footer")}
         bgImage={SystematicInnovation}
+        link={t("TrizEngineering.link")}
+        linkText={t("TrizEngineering.linktext")}
       />
       <Section
         index={3}

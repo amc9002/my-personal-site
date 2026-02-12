@@ -25,7 +25,7 @@ const Home = () => {
         cardPosition={{ bottom: '10%', right: '5%' }} 
         cardWidth="650px"
         link="/philosophy"
-        linkText={t("whenIAmNeeded.link")}
+        linkText={t("whenIAmNeeded.linktext")}
       />
       <Section
         index={1}
@@ -44,7 +44,7 @@ const Home = () => {
         cardPosition={{ top: '10%', right: '15%' }}
         cardWidth="450px"
         link="/projects"
-        linkText={t("projects.link")}
+        linkText={t("projects.linktext")}
       />
       <Section
         index={3}
@@ -54,7 +54,7 @@ const Home = () => {
         cardPosition={{ top: '10%', left: '20%' }}
         cardWidth="450px"
         link="/contacts"
-        linkText={t("contacts.link")}
+        linkText={t("contacts.linktext")}
       />
     </>
   );

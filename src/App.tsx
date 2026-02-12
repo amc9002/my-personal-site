@@ -8,7 +8,7 @@ import Home from "./pages/Home/Home";
 import Philosophy from "./pages/Philosophy/Philosophy"; // Імпартуй філасофію, як і астатнія старонкі
 import Methodology from "./pages/Methodology/Methodology";
 import AboutMe from "./pages/AboutMe";
-import Projects from "./pages/Projects";
+import TechnicalCases from "./pages/TechnicalCases";
 import Contacts from "./pages/Contacts/Contacts";
 import { Route, Routes } from "react-router-dom";
 
@@ -25,7 +25,7 @@ function App() {
             <Route path="/philosophy" element={<Philosophy />} />
             <Route path="/methodology" element={<Methodology />} />
             <Route path="/about" element={<AboutMe />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<TechnicalCases />} />
             <Route path="/contact" element={<Contacts />} />
           </Routes>
         </Suspense>

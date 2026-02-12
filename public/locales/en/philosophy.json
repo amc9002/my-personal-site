@@ -19,7 +19,9 @@
     "points": [
       "Instead of trial and error, we rely on objective laws governing the evolution of successful systems. Instead of fighting symptoms, we identify the root cause, which is usually hidden in the clash of conflicting requirements."
     ],
-    "footer": "TRIZ is not a magic formula, but a systematic approach to problem-solving. It helps expose and resolve contradictions that typically go unnoticed in traditional analysis."
+    "footer": "TRIZ — it is not a magic formula, but a systematic approach to problem-solving. It helps identify and resolve contradictions that are usually overlooked in traditional analysis.",
+    "link": "https://en.wikipedia.org/wiki/TRIZ",
+    "linktext": "Learn more about TRIZ"
   },
   "whyProblemsComeBack": {
     "title": "Why Problems Return",

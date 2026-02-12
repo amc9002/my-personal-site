@@ -11,7 +11,7 @@
       "- <b>Adaptability:</b> adapting systems to new, unplanned working conditions"
     ],
     "footer": "My method: stop the pressure and think differently.",
-    "link": "TRIZ Engineer's Philosophy"
+    "linktext": "TRIZ Engineer's Philosophy"
   },
   "whatIDo": {
     "title": "What I Do",
@@ -29,7 +29,7 @@
       "The vast majority of failures result from not considering the system as a whole,",
       "either during the design or development stages."
     ],
-    "link": "Engineer's Insight"
+    "linktext": "Engineer's Insight"
   },
   "projects": {
     "title": "Interesting Cases",
@@ -37,7 +37,7 @@
       "Selected technical cases will appear here shortly.",
       "In the meantime, feel free to contact me to discuss an idea or a problem."
     ],
-    "link": "View Case Studies"
+    "linktext": "View Case Studies"
   },
   "contacts": {
     "title": "Contacts",
@@ -45,6 +45,6 @@
       "If you are facing a technical problem that is hard to structure or fix — write to me.",
       "I am always open to complex tasks and interesting proposals."
     ],
-    "link": "Contact Me"
+    "linktext": "Contact Me"
   }
 }

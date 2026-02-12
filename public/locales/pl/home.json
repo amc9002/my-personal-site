@@ -11,7 +11,7 @@
       "- <b>Adaptacyjność:</b> dostosowywanie systemów do nowych, nieplanowanych warunków pracy"
     ],
     "footer": "Mój sposób działania: zatrzymaj nacisk i myśl inaczej.",
-    "link": "Philosofia inżyniera TRIZ"
+    "linktext": "Philosofia inżyniera TRIZ"
   },
   "whatIDo": {
     "title": "Czym się zajmuję",
@@ -29,7 +29,7 @@
       "Przeważająca większość awarii wynika z braku postrzegania systemu jako całości,",
       "zarówno na etapie projektowania, jak i rozwoju."
     ],
-    "link": "Opinia inżyniera"
+    "linktext": "Opinia inżyniera"
   },
   "projects": {
     "title": "Projekty",
@@ -37,7 +37,7 @@
       "Wybrana studia przypadków pojawią się tutaj wkrótce.",
       "Tymczasem zapraszam do kontaktu, aby omówić pomysł lub problem."
     ],
-    "link": "Zobacz case studies"
+    "linktext": "Zobacz case studies"
   },
   "contacts": {
     "title": "Kontakt",
@@ -45,6 +45,6 @@
       "Jeśli mierzysz się z problemem technicznym, który trudno zrealizować lub naprawić — napisz do mnie.",
       "Jestem zawsze otwarty na ambitne zadania i ciekawe propozycje."
     ],
-    "link": "Skontaktuj się ze mną"
+    "linktext": "Skontaktuj się ze mną"
   }
 }
