@@ -1,66 +1,64 @@
 {
   "introduction": {
-    "title": "Moje podejście: myślenie inżynieryjne",
+    "title": "Spojrzeć przez chaos",
     "text": [
-      "Pracuję z problemami technicznymi na poziomie systemów. Nie interesują mnie tymczasowe „łatki” ani izolowane awarie, lecz to, dlaczego systemy zachowują się w określony sposób; dlaczego problemy powracają mimo prawidłowych działań i gdzie w początkowych założeniach kryją się sprzeczności.",
-      "Ta strona to nie lista usług ani życiorys. To krótkie wyjaśnienie tego, jak myślę jako inżynier i w jakich sytuacjach taki sposób myślenia przynosi realne rezultaty."
+      "Systemy biznesowe i techniczne nie giną z powodu awarii. Giną z powodu iluzji, że awarię można po prostu „naprawić”. Jeśli problem powraca po naprawie — oznacza to, że leczysz symptom, podczas gdy guz tkwi w samej logice systemu.",
+      "Ta strona to nie lista usług ani życiorys. To krótkie wyjaśnienie tego, jak myślę jako inżynier i w jakich sytuacjach ten sposób myślenia przynosi rezultaty."
     ]
   },
-  "engineerVsExecutor": {
-    "title": "Inżynier vs Wykonawca",
-    "text": "Jednym z najczęstszych źródeł niepowodzeń technicznych jest zatarcia granicy między rolami.",
-    "roles": [
-      {
-        "name": "Wykonawca",
-        "description": "pracuje na poziomie realizacji: przestrzega procedur, wykonuje z góry określone kroki i wdrożenia decyzji podjętych przez kogoś innego."
-      },
-      {
-        "name": "Inżynier",
-        "description": "pracuje na poziomie modeli i rozwiązań: określa, jak system ma działać, rozumie interakcje między komponentami i ocenia skutki jeszcze przed rozpoczęciem realizacji."
-      }
+  "detailVsSystem": {
+    "title": "Detal a system",
+    "text": [
+      "Wąski specjalista widzi węzeł, agregat lub linię kodu. Jest zakładnikiem własnych kompetencji. Gdy elektryk mówi „sygnały idą”, a mechanik — „żelazo jest całe”, ale maszyna stoi, problem żyje w próżni między nimi.",
+      "Moim podejściem jest spojrzenie ponad barierami kompetencji. Nie szukam błędu w detalu, lecz błędnego założenia zaszytego w fundamencie całego systemu."
+    ]
+  },
+  "TrizEngineering": {
+    "title": "TRIZ — wyjście z impasu kompromisów",
+    "text": "Zazwyczaj jesteśmy przyzwyczajeni do „handlu”: chcesz, aby część była wytrzymała — staje się ciężka; chcesz, aby usługa była tania — spada jakość. To są sprzeczności. TRIZ uczy nie wybierać „średniej arytmetycznej”, lecz znaleźć sposób na uzyskanie obu rzeczy jednocześnie. Zamienia to poszukiwanie pomysłów z „oczekiwania na natchnienie” w precyzyjną pracę inżynierską:",
+    "points": [
+      "Zamiast prób i błędów opieramy się na obiektywnych prawach rozwoju systemów. Zamiast walki z symptomami widzimy korzeń problemu, który najczęściej tkwi w zderzeniu sprzecznych wymagań."
     ],
-    "footer": "To nie są „wyższe” i „niższe” poziomy tej samej pracy. To różne zawody o różnej odpowiedzialności."
+    "footer": "TRIZ to nie magiczna formuła, lecz systematyczne podejście do rozwiązywania problemów. Pomaga ujawnić i rozwiązać sprzeczności, które zazwyczaj pozostają niezauważone w tradycyjnej analizie."
   },
   "whyProblemsComeBack": {
     "title": "Dlaczego problemy powracają",
-    "text": "Jeśli problem powtarza się wielokrotnie, rzadko jest to kwestia złego wykonania. Powtarzające się awarie zazwyczaj sygnalizują:",
+    "text": "Jeśli problem powtarza się wielokrotnie — rzadko jest to kwestia złego wykonania. Powtarzające się awarie zazwyczaj sygnalizują:",
     "points": [
-      "błędne założenie początkowe",
-      "ignorowanie określonego trybu pracy",
-      "konflikt między podsystemami",
-      "rozbieżność między koncepcją projektu a realnymi warunkami eksploatacji"
+      "- błędne założenie początkowe",
+      "- ignorowanie pewnego trybu pracy",
+      "- konflikt między podsystemami",
+      "- niezgodność koncepcji projektu z rzeczywistymi warunkami eksploatacji"
     ],
-    "summary": "Wymiana części lub staranniejsze powtarzanie poprzednich kroków może tymczasowo ukryć symptom, ale system pozostanie niestabilny. Z punktu widzenia inżyniera chroniczne problemy to sygnał: model systemu jest niepełny lub błędny. Rozwiązanie takich kwestii wymaga kroku w tył, a nie „zwiększenia nacisku”."
-  },
-  "systemsLiveBetweenDisciplines": {
-    "title": "Systemy żyją między dyscyplinami",
-    "example": "Najkosztowniejsze problemy techniczne często nie mają jednego „właściciela”. Typowy przypadek: mechanicy nie widzą usterek, elektrycy potwierdzają obecność sygnałów, a oprogramowanie działa zgodnie ze specyfikacją. Jednak system jako całość — nie działa.",
-    "conclusion": "Problemy te żyją między domenami, a nie wewnątrz nich. Dlatego nie da się ich rozwiązać siłami jednego wąskiego specjalisty. Potrzebny jest ktoś, kto nie broni „własnego terytorium”, lecz stara się zrozumieć całość."
+    "summary": "Wymiana części lub staranniejsze powtarzanie poprzednich kroków może tymczasowo ukryć symptom, ale system pozostanie niestabilny. Z punktu widzenia inżyniera chroniczne problemy są sygnałem: model systemu jest niepełny lub błędny. Rozwiązanie takich kwestii wymaga kroku w tył, a nie „zwiększenia nacisku”."
   },
   "toolsAreNotThePoint": {
-    "title": "Narzędzia to nie istota",
-    "text": "Inżynieria nie jest definiowana przez narzędzia. Kod, mechanika, automatyka, sztuczna inteligencja — to tylko środki realizacji. Inżynier nie musi pamiętać każdego niuansu składni czy dokładnych momentów dokręcania wszystkich śrub.",
+    "title": "Narzędzia to nie sedno",
+    "text": "Kod, mechanika, automatyzacja, sztuczna inteligencja — to tylko środki. Ekspertyza inżynierska nie polega na znajomości każdej komendy składni, lecz na umiejętności:",
     "responsibilities": [
-      "Wiedzieć, gdzie znaleźć wiarygodne informacje",
-      "Oddzielać sygnał od szumu",
-      "Wyodrębniać to, co najważniejsze i sprawdzać, czy rozwiązanie działa w kontekście całego systemu"
+      "- oddzielania sygnału od szumu informacyjnego",
+      "- wyodrębniania tego, co najważniejsze i sprawdzania rozwiązania w kontekście całego systemu",
+      "- używania narzędzi do wzmacniania logiki, a nie do maskowania jej braku"
     ],
-    "footer": "Współczesne narzędzia nie zastępują inżyniera — wzmacniają jakość jego decyzji, zarówno dobrych, jak i złych."
+    "footer": "Współczesne narzędzia nie zastępują inżyniera — one jedynie skalują jakość jego decyzji, zarówno tych dobrych, jak i złych."
   },
   "whenThisWayOfThinkingHelps": {
-    "title": "Kiedy to podejście pomaga",
+    "title": "Diagnostyka: kiedy potrzebne jest podejście systemowe",
     "cases": [
-      "problem powraca mimo wielokrotnych napraw",
-      "specjaliści z różnych dziedzin podają sprzeczne wyjaśnienia",
-      "na papierze wszystko się zgadza, ale w praktyce system zawodzi",
-      "należy rozszerzyć funkcjonalność systemu, poprawić jego parametry lub obniżyć koszty",
-      "konieczne jest zbudowanie systemu o zupełnie nowej funkcjonalności",
-      "decyzje muszą być podejmowane w warunkach niepełnych lub niedokładnych danych"
+      "Problem powraca mimo wielokrotnych napraw",
+      "Specjaliści z różnych dziedzin obwiniają się nawzajem",
+      "Na papierze wszystko jest poprawne, ale w praktyce system zawodzi",
+      "Trzeba zbudować złożony system w warunkach niepełnych danych",
+      "Należy poprawić parametry bez nieproporcjonalnego wzrostu kosztów"
     ],
-    "footer": "W takich sytuacjach niezbędna jest analiza interakcji systemu z podsystemami i otoczeniem."
+    "footer": "Jeśli rozpoznajesz swoją sytuację — oznacza to, że problem nie tkwi w detalach, lecz w systemie jako całości."
   },
   "closing": {
-    "text": "Interesuje mnie budowanie logicznych i niezawodnych systemów, a nie leczenie symptomów. Jeśli takie podejście Państwu odpowiada — zapraszam do kontaktu. Czasem jedna trafna analiza wystarczy, by przerwać długi łańcuch chronicznych problemów.",
-    "items": []
+    "title": "Wynalazczość jako metoda, niezawodność jako wynik",
+    "text": [
+      "Moim priorytetem jest budowanie systemów, w których logika wygrywa z przypadkowością. Podejście wynalazcze pozwala mi spojrzeć na problem poza schematami instrukcji i znaleźć eleganckie rozwiązanie tam, gdzie standardowe metody wymagają nadmiernych kosztów.",
+      "Nie tylko bronię granic jednej domeny, ale dbam o spójną pracę całości, zamieniając systemowe sprzeczności w punkty innowacyjnego wzrostu."
+    ],
+    "footer": "Ostatecznym rezultatem myślenia systemowego jest spokój inżyniera, przewidywalność biznesu i możliwość robienia tego, co wcześniej wydawało się niemożliwe."
   }
 }
