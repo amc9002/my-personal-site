@@ -1,0 +1,30 @@
+[
+  {
+    "id": "CASE-001",
+    "title": "Przegrzewanie pompy próżniowej",
+    "previewImage": "https://via.placeholder.com/400x300/222/fff?text=Problem+Sketch",
+    "preview": {
+      "summary": "Pompa przegrzewała się co 40 godzin pracy. Standardowe radiatory nie pomagały z powodu ograniczonego miejsca."
+    },
+    "analysis": [
+      {
+        "type": "problem",
+        "title": "Sprzeczność",
+        "text": "<b>Objekt:</b> Korpus pompy. Jeśli zwiększymy powierzchnię chłodzenia, pompa nie zmieści się w narożniku. Jeśli zostawimy ją tak jak jest — przegrzewa się.",
+        "image": "https://via.placeholder.com/600x400/333/fff?text=Contradiction+Scheme"
+      },
+      {
+        "type": "triz_method",
+        "title": "Metoda TRIZ",
+        "text": "Wykorzystano zasadę <b>'Zmiany stanu agregatu'</b>. Zamiast chłodzenia powietrznego zainstalowano ciepłowniczą rurkę z cieczą.",
+        "image": "https://via.placeholder.com/600x400/444/fff?text=TRIZ+Logic"
+      },
+      {
+        "type": "effect",
+        "title": "Wynik",
+        "text": "Czas pracy został zwiększony 10-krotnie. Temperatura stabilizowała się na poziomie 45°C.",
+        "image": null
+      }
+    ]
+  }
+]

@@ -2,46 +2,8 @@ import React, { type CSSProperties } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Section.module.css";
 import typoStyles from "../../../styles/typography.module.css";
-
-interface SectionProps {
-  className?: string;
-  title?: string;
-  description?: string;
-  items?: string[];
-  link?: string;
-  linkText?: string;
-  children?: React.ReactNode;
-  image?: string; // Калі трэба малюнак побач з тэкстам
-  footer?: string;
-  bgImage?: string;
-  bgPosition?: string;
-  bgSize?: string;
-  cardPosition?: {
-    top?: string;
-    bottom?: string;
-    left?: string;
-    right?: string;
-  };
-  cardWidth?: string;
-  cardMaxWidth?: string;
-  index: number;
-}
-
-const parseText = (text: string) => {
-  // Шукаем тэгі <b>...</b> альбо <strong>...</strong>
-  const parts = text.split(/(<b>.*?<\/b>|<strong>.*?<\/strong>)/gi);
-  return parts.map((part, index) => {
-    if (
-      part.toLowerCase().startsWith("<b>") ||
-      part.toLowerCase().startsWith("<strong")
-    ) {
-      // Прыбіраем тэгі і ахінаем у React-тэг
-      const content = part.replace(/<\/?(b|strong)>/gi, "");
-      return <strong key={index}>{content}</strong>;
-    }
-    return part;
-  });
-};
+import { parseText } from "../../../utils/parseText"; // Імпарт функцыі для <b>
+import { type SectionProps } from "../../../types/sectiion"; // Імпарт тыпу для пропсаў
 
 const Section: React.FC<SectionProps> = ({
   className,
