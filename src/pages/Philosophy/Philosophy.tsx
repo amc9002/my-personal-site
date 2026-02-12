@@ -1,11 +1,17 @@
 import { useTranslation } from "react-i18next";
 import Section from "../../components/common/section/Section"; // Шлях да твайго ўніверсальнага кампанента
 import styles from "./Philosophy.module.css"; // Калі патрэбныя спецыфічныя стылі для гэтай старонкі
+import ThroughKhaotic from "../../assets/Through_khaotic.png"; // Калі патрэбна фонавая выява для раздзелаў
+import ParadoxalDecision from "../../assets/Paradoxal_decision.png"; // Калі патрэбна фонавая выява для раздзелаў
+import SystematicInnovation from "../../assets/Systematic_innovation.png"; // Калі патрэбна фонавая выява для раздзелаў
+import ToolsNotEssence from "../../assets/Tools_NotEssence.png"; // Калі патрэбна фонавая выява для раздзелаў
+import WhenItsNeeded from "../../assets/WhenItsNeeded.png"; // Калі патрэбна фонавая выява для раздзелаў
+import SolutionForBusiness from "../../assets/SolutionForBusiness.png"; // Калі патрэбна фонавая выява для раздзелаў  
 
-interface Role {
-  name: string;
-  description: string;
-}
+// interface Role {
+//   name: string;
+//   description: string;
+// }
 
 const Philosophy = () => {
   const { t } = useTranslation("philosophy");
@@ -21,38 +27,51 @@ const Philosophy = () => {
         index={0}
         title={t("introduction.title")}
         items={getArray("introduction.text")}
+        bgImage={ThroughKhaotic}
       />
       <Section
         index={1}
-        title={t("engineerVsExecutor.title")}
-        description={t("engineerVsExecutor.text")}
-        items={(
-          t("engineerVsExecutor.roles", { returnObjects: true }) as Role[]
-        ).map((r) => `${r.name}: ${r.description}`)}
+        title={t("detailVsSystem.title")}
+        items={getArray("detailVsSystem.text")}
+        bgImage={ParadoxalDecision}
+        bgPosition="center 85%"
+
+        // items={(
+        //   t("engineerVsExecutor.roles", { returnObjects: true }) as Role[]
+        // ).map((r) => `${r.name}: ${r.description}`)}
       />
       <Section
         index={2}
-        title={t("whyProblemsComeBack.title")}
-        description={t("whyProblemsComeBack.text")}
-        items={getArray("whyProblemsComeBack.points")}
+        title={t("TrizEngineering.title")}
+        description={t("TrizEngineering.text")}
+        items={getArray("TrizEngineering.points")}
+        footer={t("TrizEngineering.footer")}
+        bgImage={SystematicInnovation}
       />
       <Section
         index={3}
         title={t("toolsAreNotThePoint.title")}
         description={t("toolsAreNotThePoint.text")}
         items={getArray("toolsAreNotThePoint.responsibilities")}
+        bgImage={ToolsNotEssence}
+        bgPosition="center 65%"
       />
       <Section
         index={4}
         title={t("whenThisWayOfThinkingHelps.title")}
         items={getArray("whenThisWayOfThinkingHelps.cases")}
         footer={t("whenThisWayOfThinkingHelps.footer")}
+        bgImage={WhenItsNeeded}
+        bgPosition="center"
       />
       <Section
         className={styles.closingText}
         index={5}
-        description={t("closing.text")}
-        items={getArray("closing.items")}
+        title={t("closing.title")}
+        items={getArray("closing.text")}
+        footer={t("closing.footer")}
+        bgImage={SolutionForBusiness}
+        bgPosition="center 80%"
       />
     </>
   );

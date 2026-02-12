@@ -1,4 +1,4 @@
-/*Header.module.css*/
+/*Section.module.css*/
 .section {
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@
 }
 
 .glassCard .footerText {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: #0a0a0a !important;
   border-top-color: rgba(255, 255, 255, 0.2);
 }
 
