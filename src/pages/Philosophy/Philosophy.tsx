@@ -8,10 +8,6 @@ import ToolsNotEssence from "../../assets/Tools_NotEssence.png"; // Калі п�
 import WhenItsNeeded from "../../assets/WhenItsNeeded.png"; // Калі патрэбна фонавая выява для раздзелаў
 import SolutionForBusiness from "../../assets/SolutionForBusiness.png"; // Калі патрэбна фонавая выява для раздзелаў  
 
-// interface Role {
-//   name: string;
-//   description: string;
-// }
 
 const Philosophy = () => {
   const { t } = useTranslation("philosophy");
@@ -28,6 +24,8 @@ const Philosophy = () => {
         title={t("introduction.title")}
         items={getArray("introduction.text")}
         bgImage={ThroughKhaotic}
+        cardWidth="650px"
+        cardPosition={{ bottom: '10%', right: '20%' }}
       />
       <Section
         index={1}
@@ -35,10 +33,8 @@ const Philosophy = () => {
         items={getArray("detailVsSystem.text")}
         bgImage={ParadoxalDecision}
         bgPosition="center 85%"
-
-        // items={(
-        //   t("engineerVsExecutor.roles", { returnObjects: true }) as Role[]
-        // ).map((r) => `${r.name}: ${r.description}`)}
+        cardWidth="650px"
+        cardPosition={{ bottom: '10%', right: '20%' }}
       />
       <Section
         index={2}
@@ -49,6 +45,8 @@ const Philosophy = () => {
         bgImage={SystematicInnovation}
         link={t("TrizEngineering.link")}
         linkText={t("TrizEngineering.linktext")}
+        cardWidth="750px"
+        cardPosition={{ bottom: '10%', right: '20%' }}
       />
       <Section
         index={3}
@@ -57,6 +55,8 @@ const Philosophy = () => {
         items={getArray("toolsAreNotThePoint.responsibilities")}
         bgImage={ToolsNotEssence}
         bgPosition="center 65%"
+        cardWidth="650px"
+        cardPosition={{ bottom: '10%', right: '20%' }}
       />
       <Section
         index={4}
@@ -65,6 +65,8 @@ const Philosophy = () => {
         footer={t("whenThisWayOfThinkingHelps.footer")}
         bgImage={WhenItsNeeded}
         bgPosition="center"
+        cardWidth="650px"
+        cardPosition={{ bottom: '10%', right: '20%' }}
       />
       <Section
         className={styles.closingText}
@@ -74,6 +76,8 @@ const Philosophy = () => {
         footer={t("closing.footer")}
         bgImage={SolutionForBusiness}
         bgPosition="center 80%"
+        cardWidth="750px"
+        cardPosition={{ bottom: '10%', right: '20%' }}
       />
     </>
   );

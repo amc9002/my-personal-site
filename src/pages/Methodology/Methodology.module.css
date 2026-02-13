@@ -1,0 +1,18 @@
+/*Methodology.module.css*/
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Кантэйнер павінен быць на ўсю шырыню */
+  align-items: stretch; /* Гэта прымусіць крокі расцягвацца */
+}
+
+header {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.methodologyPage {
+  position: relative;
+  z-index: 1; /* Гэта гарантуе, што ўся старонка будзе ніжэй за Header */
+}

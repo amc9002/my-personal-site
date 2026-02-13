@@ -1,0 +1,89 @@
+/*MethodologyStep.module.css*/
+.stepRow {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 100px;
+  width: 100%;
+  box-sizing: border-box; /* Гарантуем правільны падлік шырыні */
+}
+
+.stepMarker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: #007bff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.line {
+  flex-grow: 1;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #007bff,
+    #007bff 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  margin-top: 10px;
+}
+
+.detailsBlock {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #fcfcfc;
+  border-left: 3px solid #eee;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4b6584;
+}
+
+.introText {
+  font-weight: 500;
+  color: #2d3436;
+}
+
+.stepContent {
+  flex-grow: 1;
+  /* Гэта ключавы момант: кантэнт павінен ведаць, што ён шырокі */
+  min-width: 0; 
+  width: 100%;
+}
+
+.stepContent h3 {
+  margin-top: 0;
+}
+
+.number {
+  font-family: monospace;
+  color: #007bff;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.media {
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #eee;
+  padding: 40px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden; /* Каб SVG не вылазіў за межы */
+}
+
+.media svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* Прыбіраем max-width пакуль што, каб праверыць максімум */
+}
