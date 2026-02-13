@@ -3,7 +3,7 @@ import Section from "../../components/common/section/Section"; // Шлях да 
 import whatIDoBg from "../../assets/Engineer Desk_BW.png";
 import ProjectsBg from "../../assets/ProjectBg.png";
 import ContactsBg from "../../assets/Notebook.png";
-import Problems from "../../assets/Problems.png";
+import ImNeeded from "../../assets/INeeded.png"
 
 const Home = () => {
   const { t } = useTranslation("home");
@@ -19,7 +19,7 @@ const Home = () => {
         index={0}
         title={t("whenIAmNeeded.title")}
         items={getArray("whenIAmNeeded.items")}
-        bgImage={Problems}
+        bgImage={ImNeeded}
         footer={t("whenIAmNeeded.footer")}
         bgPosition="center 0.75%"
         cardPosition={{ bottom: '10%', right: '5%' }} 
