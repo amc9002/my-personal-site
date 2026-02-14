@@ -1,12 +1,35 @@
 {
   "methodology": {
     "title": "Jak pracuję",
-    "description": "Moje podejście opiera się na połączeniu precyzji inżynierskiej oraz skutecznej komunikacji.",
+    "subtitle": "Proces innowacji jako nauka",
+    "description": "Jak w każdej nauce, moje podejście opiera się na dwóch fundamentalnych metodach: analizie i syntezie. Pozwala to zamienić chaos nieustrukturyzowanych zadań w precyzyjną matematykę rozwiązań.",
     "steps": [
-      "Analiza i dekompozycja: rozkładam złożone problemy na części możliwe do zarządzania.",
-      "Projektowanie: tworzę architekturę, która sprawdza się w perspektywie długofalowej.",
-      "Implementacja i testowanie: gwarantuję jakość na każdym etapie."
+      {
+        "title": "Krok 01. Analiza funkcjonalna (As-Is)",
+        "text": "Rozkładanie systemu na atomy w celu ujawnienia ukrytych powiązań.",
+        "details": "Analiza zaczyna się od dekompozycji. Wyodrębniam PODMIOT (to, co wykonuje działanie), OBIEKT (to, na co działanie jest skierowane) oraz użyteczny proces między nimi. Głównym celem jest wyznaczenie PREFEROWANEJ ŚCIEŻKI przy jednoczesnej minimalizacji szkodliwych funkcji (HARM) i dodatkowych kosztów (EXTRA COSTS). Jednocześnie definiuję POŻĄDANY REZULTAT dla etapu syntezy projektowej."
+      },
+      {
+        "title": "Krok 01.1. Synteza projektowa (To-Be)",
+        "text": "Droga do Idealnego Rezultatu Końcowego (IRK).",
+        "details": "Przechodzimy od analizy problemów do tworzenia ideału. Stosując metodę 'odwróconą', staramy się wyeliminować zbędne elementy systemu, pozostawiając jedynie użyteczną funkcję. Nasz Idealny Rezultat Końcowy (IRK): system nie istnieje, a POŻĄDANY REZULTAT jest osiągany dzięki zasobom nadsystemu lub otoczenia (ENVIRONMENT)."
+      },
+      {
+        "title": "Krok 02. Fishbone (Związek przyczynowo-skutkowy)",
+        "text": "Szukanie przyczyny źródłowej, a nie walka z objawami.",
+        "details": "Wykorzystując diagram Ishikawy (Fishbone), analizuję system pod kątem powiązań przyczynowo-skutkowych. Pozwala to zrozumieć, jakie czynniki (ludzie, maszyny, metody, otoczenie) naprawdę wpływają na powstawanie 'czerwonych stref' z analizy funkcjonalnej."
+      },
+      {
+        "title": "Krok 03. Operator systemowy (Nadsystem)",
+        "text": "Poszerzanie perspektywy poza bieżące zadanie.",
+        "details": "Żaden problem nie istnieje w próżni. Analizuję system w czasie (przeszłość — przyszłość) i przestrzeni (podsystemy — nadsystem). Pozwala to znaleźć zasoby tam, gdzie nikt ich nie szuka — w otoczeniu lub w przyszłych zmianach kontekstu."
+      },
+      {
+        "title": "Synteza. Macierz Altszullera",
+        "text": "Przejście od analizy do tworzenia innowacyjnego rozwiązania.",
+        "details": "Po znalezieniu sprzeczności następuje czas syntezy. Korzystając z narzędzi TRIZ i macierzy Altszullera, dobieram zasady rozwiązujące sprzeczności techniczne bez kompromisów. Nie wybieramy 'mniejszego zła', tworzymy system, w którym szkoda zamienia się w korzyść."
+      }
     ],
-    "footer": "Jest to proces żywy, który dostosowuje się do konkretnych zadań."
+    "conclusion": "Wniosek: Moja metoda to droga od zrozumienia funkcji, przez analizę przyczyn źródłowych, aż po syntezę idealnego rozwiązania. To inżynieria wyprzedzająca fakty."
   }
 }

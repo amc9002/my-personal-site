@@ -1,0 +1,66 @@
+{
+  "introduction": {
+    "title": "Durch das Chaos blicken",
+    "text": [
+      "Business- und technische Systeme scheitern nicht an Defekten. Sie scheitern an der Illusion, man könne einen Defekt einfach 'reparieren'. Wenn ein Problem nach der Behebung zurückkehrt, behandeln Sie nur das Symptom, während der Tumor in der Logik des Systems selbst liegt.",
+      "Diese Seite ist kein Dienstleistungsverzeichnis und kein Lebenslauf. Es ist eine kurze Erklärung meiner Denkweise als Ingenieur und in welchen Situationen diese Denkweise Ergebnisse liefert."
+    ]
+  },
+  "detailVsSystem": {
+    "title": "Detail und System",
+    "text": [
+      "Ein spezialisierter Experte sieht die Baugruppe, das Aggregat oder die Codezeile. Er ist eine Geisel seiner Kompetenz. Wenn der Elektriker sagt 'Signale laufen' und der Mechaniker 'Hardware intakt', aber die Maschine steht, lebt das Problem im Vakuum dazwischen.",
+      "Mein Ansatz ist der Blick über die Barrieren der Kompetenzen hinweg. Ich suche nicht nach dem Fehler im Detail, sondern nach der fehlerhaften Annahme im Fundament des gesamten Systems."
+    ]
+  },
+  "TrizEngineering": {
+    "title": "TRIZ – Ausweg aus Sackgassen-Kompromissen",
+    "text": "Normalerweise sind wir an 'Handel' gewöhnt: Willst du ein Teil stabil machen, wird es schwer; willst du einen Service günstig machen, sinkt die Qualität. Das sind Widersprüche. TRIZ lehrt, nicht das 'arithmetische Mittel' zu wählen, sondern einen Weg zu finden, beides gleichzeitig zu erreichen. Dies verwandelt die Ideensuche von 'Warten auf Inspiration' in präzise Ingenieursarbeit:",
+    "points": [
+      "Anstatt Optionen durchzuprobieren, stützen wir uns auf objektive Entwicklungsgesetze erfolgreicher Systeme. Anstatt Symptome zu bekämpfen, sehen wir die Wurzel des Problems, die meist im Konflikt unterschiedlicher Anforderungen verborgen liegt."
+    ],
+    "footer": "TRIZ ist keine Zauberformel, sondern ein systematischer Ansatz zur Problemlösung. Es hilft, Widersprüche aufzudecken und zu bewältigen, die in der traditionellen Analyse meist unbemerkt bleiben.",
+    "link": "https://www.altshuller.ru/triz/",
+    "linktext": "Mehr über TRIZ"
+  },
+  "whyProblemsComeBack": {
+    "title": "Warum Probleme zurückkehren",
+    "text": "Wenn sich ein Problem immer wiederholt, ist das selten eine Frage schlechter Ausführung. Wiederkehrende Fehler signalisieren meist:",
+    "points": [
+      "- eine fehlerhafte Ausgangsannahme",
+      "- Ignorieren eines bestimmten Betriebsmodus",
+      "- Konflikte zwischen Subsystemen",
+      "- Diskrepanz zwischen Designkonzept und realen Betriebsbedingungen"
+    ],
+    "summary": "Der Austausch von Teilen oder das sorgfältigere Wiederholen früherer Schritte kann das Symptom vorübergehend verbergen, aber das System bleibt instabil. Aus Ingenieurssicht sind chronische Probleme ein Signal: Das Systemmodell ist unvollständig oder falsch. Die Lösung solcher Fragen erfordert einen Schritt zurück, nicht 'mehr Druck'."
+  },
+  "toolsAreNotThePoint": {
+    "title": "Werkzeuge sind nicht der Kern",
+    "text": "Code, Mechanik, Automatisierung, KI – das sind nur Mittel zum Zweck. Ingenieursexpertise besteht nicht darin, jeden Syntaxbefehl zu kennen, sondern in der Fähigkeit:",
+    "responsibilities": [
+      "- Signale von Informationsrauschen zu trennen",
+      "- das Wesentliche zu extrahieren und die Lösung im Kontext des Gesamtsystems zu prüfen",
+      "- Werkzeuge zur Stärkung der Logik einzusetzen, nicht zu deren Maskierung"
+    ],
+    "footer": "Moderne Werkzeuge ersetzen den Ingenieur nicht – sie skalieren lediglich die Qualität seiner Entscheidungen, sowohl der guten als auch der schlechten."
+  },
+  "whenThisWayOfThinkingHelps": {
+    "title": "Diagnose: Wann ein systematischer Ansatz erforderlich ist",
+    "cases": [
+      "Das Problem kehrt trotz mehrfacher Behebung zurück",
+      "Spezialisten verschiedener Abteilungen weisen die Schuld einander zu",
+      "Auf dem Papier ist alles korrekt, aber in der Praxis versagt das System",
+      "Ein komplexes System muss unter unvollständigen Daten gebaut werden",
+      "Eigenschaften müssen ohne unverhältnismäßigen Kostenanstieg verbessert werden"
+    ],
+    "footer": "Wenn Sie Ihre Situation wiedererkennen, liegt das Problem nicht in den Details, sondern im System als Ganzes."
+  },
+  "closing": {
+    "title": "Erfindung als Methode, Zuverlässigkeit als Ergebnis",
+    "text": [
+      "Meine Priorität ist der Aufbau von Systemen, in denen Logik über den Zufall siegt. Ein erfinderischer Ansatz erlaubt es mir, über herkömmliche Anleitungen hinauszublicken und elegante Lösungen dort zu finden, wo Standardmethoden übermäßige Kosten verursachen.",
+      "Ich verteidige nicht nur die Grenzen einer einzelnen Domäne, sondern sorge für das reibungslose Zusammenspiel des Ganzen und verwandle Systemwidersprüche in Punkte für innovatives Wachstum."
+    ],
+    "footer": "Das Endergebnis systemischen Denkens sind die Gelassenheit des Ingenieurs, die Vorhersehbarkeit des Geschäfts und die Möglichkeit, Dinge zu tun, die zuvor unmöglich schienen."
+  }
+}

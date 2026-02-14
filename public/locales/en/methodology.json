@@ -1,12 +1,35 @@
 {
   "methodology": {
     "title": "How I Work",
-    "description": "My approach is built on a combination of engineering precision and effective communication.",
+    "subtitle": "The Innovation Process as a Science",
+    "description": "As in any science, my approach is based on two fundamental methods: analysis and synthesis. This allows for turning the chaos of unstructured tasks into the precise mathematics of solutions.",
     "steps": [
-      "Analysis and decomposition: breaking down a complex problem into manageable parts.",
-      "Design: creating an architecture that works for the long term.",
-      "Implementation and testing: ensuring quality at every stage."
+      {
+        "title": "Step 01. Functional Analysis (As-Is)",
+        "text": "Deconstructing the system into atoms to reveal hidden connections.",
+        "details": "Analysis begins with decomposition. I identify the SUBJECT (what performs the action), the OBJECT (what the action is directed at), and the useful process between them. The primary goal is to define the PREFERABLE PATH by minimizing harmful functions (HARM) and EXTRA COSTS that inflate the final result's cost. Simultaneously, I define the PREFERABLY RESULT for the projective synthesis phase."
+      },
+      {
+        "title": "Step 01.1. Projective Synthesis (To-Be)",
+        "text": "The Path to the Ideal Final Result (IFR).",
+        "details": "We move from problem analysis to the creation of an ideal. Using the 'backcasting' method, we attempt to eliminate redundant system elements, leaving only the useful function. Our Ideal Final Result (IFR) is: the system does not exist, but the PREFERABLY RESULT is achieved using the resources of the ENVIRONMENT or over-system."
+      },
+      {
+        "title": "Step 02. Fishbone (Causal Relationship)",
+        "text": "Searching for the root cause, not fighting the symptoms.",
+        "details": "Using the Ishikawa diagram (Fishbone), I map the system through causal links. This helps understand which factors (people, machines, methods, environment) truly influence the emergence of 'red zones' identified in the functional analysis."
+      },
+      {
+        "title": "Step 03. System Operator (Over-system)",
+        "text": "Expanding focus beyond the current task.",
+        "details": "No problem exists in a vacuum. I examine the system across time (past — future) and space (subsystems — over-system). This allows for finding resources where no one else looks — in the environment or in future context shifts."
+      },
+      {
+        "title": "Synthesis. Altshuller Matrix",
+        "text": "Transitioning from analysis to creating an innovative solution.",
+        "details": "Once the contradiction is found, it's time for synthesis. Using the TRIZ toolkit and Altshuller's matrix, I select principles that resolve technical contradictions without compromises. We don't choose the 'lesser evil'; we create a system where harm is transformed into benefit."
+      }
     ],
-    "footer": "This is a living process that adapts to specific tasks."
+    "conclusion": "Conclusion: My method is a journey from understanding the function through root cause analysis to the synthesis of an ideal solution. This is proactive engineering."
   }
 }

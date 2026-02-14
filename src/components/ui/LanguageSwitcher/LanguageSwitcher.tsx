@@ -5,7 +5,7 @@ import styles from "./LanguageSwitcher.module.css";
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false); // Стан: меню закрыта па змаўчанні
-  const languages = ["be", "pl", "en", "ru"];
+  const languages = ["be", "pl", "en", "de", "ru"];
 
   // Функцыя для змены мовы + закрыцця меню
   const handleLangChange = (lng: string) => {
@@ -16,8 +16,8 @@ const LanguageSwitcher = () => {
   return (
     <div className={styles.container}>
       {/* Кнопка-трыгер: паказвае толькі бягучую мову */}
-      <button 
-        className={styles.activeToggle} 
+      <button
+        className={styles.activeToggle}
         onClick={() => setIsOpen(!isOpen)}
       >
         {i18n.language.toUpperCase()} {isOpen ? "▴" : "▾"}

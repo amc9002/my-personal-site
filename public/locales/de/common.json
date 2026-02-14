@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "philosophy": "Philosophie",
+    "methodology": "Wie ich arbeite",
+    "about": "Über mich",
+    "projects": "Cases",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "label": "TRIZ-INGENIEUR",
+    "title": "Andrej Cieraškoŭ",
+    "subtitle": "Ihr Problem ist meine Herausforderung"
+  }
+}
