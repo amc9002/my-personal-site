@@ -46,16 +46,17 @@ const getMarkerId = (color: string) => {
 
 export const DiagramCanvas = ({
   children,
-  viewBox = "0 0 750 550",
+  viewBox, // Прыбіраем дэфолтнае значэнне адсюль!
 }: {
   children: ReactNode;
-  viewBox?: string;
+  viewBox: string; // Цяпер гэта абавязкова!
 }) => (
   <svg
     viewBox={viewBox}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    style={{ width: "100%", height: "auto" }}
+    // preserveAspectRatio="xMidYMin meet" — прыціскае схему да верху
+    style={{ width: "100%", height: "auto", display: "block" }}
   >
     <defs>
       <marker

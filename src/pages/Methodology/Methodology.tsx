@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import MethodologyStep from "./MethodologyStep/MethodologyStep";
 import styles from "./Methodology.module.css";
 import AnalysisSchema from "./AnalysisSchema";
+import SynthesisSchema from "./SynthesisSchema";
 
 const Methodology = () => {
   const { t } = useTranslation("methodology");
@@ -21,7 +22,11 @@ const Methodology = () => {
           index={1}
           title={t("methodology.steps.0.title")}
           text={t("methodology.steps.0.text")}
-          details={t("methodology.steps.0.details")}
+          details={
+            t("methodology.steps.0.details", {
+              returnObjects: true,
+            }) as string[]
+          }
         >
           {/* Вернулі схему на месца */}
           <AnalysisSchema />
@@ -32,13 +37,13 @@ const Methodology = () => {
           index={2}
           title={t("methodology.steps.1.title")}
           text={t("methodology.steps.1.text")}
-          details={t("methodology.steps.1.details")}
+          details={
+            t("methodology.steps.1.details", {
+              returnObjects: true,
+            }) as string[]
+          }
         >
-          {/* Пакуль тут будзе копія або заглушка для новай схемы */}
-          <div className={styles.placeholder}>
-            <h3>{t("methodology.steps.1.title")}</h3>
-            <p>Тут будзе схема "ад адваротнага" (ІКВ)</p>
-          </div>
+          <SynthesisSchema />
         </MethodologyStep>
 
         {/* КРОК 02: FISHBONE */}

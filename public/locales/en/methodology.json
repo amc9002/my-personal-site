@@ -1,35 +1,53 @@
 {
   "methodology": {
     "title": "How I Work",
-    "subtitle": "The Innovation Process as a Science",
-    "description": "As in any science, my approach is based on two fundamental methods: analysis and synthesis. This allows for turning the chaos of unstructured tasks into the precise mathematics of solutions.",
+    "subtitle": "Innovation Process as a Science",
+    "description": "As in any science, my approach is based on two fundamental methods: analysis and synthesis. This allows turning the chaos of unstructured tasks into the precise mathematics of solutions.",
     "steps": [
       {
         "title": "Step 01. Functional Analysis (As-Is)",
-        "text": "Deconstructing the system into atoms to reveal hidden connections.",
-        "details": "Analysis begins with decomposition. I identify the SUBJECT (what performs the action), the OBJECT (what the action is directed at), and the useful process between them. The primary goal is to define the PREFERABLE PATH by minimizing harmful functions (HARM) and EXTRA COSTS that inflate the final result's cost. Simultaneously, I define the PREFERABLY RESULT for the projective synthesis phase."
+        "text": "Breaking down the system into atoms to reveal hidden connections.",
+        "details": [
+          "Analysis begins with decomposition: I identify the SUBJECT (the actor), the OBJECT (the target), and the useful process between them.",
+          "The main goal is to define the parameters of the PREFERABLE PATH while identifying harmful functions (HARM) and extra costs (EXTRA COSTS).",
+          "At this stage, the PREFERABLY RESULT is formulated, serving as the foundation for projective synthesis."
+        ]
       },
       {
         "title": "Step 01.1. Projective Synthesis (To-Be)",
-        "text": "The Path to the Ideal Final Result (IFR).",
-        "details": "We move from problem analysis to the creation of an ideal. Using the 'backcasting' method, we attempt to eliminate redundant system elements, leaving only the useful function. Our Ideal Final Result (IFR) is: the system does not exist, but the PREFERABLY RESULT is achieved using the resources of the ENVIRONMENT or over-system."
+        "text": "Radical simplification — the path to the Ideal Final Result (IFR).",
+        "details": [
+          "We transition from problem analysis to IFR formulation: the system vanishes, and the function is performed by OVER-SYSTEM resources or the ENVIRONMENT.",
+          "We aim to eliminate redundant elements, leaving only the PREFERABLY PROCESS.",
+          "When designing from scratch, we work backwards: visualizing the ideal and then identifying tools in the over-system to realize it."
+        ]
       },
       {
-        "title": "Step 02. Fishbone (Causal Relationship)",
-        "text": "Searching for the root cause, not fighting the symptoms.",
-        "details": "Using the Ishikawa diagram (Fishbone), I map the system through causal links. This helps understand which factors (people, machines, methods, environment) truly influence the emergence of 'red zones' identified in the functional analysis."
+        "title": "Step 02. Fishbone (Causal Analysis)",
+        "text": "Searching for the root of the problem, not fighting the symptoms.",
+        "details": [
+          "Using the Ishikawa diagram (Fishbone), I map the system through cause-and-effect relationships.",
+          "This helps understand which specific factors (people, machines, methods, environment) create the 'red zones' identified during analysis."
+        ]
       },
       {
         "title": "Step 03. System Operator (Over-system)",
         "text": "Expanding focus beyond the current task.",
-        "details": "No problem exists in a vacuum. I examine the system across time (past — future) and space (subsystems — over-system). This allows for finding resources where no one else looks — in the environment or in future context shifts."
+        "details": [
+          "No problem exists in a vacuum. I analyze the system in time (past — future) and space (subsystems — over-system).",
+          "This approach reveals resources where they are rarely sought: in the environment or in future context shifts."
+        ]
       },
       {
-        "title": "Synthesis. Altshuller Matrix",
+        "title": "Synthesis. Altshuller's Table",
         "text": "Transitioning from analysis to creating an innovative solution.",
-        "details": "Once the contradiction is found, it's time for synthesis. Using the TRIZ toolkit and Altshuller's matrix, I select principles that resolve technical contradictions without compromises. We don't choose the 'lesser evil'; we create a system where harm is transformed into benefit."
+        "details": [
+          "Once the contradiction is found, it's time for TRIZ tools and Altshuller's matrix.",
+          "I select principles that resolve technical contradictions without compromises.",
+          "We don't choose the 'lesser evil' — we create a solution where harm turns into benefit."
+        ]
       }
     ],
-    "conclusion": "Conclusion: My method is a journey from understanding the function through root cause analysis to the synthesis of an ideal solution. This is proactive engineering."
+    "conclusion": "Conclusion: My method is a path from understanding the function through root cause analysis to the synthesis of an ideal solution. It is engineering that works ahead of the curve."
   }
 }

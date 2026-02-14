@@ -1,35 +1,53 @@
 {
   "methodology": {
     "title": "Jak pracuję",
-    "subtitle": "Proces innowacji jako nauka",
-    "description": "Jak w każdej nauce, moje podejście opiera się na dwóch fundamentalnych metodach: analizie i syntezie. Pozwala to zamienić chaos nieustrukturyzowanych zadań w precyzyjną matematykę rozwiązań.",
+    "subtitle": "Proces innowacyjny jako nauka",
+    "description": "Podobnie jak w każdej nauce, moje podejście opiera się na dwóch fundamentalnych metodach: analizie i syntezie. Pozwala to zamienić chaos nieustrukturyzowanych zadań w precyzyjną matematykę rozwiązań.",
     "steps": [
       {
         "title": "Krok 01. Analiza funkcjonalna (As-Is)",
-        "text": "Rozkładanie systemu na atomy w celu ujawnienia ukrytych powiązań.",
-        "details": "Analiza zaczyna się od dekompozycji. Wyodrębniam PODMIOT (to, co wykonuje działanie), OBIEKT (to, na co działanie jest skierowane) oraz użyteczny proces między nimi. Głównym celem jest wyznaczenie PREFEROWANEJ ŚCIEŻKI przy jednoczesnej minimalizacji szkodliwych funkcji (HARM) i dodatkowych kosztów (EXTRA COSTS). Jednocześnie definiuję POŻĄDANY REZULTAT dla etapu syntezy projektowej."
+        "text": "Rozbijam system na atomy, aby dostrzec ukryte powiązania.",
+        "details": [
+          "Analiza zaczyna się od dekompozycji: wyodrębniam Podmiot (SUBJECT), Obiekt (OBJECT) oraz proces użyteczny między nimi.",
+          "Głównym celem jest określenie parametrów ścieżki idealnej (PREFERABLE PATH) przy jednoczesnym wykryciu szkodliwych funkcji (HARM) i zbędnych kosztów (EXTRA COSTS).",
+          "Na tym etapie formułowany jest pożądany wynik (PREFERABLY RESULT), który staje się bazą dla syntezy projektowej."
+        ]
       },
       {
         "title": "Krok 01.1. Synteza projektowa (To-Be)",
-        "text": "Droga do Idealnego Rezultatu Końcowego (IRK).",
-        "details": "Przechodzimy od analizy problemów do tworzenia ideału. Stosując metodę 'odwróconą', staramy się wyeliminować zbędne elementy systemu, pozostawiając jedynie użyteczną funkcję. Nasz Idealny Rezultat Końcowy (IRK): system nie istnieje, a POŻĄDANY REZULTAT jest osiągany dzięki zasobom nadsystemu lub otoczenia (ENVIRONMENT)."
+        "text": "Radykalne uproszczenie — droga do Idealnego Wyniku Końcowego (IWK).",
+        "details": [
+          "Przechodzimy od analizy problemów do formułowania IWK: system znika, a funkcja jest realizowana za pomocą zasobów nadsystemu (OVER-SYSTEM) lub otoczenia (ENVIRONMENT).",
+          "Dążymy do wyeliminowania zbędnych elementów, pozostawiając jedynie pożądany proces (PREFERABLY PROCESS).",
+          "W przypadku projektowania od podstaw idziemy „od końca”: wizualizujemy ideał, a następnie szukamy w nadsystemie gotowych narzędzi do jego realizacji."
+        ]
       },
       {
-        "title": "Krok 02. Fishbone (Związek przyczynowo-skutkowy)",
-        "text": "Szukanie przyczyny źródłowej, a nie walka z objawami.",
-        "details": "Wykorzystując diagram Ishikawy (Fishbone), analizuję system pod kątem powiązań przyczynowo-skutkowych. Pozwala to zrozumieć, jakie czynniki (ludzie, maszyny, metody, otoczenie) naprawdę wpływają na powstawanie 'czerwonych stref' z analizy funkcjonalnej."
+        "title": "Krok 02. Fishbone (Analiza przyczynowo-skutkowa)",
+        "text": "Szukam korzenia problemu, a nie walczę z objawami.",
+        "details": [
+          "Wykorzystując diagram Ishikawy (rybi szkielet), analizuję system pod kątem zależności przyczynowo-skutkowych.",
+          "Pozwala to zrozumieć, jakie konkretnie czynniki (ludzie, maszyny, metody, otoczenie) tworzą „czerwone strefy” wykryte podczas analizy."
+        ]
       },
       {
         "title": "Krok 03. Operator systemowy (Nadsystem)",
-        "text": "Poszerzanie perspektywy poza bieżące zadanie.",
-        "details": "Żaden problem nie istnieje w próżni. Analizuję system w czasie (przeszłość — przyszłość) i przestrzeni (podsystemy — nadsystem). Pozwala to znaleźć zasoby tam, gdzie nikt ich nie szuka — w otoczeniu lub w przyszłych zmianach kontekstu."
+        "text": "Poszerzam perspektywę poza bieżące zadanie.",
+        "details": [
+          "Żaden problem nie istnieje w próżni. Analizuję system w czasie (przeszłość — przyszłość) i przestrzeni (podsystemy — nadsystem).",
+          "Takie podejście pozwala znaleźć zasoby tam, gdzie nikt ich nie szuka: w otoczeniu lub w przyszłych zmianach kontekstu."
+        ]
       },
       {
-        "title": "Synteza. Macierz Altszullera",
-        "text": "Przejście od analizy do tworzenia innowacyjnego rozwiązania.",
-        "details": "Po znalezieniu sprzeczności następuje czas syntezy. Korzystając z narzędzi TRIZ i macierzy Altszullera, dobieram zasady rozwiązujące sprzeczności techniczne bez kompromisów. Nie wybieramy 'mniejszego zła', tworzymy system, w którym szkoda zamienia się w korzyść."
+        "title": "Synteza. Tablica Altszullera",
+        "text": "Przejście od analizy do stworzenia innowacyjnego rozwiązania.",
+        "details": [
+          "Gdy sprzeczność zostanie znaleziona, czas na narzędzia TRIZ i macierz Altszullera.",
+          "Wybieram techniki, które pozwalają rozwiązać sprzeczność techniczną bez kompromisów.",
+          "Nie wybieramy „mniejszego zła” — tworzymy rozwiązanie, w którym szkoda zamienia się w korzyść."
+        ]
       }
     ],
-    "conclusion": "Wniosek: Moja metoda to droga od zrozumienia funkcji, przez analizę przyczyn źródłowych, aż po syntezę idealnego rozwiązania. To inżynieria wyprzedzająca fakty."
+    "conclusion": "Wniosek: Moja metoda to droga od zrozumienia funkcji przez poszukiwanie przyczyny źródłowej do syntezy idealnego rozwiązania. To inżynieria, która wyprzedza fakty."
   }
 }

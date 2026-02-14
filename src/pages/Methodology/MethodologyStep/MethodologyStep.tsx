@@ -7,7 +7,7 @@ const MethodologyStep = ({
   text,
   details,
   children,
-}: MethodologyStepProps & { details?: string }) => {
+}: MethodologyStepProps) => {
   return (
     <div className={styles.stepRow}>
       <div className={styles.stepMarker}>
@@ -22,9 +22,13 @@ const MethodologyStep = ({
 
         {children && <div className={styles.media}>{children}</div>}
 
-        {details && (
+        {details && Array.isArray(details) && (
           <div className={styles.detailsBlock}>
-            <p>{details}</p>
+            {details.map((paragraph, pIdx) => (
+              <p key={pIdx} className={styles.detailParagraph}>
+                {paragraph}
+              </p>
+            ))}
           </div>
         )}
       </div>

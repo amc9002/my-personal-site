@@ -49,7 +49,7 @@ const AnalysisSchema = () => {
 
   // --- 2. МАЛЮЕМ (Толькі гатовыя лічбы) ---
   return (
-    <DiagramCanvas viewBox="0 0 750 550">
+    <DiagramCanvas viewBox="0 0 750 480">
       {/* ФОНАВАЯ СТРЭЛКА (Залатая) */}
       <ProcessArrow
         x={usefulX}

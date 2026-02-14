@@ -2,34 +2,52 @@
   "methodology": {
     "title": "Wie ich arbeite",
     "subtitle": "Innovationsprozess als Wissenschaft",
-    "description": "Wie in jeder Wissenschaft basiert mein Ansatz auf zwei fundamentalen Methoden: Analyse und Synthese. Dies ermöglicht es, das Chaos unstrukturierter Aufgaben in die präzise Mathematik der Lösungen zu verwandeln.",
+    "description": "Wie in jeder Wissenschaft basiert mein Ansatz auf zwei fundamentalen Methoden: Analyse und Synthese. Dies erlaubt es, das Chaos unstrukturierter Aufgaben in die präzise Mathematik von Lösungen zu verwandeln.",
     "steps": [
       {
-        "title": "Schritt 01. Funktionalanalyse (As-Is)",
+        "title": "Schritt 01. Funktionsanalyse (As-Is)",
         "text": "Zerlegung des Systems in Atome, um verborgene Verbindungen aufzudecken.",
-        "details": "Die Analyse beginnt mit der Dekomposition. Ich identifiziere das SUBJEKT (was die Handlung ausführt), das OBJEKT (worauf die Handlung gerichtet ist) und den nützlichen Prozess dazwischen. Das Hauptziel ist es, den IDEALEN PFAD zu definieren, indem schädliche Funktionen (HARM) und ZUSATZKOSTEN minimiert werden. Gleichzeitig definiere ich das WUNSCHRESULTAT für die projektive Synthese."
+        "details": [
+          "Die Analyse beginnt mit der Dekomposition: Ich identifiziere das Subjekt (SUBJECT), das Objekt (OBJECT) und den nützlichen Prozess dazwischen.",
+          "Hauptziel ist es, die Parameter des idealen Pfades (PREFERABLE PATH) zu definieren und gleichzeitig schädliche Funktionen (HARM) sowie Zusatzkosten (EXTRA COSTS) zu identifizieren.",
+          "In dieser Phase wird das Wunschergebnis (PREFERABLY RESULT) als Basis für die projektive Synthese formuliert."
+        ]
       },
       {
         "title": "Schritt 01.1. Projektive Synthese (To-Be)",
-        "text": "Der Weg zum Idealen Endresultat (IER).",
-        "details": "Wir gehen von der Problemanalyse zur Schaffung eines Ideals über. Mit der 'Rückwärts-Methode' versuchen wir, überflüssige Systemelemente zu eliminieren und nur die nützliche Funktion zu erhalten. Unser Ideales Endresultat (IER): Das System existiert nicht, aber das WUNSCHRESULTAT wird durch Ressourcen der ÜBERSYSTEM oder der UMWELT erreicht."
+        "text": "Radikale Vereinfachung — der Weg zum Idealen Endresultat (IER).",
+        "details": [
+          "Wir gehen von der Problemanalyse zur IER-Formulierung über: Das System verschwindet, und die Funktion wird durch Ressourcen des Übersystems (OVER-SYSTEM) oder der Umgebung (ENVIRONMENT) erfüllt.",
+          "Wir streben danach, überflüssige Elemente zu eliminieren und nur den bevorzugten Prozess (PREFERABLY PROCESS) zu erhalten.",
+          "Bei Neuentwicklungen gehen wir rückwärts vor: Wir visualisieren das Ideal und suchen dann im Übersystem nach fertigen Werkzeugen für dessen Realisierung."
+        ]
       },
       {
-        "title": "Schritt 02. Fishbone (Ursache-Wirkungs-Zusammenhang)",
-        "text": "Suche nach der Grundursache, nicht Kampf gegen Symptome.",
-        "details": "Mithilfe des Ishikawa-Diagramms (Fishbone) plane ich das System im Hinblick auf Ursache-Wirkungs-Zusammenhänge. Dies ermöglicht es zu verstehen, welche Faktoren (Menschen, Maschinen, Methoden, Umwelt) tatsächlich die 'roten Zonen' aus der Funktionalanalyse beeinflussen."
+        "title": "Schritt 02. Fishbone (Ursache-Wirkungs-Analyse)",
+        "text": "Suche nach der Wurzel des Problems, nicht Bekämpfung der Symptome.",
+        "details": [
+          "Mithilfe des Ishikawa-Diagramms (Fischgräte) plane ich das System im Hinblick auf Ursache-Wirkungs-Zusammenhänge.",
+          "Dies hilft zu verstehen, welche Faktoren (Mensch, Maschine, Methode, Mitwelt) die bei der Analyse identifizierten 'roten Zonen' verursachen."
+        ]
       },
       {
-        "title": "Schritt 03. Systemoperator (Obersystem)",
-        "text": "Fokus über die aktuelle Aufgabe hinaus erweitern.",
-        "details": "Kein Problem existiert im luftleeren Raum. Ich betrachte das System in der Zeit (Vergangenheit — Zukunft) und im Raum (Subsysteme — Obersystem). Dies erlaubt es, Ressourcen dort zu finden, wo niemand sonst sucht — in der Umgebung oder in künftigen Kontextänderungen."
+        "title": "Schritt 03. System-Operator (Übersystem)",
+        "text": "Erweiterung des Fokus über die aktuelle Aufgabe hinaus.",
+        "details": [
+          "Kein Problem existiert im luftleeren Raum. Ich betrachte das System in der Zeit (Vergangenheit — Zukunft) und im Raum (Untersysteme — Übersystem).",
+          "Dieser Ansatz ermöglicht es, Ressourcen dort zu finden, wo sie selten gesucht werden: in der Umgebung oder in künftigen Kontextänderungen."
+        ]
       },
       {
-        "title": "Synthese. Altshuller-Matrix",
+        "title": "Synthese. Altshuller-Tabelle",
         "text": "Übergang von der Analyse zur Erarbeitung einer innovativen Lösung.",
-        "details": "Wenn der Widerspruch gefunden ist, beginnt die Synthese. Mithilfe der TRIZ-Werkzeuge und der Altshuller-Matrix wähle ich Prinzipien aus, die technische Widersprüche ohne Kompromisse lösen. Wir wählen nicht das 'kleinere Übel', wir schaffen ein System, in dem Schaden in Nutzen transformiert wird."
+        "details": [
+          "Sobald der Widerspruch gefunden ist, kommen TRIZ-Werkzeuge und die Altshuller-Matrix zum Einsatz.",
+          "Ich wähle Prinzipien, die technische Widersprüche ohne Kompromisse lösen.",
+          "Wir wählen nicht das 'kleinere Übel' — wir schaffen eine Lösung, bei der Schaden in Nutzen umgewandelt wird."
+        ]
       }
     ],
-    "conclusion": "Fazit: Meine Methode ist der Weg vom Funktionsverständnis über die Ursachenanalyse bis zur Synthese einer idealen Lösung. Das ist vorausschauendes Engineering."
+    "conclusion": "Fazit: Meine Methode ist ein Weg vom Verständnis der Funktion über die Ursachenforschung bis zur Synthese einer idealen Lösung. Es ist Engineering, das der Zeit voraus ist."
   }
 }
