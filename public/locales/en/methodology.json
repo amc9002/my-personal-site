@@ -24,10 +24,12 @@
       },
       {
         "title": "Step 02. Fishbone (Causal Analysis)",
-        "text": "Searching for the root of the problem, not fighting the symptoms.",
+        "text": "Searching for the root cause, not fighting the symptoms.",
         "details": [
-          "Using the Ishikawa diagram (Fishbone), I map the system through cause-and-effect relationships.",
-          "This helps understand which specific factors (people, machines, methods, environment) create the 'red zones' identified during analysis."
+          "The Ishikawa diagram (Fishbone) serves as a backbone that connects the chaos of minor factors to the core issue (PROBLEM).",
+          "We categorize causes (People, Methods, Machines, etc.) to reveal the complete anatomy of the process.",
+          "The vertical structure allows for a deep dive into each 'bone', exposing secondary factors that are often the true root of the problem.",
+          "The result is a precise map of risks and bottlenecks, ensuring no critical factor is lost in the overall description."
         ]
       },
       {

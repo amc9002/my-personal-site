@@ -3,6 +3,7 @@ import MethodologyStep from "./MethodologyStep/MethodologyStep";
 import styles from "./Methodology.module.css";
 import AnalysisSchema from "./AnalysisSchema";
 import SynthesisSchema from "./SynthesisSchema";
+import FishboneVertical from "./FishboneVertical";
 
 const Methodology = () => {
   const { t } = useTranslation("methodology");
@@ -49,10 +50,15 @@ const Methodology = () => {
         {/* КРОК 02: FISHBONE */}
         <MethodologyStep
           index={3}
-          title="Крок 02. Прычынна-выніковая сувязь"
-          text="Пошук каранёвай прычыны праз Fishbone"
+          title={t("methodology.steps.2.title")}
+          text={t("methodology.steps.2.text")}
+          details={
+            t("methodology.steps.2.details", {
+              returnObjects: true,
+            }) as string[]
+          }
         >
-          <div className={styles.placeholder}>🚧 Fishbone System Operator</div>
+          <FishboneVertical />
         </MethodologyStep>
       </div>
     </div>

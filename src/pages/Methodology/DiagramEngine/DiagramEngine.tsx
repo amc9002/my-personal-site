@@ -29,6 +29,21 @@ export interface ProcessArrowProps extends BaseProps {
   textOffsetY?: number; // Зрух па вертыкалі
 }
 
+export interface SubCause {
+  label: string;
+  dx: number; // Адлегласць ад хрыбта (можа быць адмоўнай для левага боку)
+}
+
+export interface SmartBoneProps extends Omit<BaseProps, "x" | "y"> {
+  spineX: number; // Кропка прывязкі да хрыбта
+  spineY: number;
+  length: number;
+  angle: number; // Кут у градусах (напрыклад, 135 для левага боку, 45 для правага)
+  label?: string;
+  textFlip?: boolean;
+  subCauses?: SubCause[];
+}
+
 // --- УТЫЛІТЫ ---
 
 // Функцыя для атрымання ID маркера на аснове колеру
@@ -246,3 +261,81 @@ export const SmartPath = ({
     markerEnd={marker ? getMarkerId(color) : undefined}
   />
 );
+
+// Bone — нахіленая лінія для Fishbone
+export const SmartBone = ({
+  spineX,
+  spineY,
+  length,
+  angle,
+  label,
+  color = "black",
+  textFlip = false,
+  subCauses = [],
+}: SmartBoneProps) => {
+  const rad = (angle * Math.PI) / 180;
+  const startX = spineX + length * Math.cos(rad);
+  const startY = spineY + length * Math.sin(rad);
+
+  const midX = (spineX + startX) / 2;
+  const midY = (spineY + startY) / 2;
+  const textRot = textFlip ? angle + 180 : angle;
+
+  return (
+    <g>
+      <line
+        x1={startX}
+        y1={startY}
+        x2={spineX}
+        y2={spineY}
+        stroke={color}
+        strokeWidth={2}
+        markerEnd={getMarkerId(color)}
+      />
+      {label && (
+        <text
+          x={midX}
+          y={midY}
+          transform={`rotate(${textRot}, ${midX}, ${midY}) translate(0, -10)`}
+          fill={color}
+          fontSize="11"
+          fontWeight="900"
+          textAnchor="middle"
+        >
+          {label}
+        </text>
+      )}
+
+      {subCauses.map((sc, i) => {
+        const arrowX = spineX + sc.dx;
+        // Кропка ўваходу ў костку (перасячэнне)
+        const intersectY = spineY + sc.dx * Math.tan(rad);
+        const arrowHeight = 35; // Даўжыня малой стрэлкі
+
+        return (
+          <g key={i}>
+            <line
+              x1={arrowX}
+              y1={intersectY - arrowHeight} // Пачынаем зверху
+              x2={arrowX}
+              y2={intersectY} // Упіраемся ў костку
+              stroke="#666"
+              strokeWidth={1}
+              markerEnd="url(#head-black)"
+            />
+            <text
+              x={arrowX}
+              y={intersectY - arrowHeight - 5}
+              fill="#666"
+              fontSize="9"
+              textAnchor="middle"
+              fontWeight="bold"
+            >
+              {sc.label}
+            </text>
+          </g>
+        );
+      })}
+    </g>
+  );
+};

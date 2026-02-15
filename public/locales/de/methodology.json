@@ -24,10 +24,12 @@
       },
       {
         "title": "Schritt 02. Fishbone (Ursache-Wirkungs-Analyse)",
-        "text": "Suche nach der Wurzel des Problems, nicht Bekämpfung der Symptome.",
+        "text": "Suche nach der Wurzel des Problems, statt Symptome zu bekämpfen.",
         "details": [
-          "Mithilfe des Ishikawa-Diagramms (Fischgräte) plane ich das System im Hinblick auf Ursache-Wirkungs-Zusammenhänge.",
-          "Dies hilft zu verstehen, welche Faktoren (Mensch, Maschine, Methode, Mitwelt) die bei der Analyse identifizierten 'roten Zonen' verursachen."
+          "Das Ishikawa-Diagramm (Fischgräte) fungiert als Rückgrat, das das Chaos kleiner Faktoren mit dem Hauptergebnis (PROBLEM) verbindet.",
+          "Wir ordnen Ursachen in Kategorien (Mensch, Methode, Maschine usw.) ein, um die vollständige Anatomie des Prozesses aufzuzeigen.",
+          "Die vertikale Struktur ermöglicht eine detaillierte Ausarbeitung jeder 'Gräte', wodurch sekundäre Faktoren sichtbar werden, die oft die wahre Ursache sind.",
+          "Das Ergebnis ist eine präzise Karte von Risiken und Engpässen, die verhindert, dass wichtige Faktoren in der allgemeinen Beschreibung verloren gehen."
         ]
       },
       {

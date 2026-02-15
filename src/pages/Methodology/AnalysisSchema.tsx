@@ -1,4 +1,9 @@
-import { DiagramCanvas, Node, ProcessArrow, SmartPath } from "./DiagramEngine";
+import {
+  DiagramCanvas,
+  Node,
+  ProcessArrow,
+  SmartPath,
+} from "./DiagramEngine/DiagramEngine";
 
 const AnalysisSchema = () => {
   // --- 1. ПАРАМЕТРЫ ---

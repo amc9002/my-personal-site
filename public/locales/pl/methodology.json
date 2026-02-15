@@ -24,10 +24,12 @@
       },
       {
         "title": "Krok 02. Fishbone (Analiza przyczynowo-skutkowa)",
-        "text": "Szukam korzenia problemu, a nie walczę z objawami.",
+        "text": "Szukam przyczyny źródłowej, a nie walczę z objawami.",
         "details": [
-          "Wykorzystując diagram Ishikawy (rybi szkielet), analizuję system pod kątem zależności przyczynowo-skutkowych.",
-          "Pozwala to zrozumieć, jakie konkretnie czynniki (ludzie, maszyny, metody, otoczenie) tworzą „czerwone strefy” wykryte podczas analizy."
+          "Diagram Ishikawy (Rybi szkielet) to kręgosłup łączący chaos drobnych czynników z głównym wynikiem (PROBLEM).",
+          "Dzielimy przyczyny na kategorie (Ludzie, Metody, Maszyny itp.), aby zobaczyć pełną anatomię procesu.",
+          "Pionowa struktura pozwala na szczegółowe opracowanie każdej 'ości', ujawniając czynniki drugorzędne, które często są prawdziwym źródłem problemu.",
+          "Wynikiem jest precyzyjna mapa ryzyk i wąskich gardeł, która nie pozwala na zgubienie istotnych czynników w ogólnym opisie."
         ]
       },
       {
