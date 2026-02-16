@@ -90,7 +90,7 @@ const FishboneVertical = () => {
         spineY={firstBonesY - deltaY}
         length={140}
         angle={calcAngle(baseAngle, angleStep, "L")}
-        label="MEASURE"
+        label="MEASUREMENT"
         textFlip
         subCauses={[
           { label: "Precision", dx: -90 },

@@ -33,11 +33,15 @@
         ]
       },
       {
-        "title": "Krok 03. Operator systemowy (Nadsystem)",
-        "text": "Poszerzam perspektywę poza bieżące zadanie.",
+        "title": "Krok 03. Winda Systemowa (Multi-Screen Thinking)",
+        "text": "Przenoszę punkt ciężkości z atomów na cały zakład, aby znaleźć ukryte zasoby.",
+        "focusTitle": "Etapy rozszerzania fokusu",
         "details": [
-          "Żaden problem nie istnieje w próżni. Analizuję system w czasie (przeszłość — przyszłość) i przestrzeni (podsystemy — nadsystem).",
-          "Takie podejście pozwala znaleźć zasoby tam, gdzie nikt ich nie szuka: w otoczeniu lub w przyszłych zmianach kontekstu."
+          "Dla głębokiego zrozumienia stosuję 5 poziomów szczegółowości: od mikro-strefy kontaktu do makro-struktury całego przedsiębiorstwa.",
+          "Focus 1-2 (Mikro): Badanie strefy interakcji fizycznej i kinematyki węzłów — tu kryją się sprzeczności techniczne.",
+          "Focus 3 (Mezo): Analiza ergonomii „Człowiek-Maszyna” — wykrywanie błędów sterowania i czynnika ludzkiego.",
+          "Focus 4-5 (Makro): Spojrzenie na logistykę hali i infrastrukturę zakładu — tutaj znajdują się darmowe zasoby nadsystemu.",
+          "Ta „winda” pozwala nie tylko naprawić detale, ale zoptymalizować cały cykl życia produkcji."
         ]
       },
       {
