@@ -119,4 +119,5 @@
   color: #1c1b1b;
   font-weight: bold;
   -webkit-user-select: none;
+  user-select: none;
 }

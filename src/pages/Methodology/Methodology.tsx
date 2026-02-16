@@ -5,6 +5,7 @@ import AnalysisSchema from "./AnalysisSchema";
 import SynthesisSchema from "./SynthesisSchema";
 import FishboneVertical from "./FishboneVertical";
 import SystemOperator from "./SystemOperator/SystemOperator"; // Правер, каб файл называўся SystemOperator.tsx
+import AltshullerMatrix from "./AltshullerMatrix/AltshullerMatrix";
 
 const Methodology = () => {
   const { t } = useTranslation("methodology");
@@ -74,25 +75,11 @@ const Methodology = () => {
           text={t("methodology.steps.4.text")}
           details={getDetails(4)}
         >
-          <div className={styles.placeholderBox}>
-            <p
-              style={{
-                fontStyle: "italic",
-                color: "#666",
-                textAlign: "center",
-                padding: "20px",
-              }}
-            >
-              {t("methodology.steps.4.text")}
-            </p>
-          </div>
+          <AltshullerMatrix />
         </MethodologyStep>
       </div>
 
-      <footer
-        className={styles.footer}
-        style={{ marginTop: "40px", textAlign: "center", padding: "20px" }}
-      >
+      <footer className={styles.footer}>
         <p>
           <strong>{t("methodology.conclusion")}</strong>
         </p>

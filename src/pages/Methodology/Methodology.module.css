@@ -16,3 +16,18 @@ header {
   position: relative;
   z-index: 1; /* Гэта гарантуе, што ўся старонка будзе ніжэй за Header */
 }
+
+/* Для тэксту ў Кроку 04 */
+.placeholderText {
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Для футара */
+.footerContainer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+}

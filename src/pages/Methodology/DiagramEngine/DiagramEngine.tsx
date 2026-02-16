@@ -1,4 +1,5 @@
 import { type ReactNode } from "react";
+import styles from "./DiagramEngine.module.css";
 
 // --- ТЫПЫ ---
 
@@ -80,10 +81,10 @@ export const DiagramCanvas = ({
   viewBox: string;
 }) => (
   <svg
+    className={styles.viewBox}
     viewBox={viewBox}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    style={{ width: "100%", height: "auto", display: "block" }}
   >
     <defs>
       {["#2E7D32", "#D32F2F", "#B28900", "black", "#666"].map((c) => (
