@@ -4,7 +4,7 @@ import { ParameterSelect, type MatrixParameter } from "./ParameterSelect";
 import { PrincipleCard, type Principle } from "./PrincipleCard";
 import styles from "./AltshullerMatrix.module.css";
 // Гэта наш "мозг", ён цяпер агульны для ўсіх моў
-import { ALTSHULLER_MATRIX } from "../../../data/altshullerMatrix";
+import { ALTSHULLER_MATRIX } from "../../../data/data/altshullerMatrix";
 
 const AltshullerMatrix = () => {
   const { t, ready } = useTranslation([
@@ -21,7 +21,7 @@ const AltshullerMatrix = () => {
       (t("altshuller.parameters", {
         ns: "altshuller/contradictions",
         returnObjects: true,
-      }) as MatrixParameter[]) || [],
+      }) as Record<string, MatrixParameter>) || {},
     [t],
   );
 
@@ -34,6 +34,9 @@ const AltshullerMatrix = () => {
   }, [improveParam, worsenParam]);
 
   if (!ready) return <div className={styles.loading}>Загрузка...</div>;
+
+  const p1Name = improveParam ? parameters[improveParam]?.name : "";
+  const p2Name = worsenParam ? parameters[worsenParam]?.name : "";
 
   return (
     <div className={styles.matrixContainer}>
@@ -72,8 +75,8 @@ const AltshullerMatrix = () => {
             `altshuller.hints.${improveParam === worsenParam ? "physical" : "technical"}`,
             {
               ns: "altshuller/contradictions",
-              p1: parameters.find((p) => p.id === improveParam)?.name,
-              p2: parameters.find((p) => p.id === worsenParam)?.name,
+              p1: p1Name,
+              p2: p2Name,
             },
           )}
         </div>

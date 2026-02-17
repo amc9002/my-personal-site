@@ -7,12 +7,16 @@ export interface MatrixParameter {
   desc?: string;
 }
 
+// Вызначаем строгі тып для слоўніка параметраў
+type ParametersData = Record<string, MatrixParameter>;
+
 interface ParameterSelectProps {
   labelKey: string;
   id: string;
   value: number | null;
   onChange: (n: number) => void;
-  parameters: MatrixParameter[];
+  // Пакідаем толькі Record, бо мы дакладна ведаем, што прыйдзе аб'ект
+  parameters: ParametersData;
   matrix: Record<string, number[]>;
   improveParam: number | null;
   isWorsening: boolean;
@@ -30,6 +34,9 @@ export const ParameterSelect = ({
 }: ParameterSelectProps) => {
   const { t } = useTranslation("altshuller/contradictions");
 
+  // Цяпер нам не трэба as unknown, калі пропсы тыпізаваны правільна
+  const paramsObject = parameters;
+
   return (
     <div className={styles.field}>
       <label htmlFor={id} className={styles.label}>
@@ -38,14 +45,18 @@ export const ParameterSelect = ({
       <select
         id={id}
         className={styles.select}
-        value={value || ""}
+        // Ператвараем лік у радок для селекта, каб ён супаў з value ў option
+        value={value?.toString() || ""}
         onChange={(e) => onChange(Number(e.target.value))}
       >
         <option value="">-- {t("altshuller.labels.select")} --</option>
-        {parameters.map((p) => {
-          const key = `${improveParam}-${p.id}`;
-          const hasData = matrix[key]?.length > 0;
-          const isPhysical = improveParam === p.id;
+
+        {Object.entries(paramsObject).map(([idStr, info]) => {
+          const pId = Number(idStr);
+          const key = `${improveParam}-${pId}`;
+          const hasData = matrix[key] && matrix[key].length > 0;
+          const isPhysical = improveParam === pId;
+
           const isDisabled = !!(
             isWorsening &&
             improveParam &&
@@ -54,8 +65,9 @@ export const ParameterSelect = ({
           );
 
           return (
-            <option key={p.id} value={p.id} disabled={isDisabled}>
-              {p.name} {isDisabled ? `(${t("altshuller.labels.noData")})` : ""}
+            <option key={idStr} value={idStr} disabled={isDisabled}>
+              {idStr}. {info.name}{" "}
+              {isDisabled ? `(${t("altshuller.labels.noData")})` : ""}
             </option>
           );
         })}
