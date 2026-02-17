@@ -1,0 +1,59 @@
+{
+  "altshuller": {
+    "title": "Macierz Rozwiązywania Sprzeczności",
+    "labels": {
+      "improving": "Co ulepszamy?",
+      "worsening": "Co się pogarsza?",
+      "select": "Wybierz parametr",
+      "recommendedPrinciples": "Zalecane zasady:",
+      "exampleLabel": "Przykład:",
+      "noData": "brak danych"
+    },
+    "hints": {
+      "technical": "Ulepszasz „{{p1}}”, ale pogarsza się „{{p2}}”. Oto jak rozwiązali to wynalazcy:",
+      "physical": "Sprzeczność fizyczna: parametr „{{p1}}” musi jednocześnie spełniać sprzeczne wymagania. TRIZ sugeruje rozdzielenie w czasie lub przestrzeni.",
+      "empty": "Dla tej pary nie ma jeszcze gotowych recept. Spróbuj wybrać bardziej ogólne parametry."
+    },
+    "parameters": [
+      { "id": 1, "name": "1. Ciężar obiektu ruchomego", "desc": "Masa ciała lub układu będącego w ruchu." },
+      { "id": 2, "name": "2. Ciężar obiektu nieruchomego", "desc": "Masa obiektu, który nie zmienia swojego położenia." },
+      { "id": 3, "name": "3. Długość obiektu ruchomego", "desc": "Dowolny wymiar liniowy obiektu w ruchu." },
+      { "id": 4, "name": "4. Długość obiektu nieruchomego", "desc": "Wymiary liniowe obiektu stacjonarnego." },
+      { "id": 5, "name": "5. Powierzchnia obiektu ruchomego", "desc": "Rozmiar powierzchni zewnętrznej lub wewnętrznej ciała w ruchu." },
+      { "id": 6, "name": "6. Powierzchnia obiektu nieruchomego", "desc": "Powierzchnia obiektu stacjonarnego." },
+      { "id": 7, "name": "7. Objętość obiektu ruchomego", "desc": "Przestrzeń zajmowana przez obiekt podczas ruchu." },
+      { "id": 8, "name": "8. Objętość obiektu nieruchomego", "desc": "Przestrzeń zajmowana przez obiekt nieruchomy." },
+      { "id": 9, "name": "9. Prędkość", "desc": "Tempo ruchu lub szybkość przebiegu procesu." },
+      { "id": 10, "name": "10. Siła", "desc": "Oddziaływanie zmieniające stan obiektu (nacisk, obciążenie)." },
+      { "id": 11, "name": "11. Naprężenie lub ciśnienie", "desc": "Siła na jednostkę powierzchni lub napięcie elektryczne." },
+      { "id": 12, "name": "12. Kształt", "desc": "Wygląd zewnętrzny lub kontury obiektu." },
+      { "id": 13, "name": "13. Stabilność składu obiektu", "desc": "Integralność systemu, jego odporność na zniszczenie." },
+      { "id": 14, "name": "14. Wytrzymałość", "desc": "Zdolność do wytrzymywania obciążeń bez pęknięć." },
+      { "id": 15, "name": "15. Czas działania obiektu ruchomego", "desc": "Okres, w którym ruchomy obiekt może wykonywać pracę." },
+      { "id": 16, "name": "16. Czas działania obiektu nieruchomego", "desc": "Trwałość i żywotność urządzenia stacjonarnego." },
+      { "id": 17, "name": "17. Temperatura", "desc": "Stan cieplny obiektu lub otoczenia." },
+      { "id": 18, "name": "18. Oświetlenie", "desc": "Poziom światła lub intensywność promieniowania." },
+      { "id": 19, "name": "19. Zużycie energii (ruchomy)", "desc": "Ilość energii lub paliwa potrzebna do pracy." },
+      { "id": 20, "name": "20. Zużycie energii (nieruchomy)", "desc": "Zużycie energii przez systemy stacjonarne." },
+      { "id": 21, "name": "21. Moc", "desc": "Szybkość wykonywania pracy lub transferu energii." },
+      { "id": 22, "name": "22. Straty energii", "desc": "Marnotrawstwo zasobów, które nie idzie na użyteczną pracę." },
+      { "id": 23, "name": "23. Straty substancji", "desc": "Wycieki, odpady materiałowe lub surowcowe." },
+      { "id": 24, "name": "24. Straty informacji", "desc": "Błędy w transmisji danych lub utrata wiedzy." },
+      { "id": 25, "name": "25. Straty czasu", "desc": "Opóźnienia, przestoje i interwały nieprodukcyjne." },
+      { "id": 26, "name": "26. Ilość substancji", "desc": "Zużycie materiałów, liczba komponentów w systemie." },
+      { "id": 27, "name": "27. Niezawodność", "desc": "Bezawaryjność pracy w różnych warunkach." },
+      { "id": 28, "name": "28. Dokładność pomiaru", "desc": "Bliskość wyniku pomiaru do wartości rzeczywistej." },
+      { "id": 29, "name": "29. Dokładność wykonania", "desc": "Zgodność gotowego produktu z rysunkami." },
+      { "id": 30, "name": "30. Szkodliwe czynniki na obiekt", "desc": "Wpływ otoczenia (korozja, hałas) na system." },
+      { "id": 31, "name": "31. Szkodliwe czynniki od obiektu", "desc": "Szkody generowane przez sam obiekt (emisje, hałas)." },
+      { "id": 32, "name": "32. Wykonalność technologiczna", "desc": "Łatwość i oszczędność produkcji." },
+      { "id": 33, "name": "33. Wygoda eksploatacji", "desc": "Prostota i komfort użytkowania przez człowieka." },
+      { "id": 34, "name": "34. Łatwość naprawy", "desc": "Szybkość i łatwość przywracania do stanu używalności." },
+      { "id": 35, "name": "35. Adaptacyjność", "desc": "Zdolność do dostosowania się do różnych trybów pracy." },
+      { "id": 36, "name": "36. Złożoność urządzenia", "desc": "Liczba części i skomplikowanie powiązań wewnętrznych." },
+      { "id": 37, "name": "37. Złożoność sterowania", "desc": "Trudność w kontrolowaniu procesu." },
+      { "id": 38, "name": "38. Poziom automatyzacji", "desc": "Udział pracy wykonywanej bez udziału człowieka." },
+      { "id": 39, "name": "39. Wydajność", "desc": "Ilość użytecznego wyniku na jednostkę czasu." }
+    ]
+  }
+}

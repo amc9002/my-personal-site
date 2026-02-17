@@ -1,0 +1,59 @@
+{
+  "altshuller": {
+    "title": "Widerspruchsmatrix",
+    "labels": {
+      "improving": "Was wird verbessert?",
+      "worsening": "Was verschlechtert sich?",
+      "select": "Parameter wählen",
+      "recommendedPrinciples": "Empfohlene Prinzipien:",
+      "exampleLabel": "Beispiel:",
+      "noData": "keine Daten"
+    },
+    "hints": {
+      "technical": "Sie verbessern „{{p1}}“, aber „{{p2}}“ verschlechtert sich. Erfinder haben dies so gelöst:",
+      "physical": "Physischer Widerspruch: Der Parameter „{{p1}}“ muss gleichzeitig widersprüchliche Anforderungen erfüllen. TRIZ schlägt eine Trennung in Zeit oder Raum vor.",
+      "empty": "Für dieses Paar gibt es noch keine fertigen Rezepte. Versuchen Sie allgemeinere Parameter."
+    },
+    "parameters": [
+      { "id": 1, "name": "1. Gewicht des beweglichen Objekts", "desc": "Masse des Körpers oder Systems in Bewegung." },
+      { "id": 2, "name": "2. Gewicht des unbeweglichen Objekts", "desc": "Masse eines Objekts, das seine Position nicht verändert." },
+      { "id": 3, "name": "3. Länge des beweglichen Objekts", "desc": "Jede lineare Dimension eines Objekts in Bewegung." },
+      { "id": 4, "name": "4. Länge des unbeweglichen Objekts", "desc": "Lineare Abmessungen eines statischen Objekts." },
+      { "id": 5, "name": "5. Fläche des beweglichen Objekts", "desc": "Größe der Außen- oder Innenfläche eines bewegten Körpers." },
+      { "id": 6, "name": "6. Fläche des unbeweglichen Objekts", "desc": "Oberfläche eines statischen Objekts." },
+      { "id": 7, "name": "7. Volumen des beweglichen Objekts", "desc": "Vom Objekt während der Bewegung eingenommener Raum." },
+      { "id": 8, "name": "8. Volumen des unbeweglichen Objekts", "desc": "Vom unbewegten Objekt eingenommener Raum." },
+      { "id": 9, "name": "9. Geschwindigkeit", "desc": "Bewegungstempo oder Prozessgeschwindigkeit." },
+      { "id": 10, "name": "10. Kraft", "desc": "Einwirkung, die den Zustand eines Objekts ändert (Druck, Last)." },
+      { "id": 11, "name": "11. Spannung oder Druck", "desc": "Kraft pro Flächeneinheit oder elektrische Spannung." },
+      { "id": 12, "name": "12. Form", "desc": "Aussehen oder Konturen eines Objekts." },
+      { "id": 13, "name": "13. Stabilität der Zusammensetzung", "desc": "Integrität des Systems und sein Widerstand gegen Zerstörung." },
+      { "id": 14, "name": "14. Festigkeit", "desc": "Fähigkeit, Belastungen ohne Bruch standzuhalten." },
+      { "id": 15, "name": "15. Dauer der Wirkung (beweglich)", "desc": "Zeitraum, in dem ein bewegliches Objekt Arbeit verrichten kann." },
+      { "id": 16, "name": "16. Dauer der Wirkung (unbeweglich)", "desc": "Langlebigkeit und Lebensdauer eines stationären Geräts." },
+      { "id": 17, "name": "17. Temperatur", "desc": "Thermischer Zustand eines Objekts oder der Umgebung." },
+      { "id": 18, "name": "18. Beleuchtungsstärke", "desc": "Lichtniveau oder Strahlungsintensität." },
+      { "id": 19, "name": "19. Energieverbrauch (beweglich)", "desc": "Benötigte Energie- oder Kraftstoffmenge für den Betrieb." },
+      { "id": 20, "name": "20. Energieverbrauch (unbeweglich)", "desc": "Energieverbrauch stationärer Systeme." },
+      { "id": 21, "name": "21. Leistung", "desc": "Geschwindigkeit der Arbeitsverrichtung oder Energieübertragung." },
+      { "id": 22, "name": "22. Energieverlust", "desc": "Ressourcenverschwendung ohne Nutzarbeit." },
+      { "id": 23, "name": "23. Substanzverlust", "desc": "Leckagen, Material- oder Rohstoffabfälle." },
+      { "id": 24, "name": "24. Informationsverlust", "desc": "Fehler bei der Datenübertragung oder Wissensverlust." },
+      { "id": 25, "name": "25. Zeitverlust", "desc": "Verzögerungen, Ausfallzeiten und unproduktive Intervalle." },
+      { "id": 26, "name": "26. Substanzmenge", "desc": "Materialverbrauch oder Anzahl der Komponenten im System." },
+      { "id": 27, "name": "27. Zuverlässigkeit", "desc": "Ausfallsicherheit unter verschiedenen Bedingungen." },
+      { "id": 28, "name": "28. Messgenauigkeit", "desc": "Nähe des Messergebnisses zur Realität." },
+      { "id": 29, "name": "29. Fertigungsgenauigkeit", "desc": "Übereinstimmung des Produkts mit den Zeichnungen." },
+      { "id": 30, "name": "30. Schädliche Faktoren auf das Objekt", "desc": "Umwelteinflüsse (Korrosion, Lärm) auf das System." },
+      { "id": 31, "name": "31. Vom Objekt erzeugte schädliche Faktoren", "desc": "Vom Objekt verursachte Schäden (Emissionen, Lärm)." },
+      { "id": 32, "name": "32. Fertigbarkeit", "desc": "Einfachheit und Wirtschaftlichkeit der Herstellung." },
+      { "id": 33, "name": "33. Bedienungsfreundlichkeit", "desc": "Einfachheit und Komfort für den Benutzer." },
+      { "id": 34, "name": "34. Reparaturfreundlichkeit", "desc": "Schnelligkeit und Leichtigkeit der Instandsetzung." },
+      { "id": 35, "name": "35. Adaptierbarkeit", "desc": "Fähigkeit zur Anpassung an verschiedene Betriebsmodi." },
+      { "id": 36, "name": "36. Komplexität des Geräts", "desc": "Anzahl der Teile und Komplexität der internen Verbindungen." },
+      { "id": 37, "name": "37. Komplexität der Steuerung", "desc": "Schwierigkeit, den Prozess zu kontrollieren." },
+      { "id": 38, "name": "38. Automatisierungsgrad", "desc": "Anteil der ohne menschliches Eingreifen geleisteten Arbeit." },
+      { "id": 39, "name": "39. Produktivität", "desc": "Menge des Nutzeffekts pro Zeiteinheit." }
+    ]
+  }
+}

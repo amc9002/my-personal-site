@@ -3,15 +3,19 @@ import { useTranslation } from "react-i18next";
 import { ParameterSelect, type MatrixParameter } from "./ParameterSelect";
 import { PrincipleCard, type Principle } from "./PrincipleCard";
 import styles from "./AltshullerMatrix.module.css";
+// Гэта наш "мозг", ён цяпер агульны для ўсіх моў
+import { ALTSHULLER_MATRIX } from "../../../constants/altshullerMatrix";
 
 const AltshullerMatrix = () => {
   const { t, ready } = useTranslation([
     "altshuller/contradictions",
     "altshuller/principles",
   ]);
+
   const [improveParam, setImproveParam] = useState<number | null>(null);
   const [worsenParam, setWorsenParam] = useState<number | null>(null);
 
+  // Спіс параметраў застаецца ў i18n, бо іх ТРЭБА перакладаць
   const parameters = useMemo(
     () =>
       (t("altshuller.parameters", {
@@ -21,19 +25,13 @@ const AltshullerMatrix = () => {
     [t],
   );
 
-  const matrix = useMemo(
-    () =>
-      (t("altshuller.matrix", {
-        ns: "altshuller/contradictions",
-        returnObjects: true,
-      }) as Record<string, number[]>) || {},
-    [t],
-  );
+  // ВЫДАЛЕНА: стары useMemo для matrix, бо мы выкарыстоўваем ALTSHULLER_MATRIX
 
   const selectedIds = useMemo(() => {
     if (!improveParam || !worsenParam) return [];
-    return matrix[`${improveParam}-${worsenParam}`] || [];
-  }, [improveParam, worsenParam, matrix]);
+    // Звяртаемся да нашай новай канстанты
+    return ALTSHULLER_MATRIX[`${improveParam}-${worsenParam}`] || [];
+  }, [improveParam, worsenParam]);
 
   if (!ready) return <div className={styles.loading}>Загрузка...</div>;
 
@@ -46,7 +44,7 @@ const AltshullerMatrix = () => {
           value={improveParam}
           onChange={setImproveParam}
           parameters={parameters}
-          matrix={matrix}
+          matrix={ALTSHULLER_MATRIX} // Перадаем агульную матрыцу
           improveParam={improveParam}
           isWorsening={false}
         />
@@ -56,7 +54,7 @@ const AltshullerMatrix = () => {
           value={worsenParam}
           onChange={setWorsenParam}
           parameters={parameters}
-          matrix={matrix}
+          matrix={ALTSHULLER_MATRIX} // Перадаем агульную матрыцу
           improveParam={improveParam}
           isWorsening={true}
         />
@@ -96,6 +94,13 @@ const AltshullerMatrix = () => {
                 }
               />
             ))}
+          </div>
+        )}
+
+        {/* Дадаем апрацоўку пустога выніку (для бландзінак) */}
+        {improveParam && worsenParam && selectedIds.length === 0 && (
+          <div className={styles.noResult}>
+            {t("altshuller.hints.empty", { ns: "altshuller/contradictions" })}
           </div>
         )}
       </div>
