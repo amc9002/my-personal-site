@@ -4,7 +4,7 @@ import { ParameterSelect, type MatrixParameter } from "./ParameterSelect";
 import { PrincipleCard, type Principle } from "./PrincipleCard";
 import styles from "./AltshullerMatrix.module.css";
 // Гэта наш "мозг", ён цяпер агульны для ўсіх моў
-import { ALTSHULLER_MATRIX } from "../../../constants/altshullerMatrix";
+import { ALTSHULLER_MATRIX } from "../../../data/altshullerMatrix";
 
 const AltshullerMatrix = () => {
   const { t, ready } = useTranslation([

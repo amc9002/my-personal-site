@@ -2,7 +2,7 @@ import styles from "./Contacts.module.css";
 import Section from "../../components/common/section/Section";
 import myPhoto from "../../assets/my-photo.jpeg";
 import { useTranslation } from "react-i18next";
-import { CONTACT_LINKS } from "../../constants/contactData";
+import { CONTACT_LINKS } from "../../data/contactData";
 
 const Contacts = () => {
   const { t } = useTranslation("contacts");

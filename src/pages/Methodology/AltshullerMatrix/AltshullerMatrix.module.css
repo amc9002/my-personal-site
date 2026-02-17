@@ -1,43 +1,74 @@
+/* 1. Галоўны кантэйнер: прыбіраем padding на малых экранах, каб даць больш месца */
 .matrixContainer {
   padding: 20px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  width: 100%;
+  box-sizing: border-box; /* Вельмі важна! */
 }
 
+/* 2. Зона выбару: на мабільных робім у адзін слупок */
 .selectionZone {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 30px;
+  gap: 24px; /* Павялічым адлегласць для паветра */
+  margin-bottom: 40px;
+  align-items: end; /* Каб подпісы і вокны стаялі роўна */
 }
 
 .label {
   display: block;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50; /* Больш высакародны цёмна-шэры */
+  font-size: 0.9rem;
+  text-transform: uppercase; /* Маленькі шрыфт, але капсам — выглядае стыльна */
+  letter-spacing: 0.5px;
 }
 
 .select {
   width: 100%;
-  padding: 10px;
-  border: 2px solid #eee;
-  border-radius: 6px;
-  font-size: 14px;
+  padding: 12px 16px;
+  border: 2px solid #e0e6ed;
+  border-radius: 10px; /* Больш закругленыя куты */
+  font-size: 15px;
+  background-color: #f9fafb;
+  color: #333;
+  appearance: none; /* Прыбіраем стандартную стрэлку браўзера */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-.resultTitle {
-  margin: 20px 0;
-  color: #1c1b1b;
-  border-bottom: 2px solid #ffde59;
-  display: inline-block;
+.select:hover {
+  border-color: #cbd5e0;
+  background-color: #fff;
 }
 
+.select:focus {
+  outline: none;
+  border-color: #ffde59; /* Твой фірмовы жоўты колер */
+  box-shadow: 0 0 0 4px rgba(255, 222, 89, 0.2);
+  background-color: #fff;
+}
+
+@media (max-width: 640px) {
+  .selectionZone {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* 3. Карткі: дазваляем ім займаць усю даступную шырыню */
 .principleGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
+  width: 100%;
 }
 
 .principleCard {
@@ -46,43 +77,58 @@
   padding: 16px;
   border-radius: 8px;
   transition: transform 0.2s;
+  word-wrap: break-word; /* Каб доўгія словы не распіралі картку */
+  overflow: hidden;      /* Гарантыя, што нічога не вылезе */
+  animation: slideIn 0.3s ease-out;
 }
 
-.principleCard:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.cardHeader {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+/* 4. Адаптыўная магія для мабільных (max-width: 600px) */
+@media (max-width: 600px) {
+  .matrixContainer {
+    padding: 10px; /* Эканомім месца па баках */
+  }
+
+  .selectionZone {
+    grid-template-columns: 1fr; /* Селектары адзін пад адным */
+    gap: 10px;
+  }
+
+  .principleGrid {
+    grid-template-columns: 1fr; /* Карткі строга ў адзін слупок */
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    /* Дазваляем доўгім назвам пераносіцца */
+    white-space: normal; 
+  }
+
+  /* Гэта вырашыць праблему з абразаннем тэксту на скрыншоце */
+  .cardHeader {
+    flex-direction: row;
+    align-items: flex-start; 
+  }
+
+  .idBadge {
+    flex-shrink: 0; /* Каб нумар не сціскаўся */
+  }
 }
 
-.idBadge {
-  background: #ffde59;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 12px;
-}
-
-.cardTitle {
-  margin: 0;
-  font-size: 16px;
-}
-
-.cardDesc {
-  font-size: 14px;
-  line-height: 1.4;
-  color: #555;
-}
-
-.cardExample {
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px dashed #ddd;
-  font-size: 13px;
-  color: #777;
+/* 5. Дадатковая страхоўка для вельмі вузкіх экранаў (iPhone SE і г.д.) */
+@media (max-width: 360px) {
+  .cardTitle {
+    font-size: 0.95rem;
+  }
 }
