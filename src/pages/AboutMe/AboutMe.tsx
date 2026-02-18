@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import AboutMeSection, {
   type IStoryChapter,
 } from "./AboutMeSection/AboutMeSection";
-import styles from "./aboutMe.module.css";
+import styles from "./AboutMe.module.css";
 
 const AboutMe: React.FC = () => {
   const { t } = useTranslation("aboutMe");
