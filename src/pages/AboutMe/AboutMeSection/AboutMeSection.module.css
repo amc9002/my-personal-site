@@ -1,0 +1,21 @@
+.timelineContainer {
+  max-width: 800px;
+  margin: 20px auto;
+  padding-left: 40px;
+  position: relative;
+  border-left: 2px dashed #007bff;
+}
+.chapterRow { margin-bottom: 50px; position: relative; }
+.markerDot {
+  position: absolute;
+  left: -47px;
+  top: 8px;
+  width: 12px; height: 12px;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #007bff;
+}
+.periodText { font-family: 'Fira Code', monospace; color: #007bff; font-weight: 700; }
+.chapterTitle { font-size: 1.6rem; font-weight: 800; margin: 10px 0; }
+.chapterText { white-space: pre-line; line-height: 1.8; color: #333; }

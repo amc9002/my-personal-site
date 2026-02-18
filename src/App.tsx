@@ -7,7 +7,7 @@ import ScrollToTop from "./components/ui/ScrollToTop";
 import Home from "./pages/Home/Home";
 import Philosophy from "./pages/Philosophy/Philosophy"; // Імпартуй філасофію, як і астатнія старонкі
 import Methodology from "./pages/Methodology/Methodology";
-import AboutMe from "./pages/AboutMe";
+import AboutMe from "./pages/AboutMe/AboutMe";
 import TechnicalCases from "./pages/TechnicalCases/TechnicalCases";
 import Contacts from "./pages/Contacts/Contacts";
 import { Route, Routes } from "react-router-dom";

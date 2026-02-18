@@ -8,7 +8,7 @@ i18n
   .init({
     lng: "be", // Фіксуем мову для тэсту
     fallbackLng: "be",
-    ns: ["common", "home", "philosophy", "metodology"], // Усе твае прасторы імёнаў 
+    ns: ["common", "home", "philosophy", "metodology", "aboutMe"], // Усе твае прасторы імёнаў 
     defaultNS: "common",
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",

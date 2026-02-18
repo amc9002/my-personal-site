@@ -1,0 +1,45 @@
+{
+  "header": {
+    "title": "Andrej Cieraškoŭ",
+    "subtitle": "System Engineer | .NET Developer | TRIZ Practitioner",
+    "bio": "An engineer by calling, a programmer by education, and a systems analyst by mindset. My path is an evolution from designing complex hydraulics to architecting digital systems. I love engineering as a field of systematic reality creation, where mechanics and code obey the same laws of logic."
+  },
+  "story_chapters": [
+    {
+      "id": "logic",
+      "period": "1980s — 1993",
+      "title": "Logic and Roots: From MK-52 to ImLab",
+      "content": "My introduction to technology began in a technical creativity club, where I was taught to think non-trivially, broadly, and systematically. Even then, I participated in a team working on successful innovative projects. This is where my path into the IT industry originated. Programming on the 16-bit BK-0010 computer and the MK-52 calculator taught me innovative thinking under strict resource constraints. This experience became the foundation for my studies at BNTU in 'Hydropneumoautomatics' and my work at ImLab (Research Laboratory of Inventive Machines), where I encountered scientific innovation and patent science."
+    },
+    {
+      "id": "mechanics",
+      "period": "1993 — 2005",
+      "title": "Hard Engineering: Hydraulics and IVECO",
+      "content": "As a mechanical engineer, I provided service for complex special machinery and IVECO road trains. At every workplace, I acted as an agent of change: modernizing fire trucks and implementing one of the first custom-built automated accounting systems for service stations. Even my experience as an economist in a bank became another practice in systematic business process analysis and internal discipline."
+    },
+    {
+      "id": "security",
+      "period": "2005 — 2015",
+      "title": "Security Systems: Lead Project Engineer Scope",
+      "content": "At ORIXGROUP, I rose from an installer to Lead Project Engineer (GIP). Implementing over 100 complex projects (CCTV, Access Control, Fire Alarms) taught me to build security as a comprehensive algorithm where hardware and software work as a single mechanism."
+    },
+    {
+      "id": "it_dev",
+      "period": "2015 — Present",
+      "title": "IT Renaissance: .NET, React, and Teaching",
+      "content": "Returning to professional IT by earning a Bachelor’s degree in Computer Science (MEGU, 2019) allowed me to bring engineering rigor to code. Today, I specialize in .NET (C#) and modern frontend technologies (this site is my Proof of Concept on React). I work with legacy systems like a design engineer: through deep refactoring toward high reliability."
+    },
+    {
+      "id": "social",
+      "period": "1999 — Present",
+      "title": "Ethics and Knowledge Transfer",
+      "content": "Teaching mathematics in schools and lyceums, as well as legal aspects of information protection at the university, is my way of systematizing experience. Years of civic and human rights activity have shaped my approach to Cybersecurity: data security is not just about encryption, but about protecting human rights in the digital world."
+    },
+    {
+      "id": "family",
+      "period": "Family",
+      "title": "What Truly Matters",
+      "content": "My wife is a doctor, a surgeon. We have four children. Our eldest son is already working as an engineer, our daughter is a university student, our middle son is in lyceum, and the youngest is in gymnasium. \n\nWe love music: all the children have a musical education. The eldest son and daughter competed in sailing and hold sports awards. This is our world beyond professional schedules and projects."
+    }
+  ]
+}

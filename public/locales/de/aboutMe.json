@@ -1,0 +1,45 @@
+{
+  "header": {
+    "title": "Andrej Cieraškoŭ",
+    "subtitle": "Systemingenieur | .NET-Entwickler | TRIZ-Anwender",
+    "bio": "Ingenieur aus Berufung, Programmierer durch Ausbildung und Systemanalytiker aus Überzeugung. Mein Weg ist eine Evolution von der Konstruktion komplexer Hydraulik bis zur Architektur digitaler Systeme. Ich liebe das Ingenieurwesen als ein Feld der systematischen Realitätsgestaltung, in dem Mechanik und Code denselben logischen Gesetzen folgen."
+  },
+  "story_chapters": [
+    {
+      "id": "logic",
+      "period": "1980er — 1993",
+      "title": "Logik und Wurzeln: Von MK-52 bis ImLab",
+      "content": "Meine Einführung in die Technik begann in einem Club für technisches Schaffen, wo ich lernte, unkonventionell, breit gefächert und systematisch zu denken. Schon damals war ich Teil eines Teams, das an erfolgreichen Innovationsprojekten arbeitete. Dort liegen auch die Wurzeln meines Weges in die IT-Branche. Das Programmieren auf dem 16-Bit-Computer BK-0010 und dem Taschenrechner MK-52 lehrte mich innovatives Denken unter extremen Ressourcenbeschränkungen. Diese Erfahrung wurde zum Fundament für mein Studium an der BNTU im Bereich 'Hydropneumoautomatik' und meine Arbeit bei ImLab, wo ich mich intensiv mit wissenschaftlichen Innovationen und Patentwesen beschäftigte."
+    },
+    {
+      "id": "mechanics",
+      "period": "1993 — 2005",
+      "title": "Hard Engineering: Hydraulik und IVECO",
+      "content": "Als Maschineningenieur betreute ich komplexe Spezialmaschinen und IVECO-Lastzüge. An jedem Arbeitsplatz war ich ein Impulsgeber für Veränderungen: Ich modernisierte Feuerwehrautos und führte eines der ersten selbstgeschriebenen automatisierten Abrechnungssysteme in einer Werkstatt ein. Selbst meine Erfahrung als Ökonom in einer Bank war für mich eine weitere Praxis in der systematischen Analyse von Geschäftsprozessen und innerer Disziplin."
+    },
+    {
+      "id": "security",
+      "period": "2005 — 2015",
+      "title": "Sicherheitssysteme: Verantwortung als Chefingenieur",
+      "content": "Bei ORIXGROUP stieg ich vom Monteur zum Chefprojektleiter (GIP) auf. Die Realisierung von über 100 komplexen Projekten (Videoüberwachung, Zutrittskontrolle, Brandmeldeanlagen) lehrte mich, Sicherheit als umfassenden Algorithmus zu begreifen, bei dem Hardware und Software wie ein einziges Uhrwerk funktionieren."
+    },
+    {
+      "id": "it_dev",
+      "period": "2015 — Heute",
+      "title": "IT-Renaissance: .NET, React und Lehre",
+      "content": "Die Rückkehr in die professionelle IT durch den Bachelor-Abschluss in Informatik (MEGU, 2019) ermöglichte es mir, ingenieurtechnische Strenge in den Code zu übertragen. Heute spezialisiere ich mich auf .NET (C#) und moderne Frontend-Technologien (diese Website ist mein Proof of Concept in React). Ich arbeite an Legacy-Systemen wie ein Konstrukteur: durch tiefgreifendes Refactoring zu höchster Zuverlässigkeit."
+    },
+    {
+      "id": "social",
+      "period": "1999 — Heute",
+      "title": "Ethik und Wissensvermittlung",
+      "content": "Das Unterrichten von Mathematik an Schulen und Gymnasien sowie von Rechtsaspekten des Informationsschutzes an der Universität ist meine Form der Wissenssystematisierung. Langjährige zivilgesellschaftliche und menschenrechtliche Aktivitäten haben meinen Ansatz zur Cybersicherheit geprägt: Datensicherheit bedeutet nicht nur Verschlüsselung, sondern auch den Schutz der Menschenrechte in der digitalen Welt."
+    },
+    {
+      "id": "family",
+      "period": "Familie",
+      "title": "Was wirklich zählt",
+      "content": "Meine Frau ist Ärztin, Chirurgin. Wir haben vier Kinder. Unser ältester Sohn arbeitet bereits als Ingenieur, unsere Tochter studiert an der Universität, der mittlere Sohn besucht das Lyzeum und der jüngste das Gymnasium. \n\nWir lieben Musik: Alle Kinder haben eine musikalische Ausbildung. Der älteste Sohn und die Tochter waren im Segelsport erfolgreich und halten sportliche Auszeichnungen. Das ist unsere Welt jenseits von professionellen Zeitplänen und Projekten."
+    }
+  ]
+}

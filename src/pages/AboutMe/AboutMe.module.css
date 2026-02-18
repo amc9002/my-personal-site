@@ -1,0 +1,55 @@
+.pageWrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px 120px; /* Больш месца зверху і знізу для спакою */
+}
+
+.header {
+  margin-bottom: 80px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 50px;
+  text-align: left; /* Вяртаем строгае левае выраўноўванне */
+}
+
+.mainName {
+  font-size: 3.2rem; /* Трохі буйней для маштабу */
+  font-weight: 850;
+  color: #1a1a1a;
+  letter-spacing: -0.02em;
+}
+
+.jobSubtitle {
+  font-family: 'Fira Code', monospace;
+  color: #007bff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 12px;
+  display: block;
+}
+
+.introBio {
+  margin-top: 35px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  max-width: 750px;
+}
+
+/* Элемент мяккасці: фінальная лінія-подпіс */
+.pageEndLine {
+  margin-top: 80px;
+  height: 4px;
+  width: 60px;
+  background: linear-gradient(90deg, #007bff, transparent); /* Мяккае затуханне */
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+/* Калі вы хочаце вылучыць апошнюю главу (сям'ю) асабліва */
+.familyNote {
+  font-style: italic; /* Мяккі акцэнт на асабістае */
+  color: #555;
+  border-left: 3px solid #e1e8f5;
+  padding-left: 20px;
+  margin-top: 20px;
+}
