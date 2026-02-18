@@ -1,17 +1,24 @@
 .contactSection {
-  /* Мінімальныя падынгі, каб упісацца ў экран */
-  padding-top: 0.5rem !important;
-  padding-bottom: 1rem !important;
+  width: 100%;
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .mainGrid {
-  display: grid;
-  grid-template-columns: 200px 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 4rem;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .sidebar {
+  flex: 0 0 300px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -19,85 +26,169 @@
 
 .title {
   margin: 0;
-  line-height: 1;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: left;
+  letter-spacing: -1px;
 }
 
 .photoContainer img {
   width: 100%;
-  border-radius: 4px;
+  border-radius: 12px;
   display: block;
-  filter: grayscale(20%);
-  border: 1px solid #ddd;
 }
 
 .content {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* Невялікі пад'ём тэксту, каб ён візуальна стаў у лінію з шапкай загалоўка */
-  margin-top: -0.2rem;
+  min-width: 0; /* Крытычна для працы градыенту */
 }
 
+/* Вылучаная фраза */
 .contactLead {
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.5;
-  margin: 0;
-  font-style: italic;
-  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem; /* Крыху менш, каб не ціснула */
+  line-height: 1.3;
+  font-weight: 700;
+  color: #111;
+  text-align: left;
+  border-left: 4px solid #007bff;
+  padding-left: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.workStatus {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
 }
 
 .linkList {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%; /* Займаем усю шырыню */
 }
 
-.linkList li {
+.linkItem {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 1rem;
+  align-items: baseline; /* Выраўноўваем тэкст па адной лініі */
+  width: 100%;
 }
 
 .linkLabel {
-  width: 100px;
+  width: 100px; /* Фіксаваная шырыня стварае вертыкальную вось */
   flex-shrink: 0;
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #999;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
-.linkList a {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #111;
+/* ГРАДЫЕНТНАЕ ЗАКРЫЦЦЁ */
+.linkWrapper {
+  flex: 1;
+  min-width: 0; /* Дазваляе кантэйнеру сціскацца ніжэй за памер тэксту */
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  
+  /* Маска градыенту */
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to right, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  
+}
+
+.linkWrapper a {
+  color: #007bff;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s;
+  font-family: 'Fira Code', monospace; /* Можна пакінуць ваш стыль */
+  font-size: 1rem;
 }
 
-.linkList a:hover {
-  border-bottom-color: #111;
-}
+/* МАБІЛЬНАЯ ВЕРСІЯ */
+@media (max-width: 850px) {
+  .container {
+    margin-top: -4rem !important; /* Кампенсацыя за адсутнасць цэнтравання */
+    padding-left: 15px !important; /* Мінімальны водступ ад краю экрана */
+    padding-right: 15px !important;
+  }
 
-@media (max-width: 700px) {
+  /* 1. Прымусова адключаем любыя цэнтраванні ў сетцы */
   .mainGrid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start !important; 
     gap: 2rem;
   }
-  .sidebar {
-    align-items: center;
-  }
+
+  /* 2. Кантэнт павінен займаць 100% шырыні, але не больш */
   .content {
-    margin-top: 0;
-    text-align: center;
+    width: 100%;
+    align-items: flex-start !important;
+    text-align: left !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    overflow: hidden; /* Гэта не дасць тэксту "выціскаць" экран */
   }
-  .linkList li {
+
+  /* 3. Выраўноўваем загаловак і lead-тэкст */
+  .title, .contactLead {
+    text-align: left !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contactLead {
+    font-size: 1.2rem; /* Крыху менш, каб не ціснула */
+    font-style: italic;
+  }
+
+  /* 4. Самае важнае: спіс спасылак */
+  .linkList {
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 1.2rem;
+    padding: 0;
+    margin-left: 0 !important;
+    align-items: flex-start !important;
+  }
+
+  .linkItem {
+    display: flex;
+    flex-direction: column; /* На мабільным: надпіс над спасылкай */
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    align-items: flex-start !important;
+    width: 100%;
+    gap: 4px;
+  }
+
+  /* 5. Уключаем градыент толькі тут, каб ён не псаваў дэсктоп */
+  .linkWrapper {
+    width: 100%;
+    max-width: calc(100vw - 40px); /* Шырыня экрана мінус палі */
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    /* Эфект плаўнага знікнення */
+    -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    
+  }
+
+  .linkWrapper a {
+    display: inline-block;
+    font-size: 0.95rem; /* Крыху менш, каб больш улезла */
+  }
+
+  .linkLabel {
+    width: auto; /* На мабільным не трэба фіксаваная шырыня злева */
+    margin-bottom: 2px;
   }
 }

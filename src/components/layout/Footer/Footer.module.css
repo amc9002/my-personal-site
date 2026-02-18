@@ -1,26 +1,70 @@
 .footerWrapper {
   width: 100%;
-  /* Зменім на больш цёмны ці кантрастны, каб вырашыць тваю праблему №2 */
-  background-color: #222;
-  color: #ccc;
-  padding: 3rem 0;
+  background-color: #634b5c;
+  color: #888;
+  padding: 3rem 0 1.5rem; /* Больш месца зверху, менш знізу */
   margin-top: auto;
-
-  /* Цэнтруеш гэтак жа, як секцыю */
   display: grid;
-  grid-template-columns: 1fr min(800px, 90%) 1fr;
+  grid-template-columns: 1fr min(900px, 90%) 1fr;
 }
 
 .footerContent {
   grid-column: 2;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.footerLink {
-  color: #aaa;
+.topRow {
+  display: flex;
+  justify-content: space-between; /* Разносім лакацыю і спасылкі па краях */
+  align-items: center;
+  border-bottom: 1px solid #333; /* Тонкая лінія-падзельнік */
+  padding-bottom: 1.5rem;
+}
+
+.locationBlock a {
+  color: #ccc;
   text-decoration: none;
+  font-size: 0.95rem;
 }
 
-.footerLink:hover {
-  color: #fff; /* Белы пры навядзенні на цёмным фоне */
+.locationBlock a:hover {
+  text-decoration: underline;
+}
+
+.linksBlock {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.linksBlock a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.linksBlock a:hover {
+  opacity: 0.7;
+}
+
+.divider {
+  color: #444;
+}
+
+.bottomRow {
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* На мабільных прыладах пераходзім у слупок */
+@media (max-width: 600px) {
+  .topRow {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
 }
