@@ -1,0 +1,117 @@
+.solutionWrapper {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #fff;
+  margin-bottom: 2rem;
+}
+
+.headerBlock {
+  margin-bottom: 1rem;
+}
+
+.solutionTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.ideaText {
+    margin-top: 1rem;
+  font-style: italic;
+  color: #4a5568;
+  margin: 0;
+}
+
+.imageBlock {
+  width: 100%;
+  max-width: 600px; /* Абмяжоўваем шырыню, каб не расцягваць па вертыкалі */
+  margin: 1rem 0;
+}
+
+.imageBlock img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.trizBox {
+  background: #f0f7ff;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  border-left: 3px solid #3182ce;
+  margin-bottom: 1.5rem;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* Правая калонка шырэйшая для тэксту */
+  gap: 2rem;
+  border-top: 1px solid #edf2f7;
+  padding-top: 1rem;
+}
+
+.column h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #718096;
+  margin: 0 0 0.75rem 0;
+  letter-spacing: 0.05em;
+}
+
+.effectItem {
+  display: flex;         /* Дадаем, каб gap запрацаваў */
+  flex-direction: column; /* Элементы адзін пад адным */
+  align-items: center;    /* Цэнтраванне кантэнту ўнутры плашкі */
+  background: #f7fafc;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  gap: 1.2rem;            /* Твой водступ паміж тэкстам і лічбай */
+}
+
+.financial {
+  width: 100%;            /* Каб лінія была на ўсю шырыню плашкі */
+  text-align: center;     /* Тэкст па цэнтры */
+  color: #2f855a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-top: 1px dashed #cbd5e0;
+  padding-top: 0.8rem;    /* Водступ ад пункцірнай лініі */
+}
+
+.metricText {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.subSolutionsTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 1.5rem 0 0.8rem 0; /* Павялічаны водступ зверху */
+  text-decoration: underline; /* Як на малюнку */
+}
+
+.conclusionText {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.subSolutions {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.subSolutions li {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .detailsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

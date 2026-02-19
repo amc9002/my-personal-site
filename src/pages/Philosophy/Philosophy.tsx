@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next";
 import Section from "../../components/common/section/Section"; // Шлях да твайго ўніверсальнага кампанента
 import styles from "./Philosophy.module.css"; // Калі патрэбныя спецыфічныя стылі для гэтай старонкі
-import ThroughKhaotic from "../../assets/Through_khaotic.png"; // Калі патрэбна фонавая выява для раздзелаў
-import ParadoxalDecision from "../../assets/Paradoxal_decision.png"; // Калі патрэбна фонавая выява для раздзелаў
-import SystematicInnovation from "../../assets/Systematic_innovation.png"; // Калі патрэбна фонавая выява для раздзелаў
-import ToolsNotEssence from "../../assets/Tools_NotEssence.png"; // Калі патрэбна фонавая выява для раздзелаў
-import WhenItsNeeded from "../../assets/WhenItsNeeded.png"; // Калі патрэбна фонавая выява для раздзелаў
-import SolutionForBusiness from "../../assets/SolutionForBusiness.png"; // Калі патрэбна фонавая выява для раздзелаў  
-
+import ThroughKhaotic from "../../assets/philosophy/Through_khaotic.png"; // Калі патрэбна фонавая выява для раздзелаў
+import ParadoxalDecision from "../../assets/philosophy/Paradoxal_decision.png"; // Калі патрэбна фонавая выява для раздзелаў
+import SystematicInnovation from "../../assets/philosophy/Systematic_innovation.png"; // Калі патрэбна фонавая выява для раздзелаў
+import ToolsNotEssence from "../../assets/philosophy/Tools_NotEssence.png"; // Калі патрэбна фонавая выява для раздзелаў
+import WhenItsNeeded from "../../assets/philosophy/WhenItsNeeded.png"; // Калі патрэбна фонавая выява для раздзелаў
+import SolutionForBusiness from "../../assets/philosophy/SolutionForBusiness.png"; // Калі патрэбна фонавая выява для раздзелаў
 
 const Philosophy = () => {
   const { t } = useTranslation("philosophy");
@@ -25,7 +24,7 @@ const Philosophy = () => {
         items={getArray("introduction.text")}
         bgImage={ThroughKhaotic}
         cardWidth="650px"
-        cardPosition={{ bottom: '10%', right: '20%' }}
+        cardPosition={{ bottom: "10%", right: "20%" }}
       />
       <Section
         index={1}
@@ -34,7 +33,7 @@ const Philosophy = () => {
         bgImage={ParadoxalDecision}
         bgPosition="center 85%"
         cardWidth="650px"
-        cardPosition={{ bottom: '10%', right: '20%' }}
+        cardPosition={{ bottom: "10%", right: "20%" }}
       />
       <Section
         index={2}
@@ -46,7 +45,7 @@ const Philosophy = () => {
         link={t("TrizEngineering.link")}
         linkText={t("TrizEngineering.linktext")}
         cardWidth="750px"
-        cardPosition={{ bottom: '10%', right: '20%' }}
+        cardPosition={{ bottom: "10%", right: "20%" }}
       />
       <Section
         index={3}
@@ -56,7 +55,7 @@ const Philosophy = () => {
         bgImage={ToolsNotEssence}
         bgPosition="center 65%"
         cardWidth="650px"
-        cardPosition={{ bottom: '10%', right: '20%' }}
+        cardPosition={{ bottom: "10%", right: "20%" }}
       />
       <Section
         index={4}
@@ -66,7 +65,7 @@ const Philosophy = () => {
         bgImage={WhenItsNeeded}
         bgPosition="center"
         cardWidth="650px"
-        cardPosition={{ bottom: '10%', right: '20%' }}
+        cardPosition={{ bottom: "10%", right: "20%" }}
       />
       <Section
         className={styles.closingText}
@@ -77,7 +76,7 @@ const Philosophy = () => {
         bgImage={SolutionForBusiness}
         bgPosition="center 80%"
         cardWidth="750px"
-        cardPosition={{ bottom: '10%', right: '20%' }}
+        cardPosition={{ bottom: "10%", right: "20%" }}
       />
     </>
   );

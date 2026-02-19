@@ -1,6 +1,6 @@
 import styles from "./Contacts.module.css";
 import Section from "../../components/common/section/Section";
-import myPhoto from "../../assets/my-photo.jpeg";
+import myPhoto from "../../assets/contact/my-photo.jpeg";
 import { useTranslation } from "react-i18next";
 
 const Contacts = () => {
