@@ -2,6 +2,7 @@
 .pageWrapper {
   max-width: 900px;
   margin: 0 auto;
+  margin-top: -4rem;
   padding: 60px 20px 120px; /* Больш месца зверху і знізу для спакою */
 }
 
@@ -53,4 +54,31 @@
   border-left: 3px solid #e1e8f5;
   padding-left: 20px;
   margin-top: 20px;
+}
+
+/* МАБІЛЬНАЯ ВЕРСІЯ */
+@media (max-width: 850px) {
+  .pageWrapper {
+    padding: 40px 15px 80px;
+    margin-top: -2rem;
+  }
+
+  .header {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+  }
+
+  .mainName {
+    font-size: 2.5rem;
+  }
+
+  .jobSubtitle {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+
+  .introBio {
+    font-size: 1rem;
+    max-width: none; /* На мобільных няма абмежавання шырыні */
+  }
 }

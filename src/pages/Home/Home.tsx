@@ -53,7 +53,7 @@ const Home = () => {
         bgImage={ContactsBg}
         cardPosition={{ top: '10%', left: '20%' }}
         cardWidth="450px"
-        link="/contacts"
+        link="/contact"
         linkText={t("contacts.linktext")}
       />
     </>
