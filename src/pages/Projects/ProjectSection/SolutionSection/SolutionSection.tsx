@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./SolutionSection.module.css";
 
 export interface Effect {
-  metrics: string;
+  metrics: string | string[];
   financial: string;
 }
 
@@ -27,47 +27,51 @@ const SolutionSection: React.FC<SolutionProps> = ({ data }) => {
 
   return (
     <div className={styles.solutionWrapper}>
-      {/* 1. Назва і Ідэя */}
       <div className={styles.headerBlock}>
         <h3 className={styles.solutionTitle}>{data.title}</h3>
         <p className={styles.ideaText}>{data.idea}</p>
       </div>
 
-      {/* 2. Малюнак */}
       <div className={styles.imageBlock}>
         <img src={data.image} alt={data.title} loading="lazy" />
       </div>
 
-      {/* 3. Метад TRIZ пад малюнкам */}
       <div className={styles.trizBox}>
-        <strong>TRIZ:</strong> {data.triz}
+        <strong>{t("labels.triz") || "TRIZ"}:</strong> {data.triz}
       </div>
 
-      {/* 4. Дзве калонкі */}
       <div className={styles.detailsGrid}>
-        {/* Левая: Эфект */}
+        {/* Левая калонка: Эфект */}
         <div className={styles.column}>
           <h4>{t("labels.economy")}</h4>
           {data.effect.map((eff, idx) => (
             <div key={idx} className={styles.effectItem}>
-              <div>
-                <strong>{eff.metrics}</strong>
-              </div>
-              <div className={styles.financial}>{eff.financial}</div>
+              {Array.isArray(eff.metrics) ? (
+                eff.metrics.map((text, i) => (
+                  <div key={i} className={styles.metricRow}>
+                    {text}
+                  </div>
+                ))
+              ) : (
+                <div className={styles.metricRow}>{eff.metrics}</div>
+              )}
+
+              {eff.financial && (
+                <div className={styles.financial}>{eff.financial}</div>
+              )}
             </div>
           ))}
         </div>
 
-        {/* Правая: Рызыкі і спосабы пераадолення */}
+        {/* Правая калонка: Аналіз і Рызыкі (выпраўлена тут) */}
         <div className={styles.column}>
           <h4>{t("labels.analysis")}</h4>
           <p className={styles.conclusionText}>{data.conclusion}</p>
 
-          {data.conclusionSolutions.length > 0 && (
+          {data.conclusionSolutions && data.conclusionSolutions.length > 0 && (
             <>
               <div className={styles.subSolutionsTitle}>
-                {t("labels.riskMitigation")}{" "}
-                {/* Трэба дадаць у JSON: "Спосабы пераадолення:" */}
+                {t("labels.riskMitigation")}
               </div>
               <ul className={styles.subSolutions}>
                 {data.conclusionSolutions.map((item, idx) => (

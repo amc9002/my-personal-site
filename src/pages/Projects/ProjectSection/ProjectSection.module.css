@@ -5,6 +5,7 @@
 
 .problemBlock {
   margin-bottom: 3rem;
+  display: block; /* Прыбіраем любыя grid/flex, каб працаваў float */
 }
 
 .problemHeader {
@@ -20,11 +21,18 @@
   margin-bottom: 0.5rem;
 }
 
-.problemGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Дзве калонкі: малюнак і тэкст */
-  gap: 2rem;
-  align-items: start;
+/* Кантэйнер для тэксту і малюнка */
+.descriptionWrapper {
+  display: block;
+  position: relative;
+}
+
+/* Малюнак будзе справа, тэкст пойдзе злева і пад яго */
+.problemImage {
+  float: right;
+  width: 45%;            /* Займае крыху менш за палову шырыні */
+  margin-left: 2rem;     /* Водступ тэксту ад краю малюнка */
+  margin-bottom: 1.5rem; /* Водступ тэксту, які будзе ісці пад малюнкам */
 }
 
 .problemImage img {
@@ -37,16 +45,34 @@
 .problemText p {
   line-height: 1.6;
   font-size: 1.1rem;
+  margin: 0;
+  text-align: justify;   /* Для роўнага абцякання */
+}
+
+/* Абавязковая ачыстка патоку пасля float */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .solutionsList {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
+/* Для мабільных вяртаем вертыкальны спіс */
 @media (max-width: 768px) {
-  .problemGrid {
-    grid-template-columns: 1fr;
+  .problemImage {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .problemText p {
+    text-align: left;
   }
 }

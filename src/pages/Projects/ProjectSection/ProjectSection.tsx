@@ -34,13 +34,16 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project }) => {
           <h2>{project.title}</h2>
         </div>
 
-        <div className={styles.problemGrid}>
+        <div className={styles.descriptionWrapper}>
+          {/* Малюнак павінен ісці ПЕРАД тэкстам для float */}
           <div className={styles.problemImage}>
             <img src={project.problem.image} alt="Problem view" />
           </div>
           <div className={styles.problemText}>
             <p>{project.problem.description}</p>
           </div>
+          {/* Ачыстка флоата, каб спіс рашэнняў не палез наверх */}
+          <div className={styles.clearfix}></div>
         </div>
       </section>
 

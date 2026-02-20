@@ -16,10 +16,10 @@
 }
 
 .ideaText {
-    margin-top: 1rem;
   font-style: italic;
   color: #4a5568;
-  margin: 0;
+  line-height: 1.5; /* Дадаем паветра */
+  margin-top: 0.5rem;
 }
 
 .imageBlock {
@@ -50,6 +50,12 @@
   padding-top: 1rem;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+  align-self: start; /* Каб кароткая калонка не расцягвалася */
+}
+
 .column h4 {
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -59,15 +65,25 @@
   letter-spacing: 0.05em;
 }
 
+.metricRow {
+  line-height: 1.5;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+/* Дадаем водступ паміж блокамі тэксту, але не пасля апошняга */
+.metricRow:not(:last-of-type) {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.5); /* Лёгкая рыса-раздзяляльнік */
+}
+
 .effectItem {
-  display: flex;         /* Дадаем, каб gap запрацаваў */
-  flex-direction: column; /* Элементы адзін пад адным */
-  align-items: center;    /* Цэнтраванне кантэнту ўнутры плашкі */
+  display: flex;
+  flex-direction: column;
   background: #f7fafc;
   padding: 1rem;
-  border-radius: 4px;
-  margin-bottom: 0.5rem;
-  gap: 1.2rem;            /* Твой водступ паміж тэкстам і лічбай */
+  border-radius: 8px;
 }
 
 .financial {
@@ -80,11 +96,6 @@
   padding-top: 0.8rem;    /* Водступ ад пункцірнай лініі */
 }
 
-.metricText {
-  font-weight: 600;
-  line-height: 1.4;
-}
-
 .subSolutionsTitle {
   font-size: 0.9rem;
   font-weight: 600;
@@ -93,20 +104,31 @@
   text-decoration: underline; /* Як на малюнку */
 }
 
-.conclusionText {
+.metricText {
+  font-weight: 500; /* Робім крыху танчэйшым, бо тэкст доўгі */
+  line-height: 1.4;
   font-size: 0.95rem;
-  margin-bottom: 0.75rem;
+  text-align: left; /* Для доўгага тэксту левы край лепш */
+}
+
+.conclusionText { /* Было conclusionText без кропкі */
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #2d3748;
 }
 
 .subSolutions {
   margin: 0;
   padding-left: 1.2rem;
-  font-size: 0.9rem;
-  color: #4a5568;
-}
+  list-style-type: disc;
+} 
 
 .subSolutions li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  color: #4a5568;
 }
 
 @media (max-width: 768px) {
