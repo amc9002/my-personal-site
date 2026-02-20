@@ -1,0 +1,114 @@
+{
+  "labels": {
+    "problem": "Problemstellung",
+    "idea": "Lösungskonzept",
+    "analysis": "Mögliche Herausforderungen",
+    "riskMitigation": "Maßnahmen zur Risikominderung:",
+    "techResource": "Technische Ressource:",
+    "economy": "Mögliche Auswirkungen:"
+  },
+  "cases": [
+    {
+      "id": 1,
+      "title": "Optimierung des Fördersystems",
+      "problem": {
+        "image": "/images/projects/project001/problem.png",
+        "description": "In Fördersystemen zum Transport von abrasiven Schüttgütern (z. B. Sand, Kies, Erz oder Zement) kommt es zu intensivem Verschleiß der Tragrollen (Idler) durch das Eindringen von Partikeln zwischen Gurt und Rolle. Dies verursacht eine Drei-Körper-Abrasion, die zu einem ständigen Oberflächenabtrag führt. Das Problem wird durch Materialrücktrag (Carryback), Rollenschräglauf oder hohe Bandgeschwindigkeiten verschärft. Die Folgen: Verkürzung der Rollenlebensdauer um 30–50 %, Erhöhung des Energieverbrauchs um 10–20 % durch Reibung, Havarierisiken (Blockaden, Gurtrisse) und teure Instandhaltung (bis zu 2–5 Tsd. EUR pro Sektion). In der Industrie macht der Rollenverschleiß bis zu 40 % der gesamten Wartungskosten von Förderanlagen aus."
+      },
+      "solutions": [
+        {
+          "id": 101,
+          "title": "Lösung 1: Mechanische Vibration",
+          "image": "/images/projects/project001/solution_01.png",
+          "idea": "Einführung einer gezielten Vibration der Rollen oder des Gurtes, um abrasive Partikel aus der Kontaktzone zu entfernen und deren Festsetzung zu verhindern, was den direkten Verschleiß minimiert.",
+          "triz": "Prinzip 18 — Mechanische Vibration (Nutzung von Schwingungen zur Zustandsänderung des Systems und Entfernung unerwünschter Elemente).",
+          "conclusion": "Zunahme von Lärm und Vibration (bis zu 5–10 dB), Investitionskosten für Vibratoren (500–2000 EUR pro Sektion), zusätzlicher Energiebedarf (bis zu 10 % der Förderleistung), Resonanzrisiko.",
+          "conclusionSolutions": [
+            "Einsatz elastischer oder federnder Aufhängungen für die Rollenstationen.",
+            "Verwendung von Piezoelementen für geräuscharme Frequenzregelung (10–50 Hz, Antiphase zur Resonanzunterdrückung).",
+            "Integration von Sensoren zur bedarfsgesteuerten Aktivierung; ROI ca. 6–12 Monate durch reduzierte Instandhaltungsintervalle."
+          ],
+          "effect": [
+            {
+              "metrics": [
+                "Reduzierung des Rollenverschleißes um 20–50 % durch Partikeleliminierung.",
+                "Verlängerung der Lebensdauer um das 1,5- bis 2-fache; Senkung des Energieverbrauchs um 10–15 %.",
+                "In Versuchen reduzierte die Antiphase-Vibration die Systemvibration um 20–40 %; Lärmminderung durch Piezotechnik um 5–10 dB."
+              ],
+              "financial": ""
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "title": "Lösung 2: Luftlagerung (Aerostatische Schmierung)",
+          "image": "/images/projects/project001/solution_02.png",
+          "idea": "Erzeugung eines Luftpolsters zwischen Gurt und Rolle mittels Kompressoren. Die Luft wird durch Bohrungen in den Rollen oder unter dem Gurt zugeführt, wodurch der direkte Kontakt entfällt und Partikel weggeblasen werden.",
+          "triz": "Prinzip 29 — Pneumatik und Hydraulik (Gas als Arbeitsmedium für Schmierung und Stützung); Prinzip 2 — Abtrennung (Vermeidung des direkten Kontakts).",
+          "conclusion": "Hohe Systemkosten (bis zu 2 Mio. EUR für Großanlagen, ca. 25 Tsd. EUR Wartungskosten p.a.), Energiebedarf der Kompressoren (5–10 % der Gesamtleistung), Risiko der Filterverschmutzung.",
+          "conclusionSolutions": [
+            "Nutzung bereits vorhandener Druckluftnetze im Betrieb zur Kostensenkung.",
+            "Modulare Bauweise für eine schrittweise Nachrüstung kritischer Sektionen."
+          ],
+          "effect": [
+            {
+              "metrics": [
+                "Reduzierung von Reibung und Verschleiß um bis zu 90 % (kontaktloser Betrieb).",
+                "Energieeinsparung von 4–5 % der Gesamtförderleistung.",
+                "Verdreifachung der Rollenlebensdauer; ROI < 1,5 Jahre durch Minimierung von Stillstandszeiten."
+              ],
+              "financial": ""
+            }
+          ]
+        },
+        {
+          "id": 103,
+          "title": "Lösung 3: Hydrodynamisches System",
+          "image": "/images/projects/project001/solution_03.png",
+          "idea": "Einsatz eines Wasserstroms als Schmiermittel. Wasser wird unter Druck zugeführt, um ein hydrodynamisches Polster zu bilden, das Partikel auswäscht und die Reibung senkt.",
+          "triz": "Prinzip 29 — Hydraulik (Flüssigkeit als Arbeitsmedium); Prinzip 35 — Veränderung der physikalischen Parameter (Zustandsänderung zur Schmierung und Reinigung).",
+          "conclusion": "Erhöhter Widerstand bei niedrigen Geschwindigkeiten, Korrosionsgefahr, hohe Feuchtigkeit, Kosten für Pumpen und Filtersysteme.",
+          "conclusionSolutions": [
+            "Optimierung der Strömungsgeschwindigkeit zur Minimierung des hydrodynamischen Widerstands.",
+            "Verwendung korrosionsbeständiger Polymermaterialien für Tröge und Führungen.",
+            "Eignung vor allem für Güter, die unempfindlich gegenüber Feuchtigkeit sind (z. B. im Bergbau)."
+          ],
+          "effect": [
+            {
+              "metrics": [
+                "Verschleißreduzierung um 36–60 % durch Abtransport von Abrasivstoffen.",
+                "Standzeitverlängerung um 200–300 %.",
+                "Energieeinsparung von 10–20 % unter optimalen Bedingungen."
+              ],
+              "financial": ""
+            }
+          ]
+        },
+        {
+          "id": 104,
+          "title": "Lösung 4: Magnetlagerung (Maglev-Prinzip)",
+          "image": "/images/projects/project001/solution_04.png",
+          "idea": "Installation von Elektromagneten unterhalb der metallischen Trogketten, um eine abstoßende Kraft zu erzeugen und den Gurt schweben zu lassen.",
+          "triz": "Prinzip 28 — Ersetzen eines mechanischen Systems (Ersatz des mechanischen Kontakts durch elektromagnetische Felder).",
+          "conclusion": "Sehr hohe Initialkosten (1–2 Mio. EUR), Energieverbrauch der Magnete (5–15 % der Gesamtleistung), Notwendigkeit von Notstromsystemen.",
+          "conclusionSolutions": [
+            "Einsatz von Hybridmagneten (Permanentmagnete + Elektromagnete) zur Senkung des Stromverbrauchs um 40–50 %.",
+            "Installation redundanter Stromversorgungen."
+          ],
+          "effect": [
+            {
+              "metrics": [
+                "Null-Kontakt-Betrieb — Verschleißreduzierung um 80–100 %.",
+                "Energieeinsparung durch Wegfall der Rollreibung (10–20 %).",
+                "Verlängerung der Lebensdauer auf das 3- bis 5-fache.",
+                "Senkung der Wartungskosten um 30–50 %.",
+                "ROI ca. 2–3 Jahre durch minimalen Instandhaltungsaufwand."
+              ],
+              "financial": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -9,13 +9,13 @@
       "id": "logic",
       "period": "1980er — 1993",
       "title": "Logik und Wurzeln: Von MK-52 bis ImLab",
-      "content": "Meine Einführung in die Technik begann in einem Club für technisches Schaffen, wo ich lernte, unkonventionell, breit gefächert und systematisch zu denken. Schon damals war ich Teil eines Teams, das an erfolgreichen Innovationsprojekten arbeitete. Dort liegen auch die Wurzeln meines Weges in die IT-Branche. Das Programmieren auf dem 16-Bit-Computer BK-0010 und dem Taschenrechner MK-52 lehrte mich innovatives Denken unter extremen Ressourcenbeschränkungen. Diese Erfahrung wurde zum Fundament für mein Studium an der BNTU im Bereich 'Hydropneumoautomatik' und meine Arbeit bei ImLab, wo ich mich intensiv mit wissenschaftlichen Innovationen und Patentwesen beschäftigte."
+      "content": "Meine Einführung in die Technik begann in einem Club für technisches Schaffen, wo ich lernte, unkonventionell, breit gefächert und systematisch zu denken. Schon damals gehörte ich einem Team an, das erfolgreiche Innovationsprojekte umsetzte. Dort liegen die eigentlichen Wurzeln meines Weges in die IT-Branche. Das Programmieren auf dem 16-Bit-Computer BK-0010 und dem Taschenrechner MK-52 lehrte mich innovatives Denken unter extremen Ressourcenbeschränkungen. Diese Erfahrung wurde zum Fundament für mein Studium an der BNTU im Bereich 'Hydropneumoautomatik' und meine Arbeit bei ImLab, wo ich mich intensiv mit wissenschaftlichen Innovationen und Patentwesen beschäftigte."
     },
     {
       "id": "mechanics",
       "period": "1993 — 2005",
       "title": "Hard Engineering: Hydraulik und IVECO",
-      "content": "Als Maschineningenieur betreute ich komplexe Spezialmaschinen und IVECO-Lastzüge. An jedem Arbeitsplatz war ich ein Impulsgeber für Veränderungen: Ich modernisierte Feuerwehrautos und führte eines der ersten selbstgeschriebenen automatisierten Abrechnungssysteme in einer Werkstatt ein. Selbst meine Erfahrung als Ökonom in einer Bank war für mich eine weitere Praxis in der systematischen Analyse von Geschäftsprozessen und innerer Disziplin."
+      "content": "Als Maschineningenieur betreute ich komplexe Spezialmaschinen und IVECO-Lastzüge. An jedem Arbeitsplatz war ich ein Impulsgeber für Veränderungen: Ich modernisierte Feuerwehrautos und führte eines der ersten selbstgeschriebenen automatisierten Abrechnungssysteme in einer Werkstatt ein. Sogar meine Zeit als Ökonom in einer Bank war für mich eine weitere Schule systematischer Geschäftsprozess-Analyse und innerer Disziplin."
     },
     {
       "id": "security",
@@ -27,7 +27,7 @@
       "id": "it_dev",
       "period": "2015 — Heute",
       "title": "IT-Renaissance: .NET, React und Lehre",
-      "content": "Die Rückkehr in die professionelle IT durch den Bachelor-Abschluss in Informatik (MEGU, 2019) ermöglichte es mir, ingenieurtechnische Strenge in den Code zu übertragen. Heute spezialisiere ich mich auf .NET (C#) und moderne Frontend-Technologien (diese Website ist mein Proof of Concept in React). Ich arbeite an Legacy-Systemen wie ein Konstrukteur: durch tiefgreifendes Refactoring zu höchster Zuverlässigkeit."
+      "content": "Die Rückkehr in die professionelle IT durch den Bachelor-Abschluss in Informatik (MEGU, 2019) ermöglichte es mir, ingenieurtechnische Strenge in den Code zu übertragen. Heute liegt mein Schwerpunkt auf .NET (C#) und modernen Frontend-Technologien – diese Website selbst ist mein React-Proof-of-Concept. Ich arbeite an Legacy-Systemen wie ein Konstrukteur: durch tiefgreifendes Refactoring zu höchster Zuverlässigkeit."
     },
     {
       "id": "social",
@@ -39,7 +39,7 @@
       "id": "family",
       "period": "Familie",
       "title": "Was wirklich zählt",
-      "content": "Meine Frau ist Ärztin, Chirurgin. Wir haben vier Kinder. Unser ältester Sohn arbeitet bereits als Ingenieur, unsere Tochter studiert an der Universität, der mittlere Sohn besucht das Lyzeum und der jüngste das Gymnasium. \n\nWir lieben Musik: Alle Kinder haben eine musikalische Ausbildung. Der älteste Sohn und die Tochter waren im Segelsport erfolgreich und halten sportliche Auszeichnungen. Das ist unsere Welt jenseits von professionellen Zeitplänen und Projekten."
+      "content": "Meine Frau ist Ärztin, Chirurgin. Wir haben vier Kinder. Unser ältester Sohn ist bereits selbst Ingenieur geworden, unsere Tochter studiert an der Universität, der mittlere Sohn besucht das Lyzeum und der jüngste das Gymnasium. \n\nWir lieben Musik: Alle Kinder haben eine musikalische Ausbildung. Der älteste Sohn und die Tochter waren im Segelsport erfolgreich und halten sportliche Auszeichnungen. Das ist unsere Welt jenseits von professionellen Zeitplänen und Projekten."
     }
   ]
 }

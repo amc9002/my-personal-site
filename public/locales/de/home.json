@@ -1,17 +1,17 @@
 {
   "whenIAmNeeded": {
-    "title": "Sie brauchen mich, wenn:",
-    "items": [
-      "- <b>Reparatur teurer als Stillstand:</b> Das Budget für Standardlösungen übersteigt den gesunden Menschenverstand.",
-      "- <b>Bumerang-Problem:</b> Sie reparieren dieselbe Baugruppe zum dritten Mal in einem Jahr.",
-      "- <b>Sackgassen-Kompromiss:</b> Sie müssen zwischen 'schnell', 'qualitativ' und 'günstig' wählen.",
-      "- <b>Tote Zone:</b> Experten sagen 'alles im Normbereich', aber es gibt kein Ergebnis.",
-      "- <b>Weg ins Unbekannte:</b> Sie müssen etwas erschaffen, für das es noch keine Anleitung gibt.",
-      "- <b>Modernisierung ohne Neuanschaffung:</b> Erweiterung der Kapazitäten vorhandener Anlagen und Hinzufügen neuer Funktionen.",
-      "- <b>Adaptivität:</b> Anpassung von Systemen an neue, ungeplante Betriebsbedingungen."
-    ],
-    "footer": "Meine Methode: Aufhören, fester zu drücken – anfangen, anders zu denken.",
-    "linktext": "Philosophie des TRIZ-Ingenieurs"
+  "title": "Sie brauchen mich, wenn:",
+  "items": [
+    "- <b>Reparatur teurer als Stillstand:</b> Das Budget für Standardlösungen sprengt jeden vernünftigen Rahmen.",
+    "- <b>Bumerang-Problem:</b> Sie reparieren denselben Knoten zum dritten Mal in diesem Jahr.",
+    "- <b>Sackgassen-Kompromiss:</b> Sie müssen sich entscheiden zwischen schnell, qualitativ und günstig.",
+    "- <b>Tote Zone:</b> Die Experten sagen 'alles im grünen Bereich', aber es passiert nichts.",
+    "- <b>Weg ins Unbekannte:</b> Sie müssen etwas schaffen, wofür es noch keine Anleitung gibt.",
+    "- <b>Modernisierung ohne Neuanschaffung:</b> Mehr Leistung aus bestehender Anlage herausholen und neue Funktionen hinzufügen.",
+    "- <b>Adaptivität:</b> Anpassung der Systeme an neue, ungeplante Betriebsbedingungen."
+  ],
+  "footer": "Meine Methode: Aufhören, stärker zu drücken – anfangen, anders zu denken.",
+  "linktext": "Philosophie des TRIZ-Ingenieurs"
   },
   "whatIDo": {
     "title": "Was ich tue",

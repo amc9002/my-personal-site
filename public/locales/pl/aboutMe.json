@@ -9,13 +9,13 @@
       "id": "logic",
       "period": "Lata 80. — 1993",
       "title": "Logika i korzenie: od MK-52 do ImLab",
-      "content": "Moja przygoda z techniką zaczęła się w klubie twórczości technicznej, gdzie uczono mnie myśleć nieszablonowo, szeroko i systemowo. Już wtedy uczestniczyłem w pracach zespołu nad udanymi projektami innowacyjnymi. Tam również zaczęła się moja droga do branży IT. Programowanie na 16-bitowym komputerze BK-0010 i kalkulatorze MK-52 nauczyło mnie innowacyjnego myślenia w warunkach surowych ograniczeń zasobów. Doświadczenie to stało się fundamentem podczas studiów na BNTU w zakresie 'Hydropneumoautomatyki' oraz pracy w ImLab, gdzie zetknąłem się z innowacjami naukowymi i rzecznictwem patentowym."
+      "content": "Moja przygoda z techniką zaczęła się w klubie twórczości technicznej, gdzie uczono mnie myśleć nieszablonowo, szeroko i systemowo. Już wtedy brałem udział w zespole, który realizował udane projekty innowacyjne. Tam właśnie zaczęła się moja droga do świata IT. Programowanie na 16-bitowym komputerze BK-0010 i kalkulatorze MK-52 nauczyło mnie innowacyjnego myślenia w warunkach surowych ograniczeń zasobów. Doświadczenie to stało się fundamentem podczas studiów na BNTU w zakresie 'Hydropneumoautomatyki' oraz pracy w ImLab, gdzie zetknąłem się z innowacjami naukowymi i rzecznictwem patentowym."
     },
     {
       "id": "mechanics",
       "period": "1993 — 2005",
       "title": "Hard Engineering: Hydraulika i IVECO",
-      "content": "Jako inżynier mechanik serwisowałem złożone maszyny specjalistyczne i zestawy drogowe IVECO. W każdym miejscu pracy byłem agentem zmian: modernizowałem wozy strażackie i wdrożyłem jeden z pierwszych autorskich systemów automatycznej ewidencji w serwisie. Nawet doświadczenie ekonomisty w banku stało się dla mnie kolejną praktyką w systemowej analizie procesów biznesowych i wewnętrznej dyscyplinie."
+      "content": "Jako inżynier mechanik serwisowałem złożone maszyny specjalistyczne i zestawy drogowe IVECO. W każdym miejscu pracy byłem agentem zmian: modernizowałem wozy strażackie i wdrożyłem jeden z pierwszych autorskich systemów automatycznej ewidencji w serwisie. Nawet czas jako ekonomista w banku był dla mnie kolejną szkołą systemowej analizy procesów biznesowych i wewnętrznej dyscypliny."
     },
     {
       "id": "security",
@@ -27,7 +27,7 @@
       "id": "it_dev",
       "period": "2015 — Obecnie",
       "title": "Renesans IT: .NET, React i nauczanie",
-      "content": "Powrót do profesjonalnego IT poprzez uzyskanie tytułu licencjata informatyki (MEGU, 2019) pozwolił mi przenieść inżynierską rygorystyczność do kodu. Dziś specjalizuję się w .NET (C#) i nowoczesnych technologiach frontendowych (ta strona to mój Proof of Concept w React). Pracuję z systemami legacy jak inżynier konstruktor: poprzez głęboki refaktoryzację ku wysokiej niezawodności."
+      "content": "Powrót do profesjonalnego IT poprzez uzyskanie tytułu licencjata informatyki (MEGU, 2019) pozwolił mi przenieść inżynierską rygorystyczność do kodu. Dziś specjalizuję się w .NET (C#) i nowoczesnym frontendzie – ta strona jest moim osobistym Proof of Concept w React. Pracuję z systemami legacy jak inżynier konstruktor: poprzez głęboki refaktoryzację ku wysokiej niezawodności."
     },
     {
       "id": "social",
@@ -39,7 +39,7 @@
       "id": "family",
       "period": "Rodzina",
       "title": "To, co ważne",
-      "content": "Moja żona jest lekarzem, chirurgiem. Mamy czworo dzieci. Najstarszy syn pracuje już jako inżynier, córka jest studentką uniwersytetu, średni syn uczy się w liceum, a najmłodszy w gimnazjum. \n\nKochamy muzykę: wszystkie dzieci mają wykształcenie muzyczne. Starszy syn i córka trenowali żeglarstwo i posiadają nagrody sportowe. To jest nasz świat poza profesjonalnymi grafikami i projektami."
+      "content": "Moja żona jest lekarzem, chirurgiem. Mamy czworo dzieci. Najstarszy syn poszedł w moje ślady i pracuje jako inżynier, córka jest studentką uniwersytetu, średni syn uczy się w liceum, a najmłodszy w gimnazjum. \n\nKochamy muzykę: wszystkie dzieci mają wykształcenie muzyczne. Starszy syn i córka trenowali żeglarstwo i posiadają nagrody sportowe. To jest nasz świat poza profesjonalnymi grafikami i projektami."
     }
   ]
 }

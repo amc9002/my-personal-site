@@ -2,24 +2,26 @@
   "introduction": {
     "title": "Spojrzeć przez chaos",
     "text": [
-      "Systemy biznesowe i techniczne nie giną z powodu awarii. Giną z powodu iluzji, że awarię można po prostu „naprawić”. Jeśli problem powraca po naprawie — oznacza to, że leczysz symptom, podczas gdy guz tkwi w samej logice systemu.",
+      "Systemy biznesowe i techniczne nie padają od awarii. Padają od iluzji, że awarię wystarczy po prostu „naprawić”. Jeśli problem powraca po naprawie — oznacza to, że leczysz symptom, podczas gdy guz tkwi w samej logice systemu.",
       "Ta strona to nie lista usług ani życiorys. To krótkie wyjaśnienie tego, jak myślę jako inżynier i w jakich sytuacjach ten sposób myślenia przynosi rezultaty."
     ]
   },
   "detailVsSystem": {
     "title": "Detal a system",
     "text": [
-      "Wąski specjalista widzi węzeł, agregat lub linię kodu. Jest zakładnikiem własnych kompetencji. Gdy elektryk mówi „sygnały idą”, a mechanik — „żelazo jest całe”, ale maszyna stoi, problem żyje w próżni między nimi.",
+      "Wąski specjalista widzi węzeł, agregat lub linię kodu. Jest zakładnikiem własnych kompetencji. Gdy elektryk mówi „sygnały idą”, mechanik — „żelazo całe”, a maszyna stoi — problem czai się w pustce między nimi.",
       "Moim podejściem jest spojrzenie ponad barierami kompetencji. Nie szukam błędu w detalu, lecz błędnego założenia zaszytego w fundamencie całego systemu."
     ]
   },
   "TrizEngineering": {
     "title": "TRIZ — wyjście z impasu kompromisów",
-    "text": "Zazwyczaj jesteśmy przyzwyczajeni do „handlu”: chcesz, aby część była wytrzymała — staje się ciężka; chcesz, aby usługa była tania — spada jakość. To są sprzeczności. TRIZ uczy nie wybierać „średniej arytmetycznej”, lecz znaleźć sposób na uzyskanie obu rzeczy jednocześnie. Zamienia to poszukiwanie pomysłów z „oczekiwania na natchnienie” w precyzyjną pracę inżynierską:",
+    "text": "Zwykle przyzwyczajeni jesteśmy do kompromisów: chcesz wytrzymałość — płacisz wagą; chcesz tanio — tracisz jakość. To są sprzeczności. TRIZ uczy nie wybierać „średniej arytmetycznej”, lecz znaleźć sposób na uzyskanie obu rzeczy jednocześnie. Zamienia to poszukiwanie pomysłów z „oczekiwania na natchnienie” w precyzyjną pracę inżynierską:",
     "points": [
       "Zamiast prób i błędów opieramy się na obiektywnych prawach rozwoju systemów. Zamiast walki z symptomami widzimy korzeń problemu, który najczęściej tkwi w zderzeniu sprzecznych wymagań."
     ],
-    "footer": "TRIZ to nie magiczna formuła, lecz systematyczne podejście do rozwiązywania problemów. Pomaga ujawnić i rozwiązać sprzeczności, które zazwyczaj pozostają niezauważone w tradycyjnej analizie."
+    "footer": "TRIZ to nie magiczna formuła, lecz systematyczne podejście do rozwiązywania problemów. Pomaga ujawnić i rozwiązać sprzeczności, które zazwyczaj pozostają niezauważone w tradycyjnej analizie.",
+    "link": "https://pl.wikipedia.org/wiki/TRIZ",
+    "linktext": "Dowiedz się więcej o TRIZ"
   },
   "whyProblemsComeBack": {
     "title": "Dlaczego problemy powracają",
@@ -30,9 +32,7 @@
       "- konflikt między podsystemami",
       "- niezgodność koncepcji projektu z rzeczywistymi warunkami eksploatacji"
     ],
-    "footer": "TRIZ — it is not a magic formula, but a systematic approach to problem-solving. It helps identify and resolve contradictions that are usually overlooked in traditional analysis.",
-    "link": "https://pl.wikipedia.org/wiki/TRIZ",
-    "linktext": "Dowiedz się więcej o TRIZ"
+    "footer": "Wymiana części lub ostrożniejsze powtarzanie tych samych kroków może na chwilę zamaskować objaw, ale system pozostaje kruchy. Z punktu widzenia inżyniera chroniczne problemy to sygnał: model systemu jest niepełny lub błędny. Rozwiązanie wymaga kroku wstecz, a nie „większego nacisku"
   },
   "toolsAreNotThePoint": {
     "title": "Narzędzia to nie sedno",
@@ -61,6 +61,6 @@
       "Moim priorytetem jest budowanie systemów, w których logika wygrywa z przypadkowością. Podejście wynalazcze pozwala mi spojrzeć na problem poza schematami instrukcji i znaleźć eleganckie rozwiązanie tam, gdzie standardowe metody wymagają nadmiernych kosztów.",
       "Nie tylko bronię granic jednej domeny, ale dbam o spójną pracę całości, zamieniając systemowe sprzeczności w punkty innowacyjnego wzrostu."
     ],
-    "footer": "Ostatecznym rezultatem myślenia systemowego jest spokój inżyniera, przewidywalność biznesu i możliwość robienia tego, co wcześniej wydawało się niemożliwe."
+    "footer": "Ostatecznym rezultatem myślenia systemowego jest spokój inżyniera, przewidywalność biznesu i możliwość robienia rzeczy, które wcześniej wydawały się niemożliwe."
   }
 }

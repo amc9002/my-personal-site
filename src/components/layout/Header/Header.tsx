@@ -13,8 +13,8 @@ export const Header = () => {
     { path: "/", label: t("nav.home") },
     { path: "/philosophy", label: t("nav.philosophy") },
     { path: "/methodology", label: t("nav.methodology") },
-    { path: "/about", label: t("nav.about") },
     { path: "/projects", label: t("nav.projects") },
+    { path: "/about", label: t("nav.about") },
     { path: "/contact", label: t("nav.contact") },
   ];
 
@@ -50,7 +50,9 @@ export const Header = () => {
                 to={item.path}
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+                  isActive
+                    ? `${styles.navLink} ${styles.active}`
+                    : styles.navLink
                 }
               >
                 {item.label}
@@ -65,7 +67,11 @@ export const Header = () => {
         </div>
       </header>
 
-      <Hero label={t("hero.label")} title={t("hero.title")} subtitle={t("hero.subtitle")} />
+      <Hero
+        label={t("hero.label")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+      />
     </>
   );
 };

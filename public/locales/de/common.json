@@ -3,13 +3,18 @@
     "home": "Startseite",
     "philosophy": "Philosophie",
     "methodology": "Wie ich arbeite",
+    "projects": "Fallstudien",    
     "about": "Über mich",
-    "projects": "Cases",
     "contact": "Kontakt"
   },
   "hero": {
     "label": "TRIZ-INGENIEUR",
     "title": "Andrej Cieraškoŭ",
     "subtitle": "Ihr Problem ist meine Herausforderung"
+  },
+
+    "cta": {
+    "message": "Wenn Ihr Problem trotz aller Reparaturen immer wiederkehrt, ist das kein Zufall. Schreiben Sie mir — wir packen das Übel an der Wurzel, statt nur Symptome zu bekämpfen.",
+    "button": "Schreiben Sie mir"
   }
 }

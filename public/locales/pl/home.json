@@ -2,16 +2,16 @@
   "whenIAmNeeded": {
     "title": "Jestem Ci potrzebny, jeśli:",
     "items": [
-      "- <b>Naprawa jest droższa niż przestój:</b> budżet na standardowe rozwiązania przekracza zdrowy rozsądek",
-      "- <b>Problem-bumerang:</b> naprawiasz ten sam węzeł po raz trzeci w ciągu roku",
-      "- <b>Zawieszenie compromisu:</b> wymagany wybór między 'szybko', 'wysoka jakość' i 'tanie'",
-      "- <b>Strefa martwa:</b> specjaliści mówią 'wszystko jest w porządku', ale nie ma rezultatu",
-      "- <b>Ścieżka do nieznanego:</b> musisz stworzyć coś, czego jeszcze nie ma instrukcji",
-      "- <b>Modernizacja bez zakupów:</b> rozszerzanie możliwości istniejącego wyposażenia lub dodawanie nowych funkcji",
-      "- <b>Adaptacyjność:</b> dostosowywanie systemów do nowych, nieplanowanych warunków pracy"
+      "- <b>Naprawa droższa niż przestój:</b> budżet na standardowe rozwiązania przestał mieć związek z rzeczywistością",
+      "- <b>Problem-bumerang:</b> naprawiasz ten sam węzeł po raz trzeci w tym roku",
+      "- <b>Zawieszenie kompromisu:</b> musisz wybierać między szybko, solidnie i tanio",
+      "- <b>Strefa martwa:</b> specjaliści mówią 'wszystko w porządku', a nic się nie zmienia",
+      "- <b>Droga w nieznane:</b> musisz stworzyć coś, do czego nie ma jeszcze instrukcji",
+      "- <b>Modernizacja bez zakupu:</b> wyciskanie więcej z istniejącego sprzętu i dodawanie nowych funkcji",
+      "- <b>Adaptacyjność:</b> dostosowanie systemów do nowych, nieprzewidzianych warunków pracy"
     ],
-    "footer": "Mój sposób działania: zatrzymaj nacisk i myśl inaczej.",
-    "linktext": "Philosofia inżyniera TRIZ"
+    "footer": "Mój sposób: przestać cisnąć mocniej – zacząć myśleć inaczej.",
+    "linktext": "Filozofia inżyniera TRIZ"
   },
   "whatIDo": {
     "title": "Czym się zajmuję",

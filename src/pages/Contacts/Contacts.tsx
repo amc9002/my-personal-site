@@ -1,16 +1,17 @@
-import styles from "./Contacts.module.css";
+import { useTranslation } from "react-i18next";
+import { Linkedin, Github, Send, Mail, Globe, Home } from "lucide-react";
 import Section from "../../components/common/section/Section";
 import myPhoto from "../../assets/contact/my-photo.jpeg";
-import { useTranslation } from "react-i18next";
+import styles from "./Contacts.module.css";
 
 const Contacts = () => {
   const { t } = useTranslation("contacts");
 
   return (
     <Section index={0} className={styles.contactSection}>
-      {/* Кантэйнер для цэнтравання ўсёй секцыі */}
       <div className={styles.container}>
         <div className={styles.mainGrid}>
+          {/* SIDEBAR: Visual Identity */}
           <div className={styles.sidebar}>
             <h1 className={styles.title}>{t("title")}</h1>
             <div className={styles.photoContainer}>
@@ -18,65 +19,72 @@ const Contacts = () => {
             </div>
           </div>
 
+          {/* CONTENT: Information & Call to Action */}
           <div className={styles.content}>
             <p className={styles.contactLead}>{t("lead")}</p>
 
+            <div className={styles.ctaParagraph}>
+              <p>{t("discuss")}</p>
+            </div>
+
             <div className={styles.workStatus}>
-              <p style={{ whiteSpace: "pre-line", margin: 0 }}>
-                {t("work_status")}
-              </p>
+              <div className={styles.statusItem}>
+                <Globe size={18} className={styles.statusIcon} />
+                <span>{t("status_remote")}</span>
+              </div>
+              <div className={styles.statusItem}>
+                <Home size={18} className={styles.statusIcon} />
+                <span>{t("status_hybrid")}</span>
+              </div>
             </div>
 
             <ul className={styles.linkList}>
-              {/* LinkedIn */}
-              <li className={styles.linkItem}>
-                <span className={styles.linkLabel}>LinkedIn</span>
-                <div className={styles.linkWrapper}>
-                  <a
-                    href="https://www.linkedin.com/in/andrej-ciera%C5%A1ko%C5%AD-40294322/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    linkedin.com/in/andrej-cieraskou
-                  </a>
-                </div>
-              </li>
-
-              {/* GitHub */}
-              <li className={styles.linkItem}>
-                <span className={styles.linkLabel}>GitHub</span>
-                <div className={styles.linkWrapper}>
-                  <a
-                    href="https://github.com/amc9002"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    github.com/amc9002
-                  </a>
-                </div>
-              </li>
-
-              {/* Telegram — вярнулі! */}
-              <li className={styles.linkItem}>
-                <span className={styles.linkLabel}>Telegram</span>
-                <div className={styles.linkWrapper}>
-                  <a
-                    href="https://t.me/Jjjsss2024"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @andrej_c
-                  </a>
-                </div>
-              </li>
-
-              {/* Email */}
-              <li className={styles.linkItem}>
-                <span className={styles.linkLabel}>Email</span>
-                <div className={styles.linkWrapper}>
-                  <a href="mailto:9002amc@gmail.com">9002amc@gmail.com</a>
-                </div>
-              </li>
+              {[
+                {
+                  id: "linkedin",
+                  icon: Linkedin,
+                  label: "LinkedIn",
+                  href: "https://www.linkedin.com/in/andrej-ciera%C5%A1ko%C5%AD-40294322/",
+                  text: "linkedin.com/in/andrej-cieraskou",
+                },
+                {
+                  id: "github",
+                  icon: Github,
+                  label: "GitHub",
+                  href: "https://github.com/amc9002",
+                  text: "github.com/amc9002",
+                },
+                {
+                  id: "telegram",
+                  icon: Send,
+                  label: "Telegram",
+                  href: "https://t.me/Jjjsss2024",
+                  text: "@andrej_c",
+                },
+                {
+                  id: "email",
+                  icon: Mail,
+                  label: "Email",
+                  href: "mailto:9002amc@gmail.com",
+                  text: "9002amc@gmail.com",
+                },
+              ].map((link) => (
+                <li key={link.id} className={styles.linkItem}>
+                  <div className={styles.labelWithIcon}>
+                    <link.icon size={16} />
+                    <span className={styles.linkLabel}>{link.label}</span>
+                  </div>
+                  <div className={styles.linkWrapper}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.text}
+                    </a>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

@@ -3,8 +3,8 @@
     "home": "Home",
     "philosophy": "Filosofia",
     "methodology": "Moje podejście",
-    "about": "O mnie",
     "projects": "Projekty",
+    "about": "O mnie",
     "contact": "Kontakty"
   },
 
@@ -12,5 +12,10 @@
     "label": "TRIZ INŻYNIER",
     "title": "Andrej Cieraškoŭ",
     "subtitle": "Twoje wyzwanie — moje zadanie"
+  },
+
+    "cta": {
+    "message": "Jeśli Twój problem powraca mimo wszelkich napraw, to nie jest przypadek. Napisz do mnie — zajmiemy się przyczyną, а nie objawami.",
+    "button": "Napisz do mnie"
   }
 }

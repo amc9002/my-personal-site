@@ -1,16 +1,16 @@
 {
-  "whenIAmNeeded": {
-    "title": "I'm needed when:",
+    "whenIAmNeeded": {
+    "title": "You need me when:",
     "items": [
-      "- <b>Repair is more expensive than downtime:</b> budget for standard solutions exceeds common sense",
-      "- <b>Problem-bumerang:</b> You're repairing the same node for the third time in a year",
-      "- <b>Deadlock compromise:</b> A choice is required between 'fast', 'high quality', and 'cheap'",
-      "- <b>Dead zone:</b> specialists say 'everything is fine', but there's no result",
-      "- <b>Path to the unknown:</b> you need to create something that doesn't have an instruction yet",
-      "- <b>Modernization without procurement:</b> expanding the capabilities of existing equipment or adding new functions",
-      "- <b>Adaptability:</b> adapting systems to new, unplanned working conditions"
+      "- <b>Repair costs more than downtime:</b> the budget for standard fixes has lost touch with reality",
+      "- <b>Boomerang problem:</b> the same node is being repaired for the third time this year",
+      "- <b>Deadlock compromise:</b> forced to choose between fast, high-quality, and cheap",
+      "- <b>Dead zone:</b> specialists say 'everything is fine', but nothing improves",
+      "- <b>Path into the unknown:</b> you need to create something that doesn't have a manual yet",
+      "- <b>Upgrade without buying new:</b> expanding capabilities of existing equipment, adding new functions",
+      "- <b>Adaptability:</b> making systems work under new, unplanned conditions"
     ],
-    "footer": "My method: stop the pressure and think differently.",
+    "footer": "My method: stop pushing harder — start thinking differently.",
     "linktext": "TRIZ Engineer's Philosophy"
   },
   "whatIDo": {

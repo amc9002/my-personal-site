@@ -3,8 +3,8 @@
     "home": "Home",
     "philosophy": "Philosophy",
     "methodology": "How I Work",
-    "about": "About Me",
     "projects": "Case studies",
+    "about": "About Me",
     "contact": "Contact"
   },
 
@@ -12,5 +12,10 @@
     "label": "TRIZ ENGINEER",
     "title": "Andrej Cieraškoŭ",
     "subtitle": "Your problem — my challenge"
+  },
+
+    "cta": {
+    "message": "If your problem keeps returning despite all fixes, it is no coincidence. Write to me — we will deal with the root cause, not just the symptoms.",
+    "button": "Write to me"
   }
 }

@@ -1,0 +1,91 @@
+.ctaWrapper {
+  background-color: #f1f5f9; /* Крыху больш шэры, "металічны" адценне */
+  /* Дадаем лёгкую сетку на фон, як у чарцяжах */
+  background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px);
+  background-size: 20px 20px;
+  padding: 2.5rem 1rem; /* Сціснулі па вертыкалі */
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  margin-top: 0; /* Прыбралі адмоўны маржын, калі ён не крытычны */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+}
+
+.iconBox {
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  background: white;
+  border-radius: 4px; /* Квадратныя формы выглядаюць больш тэхнічна */
+}
+
+.textBox {
+  flex: 2;
+}
+
+.text {
+  font-size: 1.15rem; /* Трохі паменшылі для шчыльнасці */
+  line-height: 1.5;
+  color: #334155;
+  margin: 0;
+  font-weight: 500;
+  border-left: 3px solid #3182ce; /* Акцэнтная лінія злева */
+  padding-left: 1.5rem;
+}
+
+.buttonBox {
+  flex: 0 0 auto;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  background-color: #1e293b; /* Цёмны колер - больш сур'ёзны */
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+  border: 1px solid #1e293b;
+}
+
+.ctaButton:hover {
+  background-color: transparent;
+  color: #1e293b;
+}
+
+/* Адаптыўнасць */
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .text {
+    border-left: none;
+    border-top: 3px solid #3182ce;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+  
+  .iconBox {
+      display: none; /* Сціскаем яшчэ мацней на мабільных */
+  }
+}

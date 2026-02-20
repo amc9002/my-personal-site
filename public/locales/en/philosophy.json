@@ -2,65 +2,64 @@
   "introduction": {
     "title": "Seeing Through Chaos",
     "text": [
-      "Business and technical systems don’t fail because of isolated breakages. They fail due to the illusion that a breakage can simply be 'fixed.' If a problem returns after a repair, it means you are treating the symptom while the tumor resides within the system's logic itself.",
-      "This page is not a list of services or a resume. It is a brief explanation of how I think as an engineer and the specific situations where this way of thinking delivers results."
+      "Business and technical systems don’t die from breakdowns. They die from the illusion that a breakdown can simply be 'fixed'. When a problem returns after repair, you’re treating the symptom while the real disease lives in the system’s logic itself.",
+      "This page isn’t a service list or a resume. It’s a short explanation of how I think as an engineer — and in which situations this thinking delivers real results."
     ]
   },
   "detailVsSystem": {
-    "title": "The Component vs. The System",
+    "title": "The Part vs. The System",
     "text": [
-      "A narrow specialist sees a node, a unit, or a line of code. They are a hostage to their own competence. When the electrician says 'signals are flowing' and the mechanic says 'the hardware is intact,' yet the machine sits idle, the problem lives in the void between them.",
-      "My approach is to look above the barriers of individual competencies. I don't look for a flaw in a component, but for a flawed assumption embedded in the very foundation of the system."
+      "A narrow specialist sees only the node, the unit, or the line of code. He is captive to his own expertise. When the electrician says 'signals are fine' and the mechanic says 'hardware is intact', but the machine stands still — the problem lives in the gap between them.",
+      "My approach is to look above the fences of individual competencies. I don’t hunt for a flaw in a part — I look for the flawed assumption built into the foundation of the entire system."
     ]
   },
   "TrizEngineering": {
-    "title": "TRIZ — Escaping Dead-End Compromises",
-    "text": "We are accustomed to 'trade-offs': make a part stronger, and it becomes heavy; make a service cheap, and quality drops. These are contradictions. TRIZ teaches us not to settle for the 'arithmetic mean,' but to find a way to achieve both simultaneously. This transforms the search for ideas from 'waiting for inspiration' into precise engineering work:",
+    "title": "TRIZ — Breaking Out of Dead-End Trade-offs",
+    "text": "We are used to bargaining: make it stronger — it gets heavier; make it cheaper — quality drops. These are contradictions. TRIZ teaches us not to pick the 'least bad' option, but to find a way to get both at once. It turns idea generation from 'waiting for inspiration' into precise engineering work:",
     "points": [
-      "Instead of trial and error, we rely on objective laws governing the evolution of successful systems. Instead of fighting symptoms, we identify the root cause, which is usually hidden in the clash of conflicting requirements."
+      "Instead of trial-and-error, we rely on the objective laws of successful system evolution. Instead of fighting symptoms, we expose the root contradiction — usually hidden in the clash of conflicting requirements."
     ],
-    "footer": "TRIZ — it is not a magic formula, but a systematic approach to problem-solving. It helps identify and resolve contradictions that are usually overlooked in traditional analysis.",
-    "link": "https://en.wikipedia.org/wiki/TRIZ",
-    "linktext": "Learn more about TRIZ"
+    "footer": "TRIZ is not magic — it’s a systematic way to resolve contradictions that conventional analysis almost always misses.",
+    "linktext": "More about TRIZ"
   },
   "whyProblemsComeBack": {
-    "title": "Why Problems Return",
-    "text": "When a problem recurs repeatedly, it is rarely a matter of poor execution. Recurring failures usually signal:",
+    "title": "Why Problems Keep Coming Back",
+    "text": "When a problem returns again and again, it’s rarely poor execution. Recurring failures almost always signal:",
     "points": [
-      "- a flawed initial assumption",
-      "- ignoring a specific operating mode",
-      "- conflict between subsystems",
-      "- discrepancy between the design intent and real-world operating conditions"
+      "a flawed initial assumption",
+      "ignoring a specific operating mode",
+      "conflict between subsystems",
+      "mismatch between design intent and real operating conditions"
     ],
-    "summary": "Replacing parts or more diligently repeating past steps may temporarily mask the symptom, but the system will remain unstable. From an engineering perspective, chronic problems are a signal: the system model is incomplete or incorrect. Resolving such issues requires stepping back, not 'pushing harder.'"
+    "summary": "Replacing parts or repeating the same steps more carefully may mask the symptom for a while, but the system stays fragile. From an engineering viewpoint, chronic problems are a clear message: your system model is incomplete or wrong. Solving them requires stepping back — not pushing harder."
   },
   "toolsAreNotThePoint": {
-    "title": "Tools Are Not the Essence",
-    "text": "Code, mechanics, automation, AI — these are merely means. Engineering expertise lies not in knowing every syntax command, but in the ability to:",
+    "title": "Tools Are Not the Core",
+    "text": "Code, mechanics, automation, AI — these are just instruments. Engineering mastery isn’t knowing every syntax rule, but the ability to:",
     "responsibilities": [
-      "- separate signal from informational noise",
-      "- isolate the essential and validate the solution within the context of the entire system",
-      "- use tools to amplify logic, not to mask its absence"
+      "separate signal from noise",
+      "identify what really matters and test the solution against the whole system",
+      "use tools to amplify clear thinking — not to hide its absence"
     ],
-    "footer": "Modern tools do not replace the engineer — they only scale the quality of their decisions, whether good or bad."
+    "footer": "Modern tools don’t replace the engineer — they only scale the quality of his decisions, good or bad."
   },
   "whenThisWayOfThinkingHelps": {
-    "title": "Diagnostics: When a Systemic Approach is Needed",
+    "title": "Diagnostics: When You Need a Systems Approach",
     "cases": [
-      "The problem returns despite multiple fixes",
-      "Specialists from different fields point fingers at each other",
-      "Everything is correct on paper, but the system fails in practice",
-      "Building a complex system under conditions of incomplete data",
-      "Improving performance without a disproportionate increase in costs"
+      "The problem keeps coming back despite repeated fixes",
+      "Different specialists point fingers at each other",
+      "On paper everything is correct, but in reality the system fails",
+      "You need to build a complex system with incomplete data",
+      "You need to improve performance without a disproportionate cost increase"
     ],
-    "footer": "If you recognize your situation here, the problem is not in the details, but in the system as a whole."
+    "footer": "If any of these feel familiar — the issue isn’t in the details. It’s in the system as a whole."
   },
   "closing": {
-    "title": "Invention as Method, Reliability as Outcome",
+    "title": "Invention as Method, Reliability as Result",
     "text": [
-      "My priority is building systems where logic triumphs over randomness. An inventive approach allows me to look beyond conventional instructions and find elegant solutions where standard methods demand excessive costs.",
-      "I don't just defend the boundaries of a single domain; I ensure the cohesive operation of the whole, turning systemic contradictions into points of innovative growth."
+      "My priority is building systems where logic overcomes randomness. An inventive approach lets me look beyond standard instructions and find elegant solutions where conventional methods demand excessive cost.",
+      "I don’t just defend the borders of one domain — I ensure the whole system works in harmony, turning contradictions into points of innovative growth."
     ],
-    "footer": "The ultimate result of systemic thinking is the engineer’s peace of mind, business predictability, and the ability to achieve what previously seemed impossible."
+    "footer": "The ultimate outcome of systems thinking is the engineer’s peace of mind, business predictability, and the ability to achieve what once seemed impossible."
   }
 }
