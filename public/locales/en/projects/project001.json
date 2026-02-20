@@ -1,0 +1,102 @@
+ {
+      "id": 1,
+      "title": "Conveyor System Optimization",
+      "problem": {
+        "image": "/images/projects/project001/problem.png",
+        "description": "In conveyor systems for transporting abrasive bulk materials (e.g., sand, gravel, ore, or cement), intensive wear of the idlers occurs due to particles trapping between the belt and the roller. This causes three-body abrasion, leading to constant surface grinding. The problem is exacerbated by material carryback, roller misalignment, or high belt speeds. Consequences include: 30–50% reduction in roller lifespan, 10–20% increase in energy consumption due to friction, risks of accidents (jamming, belt tears), and expensive maintenance (up to 2–5k EUR per section). In industry, roller wear accounts for up to 40% of total conveyor maintenance costs."
+      },
+      "solutions": [
+        {
+          "id": 101,
+          "title": "Solution 1: Mechanical Vibration",
+          "image": "/images/projects/project001/solution_01.png",
+          "idea": "Introduction of targeted vibration to the rollers or the belt to remove abrasive particles from the contact zone and prevent them from settling, thereby minimizing direct wear.",
+          "triz": "Principle 18 — Mechanical Vibration (Using vibrations to change the system state and remove unwanted elements).",
+          "conclusion": "Increase in noise and vibration (up to 5–10 dB), investment costs for vibrators (500–2000 EUR per section), additional energy demand (up to 10% of conveyor power), resonance risks.",
+          "conclusionSolutions": [
+            "Use of elastic or spring mountings for roller stations.",
+            "Implementation of piezo elements for low-noise frequency control (10–50 Hz, with antiphase to suppress resonance).",
+            "Integration of sensors for demand-driven activation; ROI approx. 6–12 months due to reduced maintenance intervals."
+          ],
+          "effect": [
+            {
+              "metrics": [
+                "20–50% reduction in roller wear through particle elimination.",
+                "1.5x to 2x increase in lifespan; 10–15% reduction in energy consumption.",
+                "In tests, antiphase vibration reduced system vibration by 20–40%; noise reduction of 5–10 dB using piezo technology."
+              ],
+              "financial": ""
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "title": "Solution 2: Air Bearing (Aerostatic Lubrication)",
+          "image": "/images/projects/project001/solution_02.png",
+          "idea": "Creation of an air cushion between the belt and the roller using compressors. Air is supplied through holes in the rollers or under the belt, eliminating direct contact and blowing away particles.",
+          "triz": "Principle 29 — Pneumatics and Hydraulics (Gas as a working medium for lubrication and support); Principle 2 — Taking Out (Avoiding direct contact).",
+          "conclusion": "High system costs (up to 2 million EUR for large-scale plants, approx. 25k EUR annual maintenance), compressor energy demand (5–10% of total power), risk of filter clogging.",
+          "conclusionSolutions": [
+            "Utilization of existing compressed air networks in the plant to reduce costs.",
+            "Modular design for step-by-step retrofitting of critical sections."
+          ],
+          "effect": [
+            {
+              "metrics": [
+                "Reduction of friction and wear by up to 90% (contactless operation).",
+                "Energy savings of 4–5% of total conveyor power.",
+                "Tripling of roller lifespan; ROI < 1.5 years by minimizing downtime."
+              ],
+              "financial": ""
+            }
+          ]
+        },
+        {
+          "id": 103,
+          "title": "Solution 3: Hydrodynamic System",
+          "image": "/images/projects/project001/solution_03.png",
+          "idea": "Use of water flow as a lubricant. Water is supplied under pressure to form a hydrodynamic cushion that washes out particles and reduces friction.",
+          "triz": "Principle 29 — Hydraulics (Liquid as a working medium); Principle 35 — Parameter Change (Changing physical state for lubrication and cleaning).",
+          "conclusion": "Increased resistance at low speeds, corrosion risk, high humidity, costs for pumps and filtration systems.",
+          "conclusionSolutions": [
+            "Optimization of flow velocity to minimize hydrodynamic resistance.",
+            "Use of corrosion-resistant polymer materials for troughs and guides.",
+            "Suitability primarily for materials insensitive to moisture (e.g., in mining)."
+          ],
+          "effect": [
+            {
+              "metrics": [
+                "Wear reduction by 36–60% due to removal of abrasive materials.",
+                "Lifespan extension by 200–300%.",
+                "Energy savings of 10–20% under optimal conditions."
+              ],
+              "financial": ""
+            }
+          ]
+        },
+        {
+          "id": 104,
+          "title": "Solution 4: Magnetic Levitation (Maglev Principle)",
+          "image": "/images/projects/project001/solution_04.png",
+          "idea": "Installation of electromagnets beneath metallic trough chains to create a repulsive force and allow the belt to levitate.",
+          "triz": "Principle 28 — Replacement of Mechanical System (Replacing mechanical contact with electromagnetic fields).",
+          "conclusion": "Very high initial costs (1–2 million EUR), energy consumption of magnets (5–15% of total power), requirement for emergency power systems.",
+          "conclusionSolutions": [
+            "Use of hybrid magnets (permanent magnets + electromagnets) to reduce power consumption by 40–50%.",
+            "Installation of redundant power supplies."
+          ],
+          "effect": [
+            {
+              "metrics": [
+                "Zero-contact operation — wear reduction by 80–100%.",
+                "Energy savings by eliminating rolling friction (10–20%).",
+                "Lifespan extension by 3 to 5 times.",
+                "Reduction of maintenance costs by 30–50%.",
+                "ROI approx. 2–3 years through minimal maintenance effort."
+              ],
+              "financial": ""
+            }
+          ]
+        }
+      ]
+    }

@@ -1,0 +1,10 @@
+{
+    "labels": {
+    "problem": "Opis problemu",
+    "idea": "Koncepcja rozwiązania",
+    "analysis": "Możliwe wyzwania",
+    "riskMitigation": "Środki łagodzenia ryzyka:",
+    "techResource": "Zasoby techniczne:",
+    "economy": "Możliwe efekty:"
+  }
+}

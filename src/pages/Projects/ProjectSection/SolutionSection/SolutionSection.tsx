@@ -1,25 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./SolutionSection.module.css";
-
-export interface Effect {
-  metrics: string | string[];
-  financial: string;
-}
-
-export interface SolutionData {
-  id: number;
-  title: string;
-  image: string;
-  idea: string;
-  triz: string;
-  conclusion: string;
-  conclusionSolutions: string[];
-  effect: Effect[];
-}
+import type { SolutionData } from "../../../../types/project";
 
 export interface SolutionProps {
   data: SolutionData;
+  labels: Record<string, string>;
 }
 
 const SolutionSection: React.FC<SolutionProps> = ({ data }) => {

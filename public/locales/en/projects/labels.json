@@ -1,0 +1,10 @@
+{
+    "labels": {
+    "problem": "Problem Statement",
+    "idea": "Solution Concept",
+    "analysis": "Potential Challenges",
+    "riskMitigation": "Risk Mitigation Measures:",
+    "techResource": "Technical Resource:",
+    "economy": "Potential Impact:"
+  }
+}
