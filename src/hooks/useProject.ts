@@ -50,6 +50,7 @@ useEffect(() => {
     fetchProjectData();
 
     // 2. Гэты магічны радок ніжэй супакойвае "палец" ESLint.
+    
     // Мы кажам яму: "Я ведаю, што я раблю, не трэба сюды дадаваць 'data'".
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [projectId, i18n.language]);
