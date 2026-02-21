@@ -2,9 +2,9 @@
     "labels": {
         "problem": "Праблема",
         "idea": "Ідэя",
-        "analysis": "Магчымыя праблемы",
+        "analysis": "Праблемы",
         "riskMitigation": "Спосабы пераадолення:",
         "techResource": "Тэхнічны рэсурс: ",
-        "economy": "Магчымы эфект: "
+        "economy": "Эфект: "
         }
 }
