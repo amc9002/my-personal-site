@@ -6,8 +6,8 @@ i18n
   .use(Backend)
   .use(initReactI18next)
   .init({
-    lng: "be", // Фіксуем мову для тэсту
-    fallbackLng: "be",
+    lng: "en", // Фіксуем мову для тэсту
+    fallbackLng: "en",
     ns: ["common", "home", "philosophy", "metodology", "projects", "aboutMe"], // Усе твае прасторы імёнаў 
     defaultNS: "common",
     backend: {

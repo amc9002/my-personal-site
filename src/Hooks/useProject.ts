@@ -10,11 +10,15 @@ export const useProject = (projectId: string) => {
 
   const { i18n } = useTranslation();
 
-  useEffect(() => {
+useEffect(() => {
     const fetchProjectData = async () => {
-      setLoading(true);
+      // 1. Уключаем лоадар ТОЛЬКІ калі ў нас яшчэ зусім няма даных.
+      // Калі мы проста мяняем мову, data ўжо ёсць, таму старонка не знікне.
+      if (!data) {
+        setLoading(true);
+      }
+
       try {
-        // Загружаем файлы паралельна для хуткасці
         const [labelsRes, projectRes] = await Promise.all([
           fetch(`/locales/${i18n.language}/projects/labels.json`),
           fetch(`/locales/${i18n.language}/projects/${projectId}.json`)
@@ -27,19 +31,15 @@ export const useProject = (projectId: string) => {
         const labelsJson: LabelsFile = await labelsRes.json();
         const projectJson = await projectRes.json();
 
-        // У labels.json мы чакаем аб'ект labels
         setLabels(labelsJson.labels || {});
         
         if (projectJson && projectJson.id) {
-          // Калі ў файле ёсць id, значыць гэта і ёсць наш праект
           setData(projectJson as ProjectCase);
         } else if (projectJson.cases && projectJson.cases.length > 0) {
-          // Запасны варыянт, калі раптам дзесьці застаўся масіў
           setData(projectJson.cases[0]);
         }
         
         setError(null);
-
       } catch (err) {
         setError(err instanceof Error ? err.message : "Error");
       } finally {
@@ -48,6 +48,10 @@ export const useProject = (projectId: string) => {
     };
 
     fetchProjectData();
+
+    // 2. Гэты магічны радок ніжэй супакойвае "палец" ESLint.
+    // Мы кажам яму: "Я ведаю, што я раблю, не трэба сюды дадаваць 'data'".
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [projectId, i18n.language]);
 
   return { data, labels, loading, error };

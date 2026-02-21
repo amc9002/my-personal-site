@@ -14,8 +14,14 @@
     "subtitle": "Your problem — my challenge"
   },
 
-    "cta": {
+  "cta": {
     "message": "If your problem keeps returning despite all fixes, it is no coincidence. Write to me — we will deal with the root cause, not just the symptoms.",
     "button": "Write to me"
+  }, 
+  
+  "footer": {
+    "location": "Olsztyn, Poland",
+    "rights": "All rights reserved",
+    "builtWith": "Built with"
   }
 }

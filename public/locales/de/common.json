@@ -16,5 +16,11 @@
     "cta": {
     "message": "Wenn Ihr Problem trotz aller Reparaturen immer wiederkehrt, ist das kein Zufall. Schreiben Sie mir — wir packen das Übel an der Wurzel, statt nur Symptome zu bekämpfen.",
     "button": "Schreiben Sie mir"
+  },
+  
+    "footer": {
+    "location": "Olsztyn, Polen",
+    "rights": "Alle Rechte vorbehalten",
+    "builtWith": "Erstellt mit"
   }
 }

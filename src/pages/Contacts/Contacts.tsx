@@ -1,8 +1,27 @@
 import { useTranslation } from "react-i18next";
-import { Linkedin, Github, Send, Mail, Globe, Home } from "lucide-react";
+import {
+  Linkedin,
+  Github,
+  Send,
+  Mail,
+  Globe,
+  Home,
+  type LucideIcon,
+} from "lucide-react";
 import Section from "../../components/common/section/Section";
 import myPhoto from "../../assets/contact/my-photo.jpeg";
 import styles from "./Contacts.module.css";
+// Імпартуем нашы даныя
+import { CONTACT_LINKS } from "../../data/contactData";
+
+// 1. Ствараем мапу іконак, дзе ключ — гэта label з твайго CONTACT_LINKS
+// Ключ — радок, значэнне — тып LucideIcon
+const ICON_MAP: Record<string, LucideIcon> = {
+  LinkedIn: Linkedin,
+  GitHub: Github,
+  Telegram: Send,
+  Email: Mail,
+};
 
 const Contacts = () => {
   const { t } = useTranslation("contacts");
@@ -11,7 +30,7 @@ const Contacts = () => {
     <Section index={0} className={styles.contactSection}>
       <div className={styles.container}>
         <div className={styles.mainGrid}>
-          {/* SIDEBAR: Visual Identity */}
+          {/* SIDEBAR застаецца без змен */}
           <div className={styles.sidebar}>
             <h1 className={styles.title}>{t("title")}</h1>
             <div className={styles.photoContainer}>
@@ -19,10 +38,8 @@ const Contacts = () => {
             </div>
           </div>
 
-          {/* CONTENT: Information & Call to Action */}
           <div className={styles.content}>
             <p className={styles.contactLead}>{t("lead")}</p>
-
             <div className={styles.ctaParagraph}>
               <p>{t("discuss")}</p>
             </div>
@@ -38,53 +55,30 @@ const Contacts = () => {
               </div>
             </div>
 
+            {/* 2. Элегантны рэндэрынг спіса */}
             <ul className={styles.linkList}>
-              {[
-                {
-                  id: "linkedin",
-                  icon: Linkedin,
-                  label: "LinkedIn",
-                  href: "https://www.linkedin.com/in/andrej-ciera%C5%A1ko%C5%AD-40294322/",
-                  text: "linkedin.com/in/andrej-cieraskou",
-                },
-                {
-                  id: "github",
-                  icon: Github,
-                  label: "GitHub",
-                  href: "https://github.com/amc9002",
-                  text: "github.com/amc9002",
-                },
-                {
-                  id: "telegram",
-                  icon: Send,
-                  label: "Telegram",
-                  href: "https://t.me/Jjjsss2024",
-                  text: "@andrej_c",
-                },
-                {
-                  id: "email",
-                  icon: Mail,
-                  label: "Email",
-                  href: "mailto:9002amc@gmail.com",
-                  text: "9002amc@gmail.com",
-                },
-              ].map((link) => (
-                <li key={link.id} className={styles.linkItem}>
-                  <div className={styles.labelWithIcon}>
-                    <link.icon size={16} />
-                    <span className={styles.linkLabel}>{link.label}</span>
-                  </div>
-                  <div className={styles.linkWrapper}>
-                    <a
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {link.text}
-                    </a>
-                  </div>
-                </li>
-              ))}
+              {CONTACT_LINKS.map((link) => {
+                // Дастаем патрэбную іконку па назве (label)
+                const IconComponent = ICON_MAP[link.label] || Mail; // Mail па змаўчанні
+
+                return (
+                  <li key={link.label} className={styles.linkItem}>
+                    <div className={styles.labelWithIcon}>
+                      <IconComponent size={16} />
+                      <span className={styles.linkLabel}>{link.label}</span>
+                    </div>
+                    <div className={styles.linkWrapper}>
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {link.value}
+                      </a>
+                    </div>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

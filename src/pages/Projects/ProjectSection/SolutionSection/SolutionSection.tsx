@@ -1,5 +1,4 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 import styles from "./SolutionSection.module.css";
 import type { SolutionData } from "../../../../types/project";
 
@@ -8,9 +7,7 @@ export interface SolutionProps {
   labels: Record<string, string>;
 }
 
-const SolutionSection: React.FC<SolutionProps> = ({ data }) => {
-  const { t } = useTranslation("projects");
-
+const SolutionSection: React.FC<SolutionProps> = ({ data, labels }) => {
   return (
     <div className={styles.solutionWrapper}>
       <div className={styles.headerBlock}>
@@ -23,13 +20,13 @@ const SolutionSection: React.FC<SolutionProps> = ({ data }) => {
       </div>
 
       <div className={styles.trizBox}>
-        <strong>{t("labels.triz") || "TRIZ"}:</strong> {data.triz}
+        <strong>{labels?.triz || "TRIZ"}:</strong> {data.triz}
       </div>
 
       <div className={styles.detailsGrid}>
         {/* Левая калонка: Эфект */}
         <div className={styles.column}>
-          <h4>{t("labels.economy")}</h4>
+          <h4>{labels.economy}</h4> {/* Вынікі і метрыкі (выпраўлена тут) */}
           {data.effect.map((eff, idx) => (
             <div key={idx} className={styles.effectItem}>
               {Array.isArray(eff.metrics) ? (
@@ -51,13 +48,13 @@ const SolutionSection: React.FC<SolutionProps> = ({ data }) => {
 
         {/* Правая калонка: Аналіз і Рызыкі (выпраўлена тут) */}
         <div className={styles.column}>
-          <h4>{t("labels.analysis")}</h4>
+          <h4>{labels.analysis}</h4>
           <p className={styles.conclusionText}>{data.conclusion}</p>
 
           {data.conclusionSolutions && data.conclusionSolutions.length > 0 && (
             <>
               <div className={styles.subSolutionsTitle}>
-                {t("labels.riskMitigation")}
+                {labels.riskMitigation} {/* Дадаем загаловак для падрашэнняў */}
               </div>
               <ul className={styles.subSolutions}>
                 {data.conclusionSolutions.map((item, idx) => (

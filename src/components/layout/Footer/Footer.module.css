@@ -1,7 +1,7 @@
 .footerWrapper {
   width: 100%;
   background-color: #634b5c;
-  color: #888;
+  color: #cfcdcd;
   padding: 3rem 0 1.5rem; /* Больш месца зверху, менш знізу */
   margin-top: auto;
   display: grid;

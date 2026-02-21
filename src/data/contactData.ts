@@ -9,7 +9,11 @@ export const CONTACT_LINKS = [
     value: "github.com/amc9002",
     url: "https://github.com/amc9002",
   },
-  { label: "Telegram", value: "@andrej_c", url: "https://t.me/Jjjsss2024" },
+  { 
+    label: "Telegram", 
+    value: "@andrej_c", 
+    url: "https://t.me/Jjjsss2024" 
+  },
   {
     label: "Email",
     value: "9002amc@gmail.com",
