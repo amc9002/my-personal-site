@@ -1,0 +1,38 @@
+{
+  "id": 2,
+  "title": "Stabilizacja opuszczania drabiny strażackiej AL-30",
+  "category": "Hydraulic Engineering",
+  "keyFactor": "Problem w fizyce przepływów.",
+  "problem": {
+    "image": "/images/projects/project002/problem.png",
+    "description": "Podczas prób precyzyjnego pozycjonowania (powolne opuszczanie) nowa drabina zaczynała wibrować i poruszać się skokowo. Stwarzało to zagrożenie twardego zderzenia z przeszkodą, co mogło skutkować uszkodzeniem sprzętu lub nawet grozić przewróceniem całej instalacji. Przy szybkim opuszczaniu problem nie występował, co utrudniało znalezienie przyczyny."
+  },
+  "analysis": {
+    "image": "/images/projects/project002/physics.png",
+    "deduction": "Analiza dedukcyjna: sprzęt jest fabrycznie nowy; awaria w wyniku niewłaściwej eksploatacji lub zużycia jest wykluczona. Możliwe przyczyny: błędna konstrukcja, błąd montażowy lub niewłaściwa regulacja. Obserwacja zachowania systemu oraz pomiary ciśnienia wykazały, że ciecz z dolnej komory odpływała szybciej, niż tłok zdążył przyspieszać pod ciężarem drabiny. Tworzyło to próżnię (podciśnienie), w którą tłok dosłownie „wpadał”, dopóki nie napotkał gwałtownego oporu resztkowej cieczy. Cykl ten powtarzał się, tworząc serię uderzeń hydraulicznych.",
+    "physicsChain": [
+      "Zapadnięcie grawitacyjne",
+      "Zerwanie przepływu",
+      "Zderzenie z cieczą",
+      "Uderzenie hydrauliczne"
+    ]
+  },
+  "solutions": [
+    {
+      "id": 201,
+      "title": "Rozwiązanie: Ograniczenie przepływu cieczy z dolnej komory cylindra",
+      "image": "/images/projects/project002/solution.png",
+      "idea": "Zmniejszenie przekroju kanału wylotowego cieczy z cylindra hydraulicznego. Pod króćcem zamontowano podkładkę z eksperymentalnie dobranym otworem.",
+      "triz": "Zasada 16: Działanie częściowe lub nadmiarowe. Świadomie zmniejszyliśmy prędkość maksymalną, aby uzyskać pełną kontrolę nad płynnością ruchu.",
+      "effect": [
+        {
+          "metrics": [
+            "Całkowita eliminacja wibracji i uderzeń hydraulicznych.",
+            "Możliwość precyzyjnego pozycjonowania kosza przy małych prędkościach.",
+            "Zachowanie funkcjonalności systemu bez zmian w głównym schemacie hydraulicznym."
+          ]
+        }
+      ]
+    }
+  ]
+}

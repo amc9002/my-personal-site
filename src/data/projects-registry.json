@@ -3,5 +3,10 @@
     "id": "project001",
     "category": "mechanical",
     "tags": ["TRIZ", "Optimization", "Conveyors"]
+  },
+  {
+    "id": "project002",
+    "category": "hydraulic",
+    "tags": ["TRIZ", "Hydraulic Engineering", "Vibration"]
   }
 ]

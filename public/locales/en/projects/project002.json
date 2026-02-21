@@ -1,0 +1,38 @@
+{
+  "id": 2,
+  "title": "Stabilization of the AL-30 Fire Ladder Descent",
+  "category": "Hydraulic Engineering",
+  "keyFactor": "Flow physics issue.",
+  "problem": {
+    "image": "/images/projects/project002/problem.png",
+    "description": "During attempts at precise positioning (slow descent), the new ladder began to vibrate and move in jerks. This created a risk of a hard collision with obstacles, which could result in equipment damage or even threaten to overturn the unit. During rapid descent, the problem was absent, which complicated the search for the root cause."
+  },
+  "analysis": {
+    "image": "/images/projects/project002/physics.png",
+    "deduction": "Deductive analysis: the equipment is brand new from the factory; failure due to improper operation or wear is excluded. Possible causes: incorrect design, assembly error, or improper adjustment. Observation of system behavior and pressure measurements revealed that fluid was leaving the lower cavity faster than the piston could accelerate under the ladder's weight. This created a vacuum into which the piston literally 'fell' until it met sharp resistance from the residual fluid. This cycle repeated, creating a series of hydraulic shocks.",
+    "physicsChain": [
+      "Gravitational drop",
+      "Flow separation",
+      "Fluid impact",
+      "Water hammer"
+    ]
+  },
+  "solutions": [
+    {
+      "id": 201,
+      "title": "Solution: Restricting Fluid Flow from the Lower Cylinder Cavity",
+      "image": "/images/projects/project002/solution.png",
+      "idea": "Reduce the cross-section of the fluid exit channel from the hydraulic cylinder. A washer with an experimentally selected orifice was installed under the fitting.",
+      "triz": "Principle 16: Partial or Excessive Action. We deliberately reduced the maximum speed to gain full control over the smoothness of movement.",
+      "effect": [
+        {
+          "metrics": [
+            "Complete elimination of vibration and hydraulic shocks.",
+            "Possibility of precision positioning of the bucket at low speeds.",
+            "Maintained system functionality without changes to the main hydraulic circuit."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+/*SolutionSection.module.css*/
 .solutionWrapper {
   border: 1px solid #e2e8f0;
   border-radius: 8px;
@@ -24,14 +25,21 @@
 
 .imageBlock {
   width: 100%;
-  max-width: 600px; /* Абмяжоўваем шырыню, каб не расцягваць па вертыкалі */
-  margin: 1rem 0;
+  max-width: 600px;
+  height: 350px; /* Фіксуем вышыню для рашэнняў */
+  margin: 1.5rem auto; /* Цэнтраванне */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7fafc;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .imageBlock img {
   width: 100%;
-  height: auto;
-  border-radius: 4px;
+  height: 100%;
+  object-fit: contain; /* Цяпер любы малюнак упішацца ў 600x350 без скажэнняў */
 }
 
 .trizBox {

@@ -1,0 +1,84 @@
+/*AnalysisSection.module.css*/
+.analysisWrapper {
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: #fcfcfc; /* Тонкае выдзяленне фону */
+  border-radius: 12px;
+  border: 1px solid #edf2f7;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contentWrapper {
+  display: block;
+  position: relative;
+}
+
+/* Уніфікаваны кантэйнер для малюнка */
+.imageContainer {
+  float: right;
+  width: 45%;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Кантроль памераў праз object-fit */
+.imageContainer img {
+  width: 100%;
+  max-height: 400px; /* Мяккі ліміт вышыні */
+  object-fit: contain; /* Не абразае малюнак, захоўвае прапорцыі */
+  border-radius: 8px;
+  background: #fff;
+}
+
+.deductionText {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+/* Ланцужок фізікі */
+.physicsChain {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  clear: both; /* Каб ланцужок пачынаўся пад малюнкам, калі тэксту мала */
+  padding-top: 1.5rem;
+}
+
+.chainStep {
+  background: #2d3748;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.arrow {
+  color: #a0aec0;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+}

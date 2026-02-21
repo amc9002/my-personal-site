@@ -4,6 +4,7 @@ import SolutionSection from "./SolutionSection/SolutionSection";
 // Імпартуем нашы цэнтралізаваныя тыпы
 import { type ProjectCase } from "../../../types/project";
 import styles from "./ProjectSection.module.css";
+import AnalysisSection from "./AnalysisSection/AnalysisSection";
 
 /**
  * Дадаем labels у інтэрфейс пропсаў.
@@ -40,6 +41,11 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, labels }) => {
           <div className={styles.clearfix}></div>
         </div>
       </section>
+
+      {/* Калі ў праекце ёсць аналіз — паказваем яго як асобную секцыю */}
+      {project.analysis && (
+        <AnalysisSection data={project.analysis} label={labels.analysis} />
+      )}
 
       <div className={styles.solutionsList}>
         {project.solutions.map((sol) => (
