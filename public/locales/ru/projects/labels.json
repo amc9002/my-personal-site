@@ -1,10 +1,16 @@
 {
-   "labels": {
+  "labels": {
     "problem": "Описание проблемы",
     "idea": "Концепция решения",
     "analysis": "Вызовы",
     "riskMitigation": "Меры по снижению рисков:",
     "techResource": "Технический ресурс:",
     "economy": "Эффект:"
+  },
+  "actions": {
+    "viewCase": "Смотреть кейс",
+    "showSolution": "Показать решение",
+    "nextCase": "Следующий кейс",
+    "toList": "К списку"
   }
 }

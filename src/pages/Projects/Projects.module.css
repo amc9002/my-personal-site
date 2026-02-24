@@ -1,0 +1,73 @@
+.projectsList {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Невялікая адлегласць паміж плашкамі */
+}
+
+.projectRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px; /* Унутраныя палі для эфекту плашкі */
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid transparent; /* Каб не было скачкоў пры навядзенні */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Плаўная анімацыя ўсяго */
+}
+
+/* Эфект пры навядзенні: плашка прыўздымаецца */
+.projectRow:hover {
+  background-color: #ffffff;
+  border-color: #f0f0f0;
+  transform: translateY(-4px); /* Прыўздымаем */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Мяккі ценю */
+}
+
+.projectMain {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.rowNumber {
+  /* Цяпер нумар цалкам у стылі загалоўка */
+  font-family: inherit;
+  font-size: 1rem; /* Яшчэ меншы */
+  font-weight: 500;
+  color: #adb5bd; /* Шэры */
+  min-width: 40px;
+}
+
+.rowTitle {
+  margin: 0;
+  font-size: 1.5rem; /* Паменшаны шрыфт назвы */
+  font-weight: 600;
+  color: #212529;
+  letter-spacing: -0.01em;
+}
+
+.rowAction {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #adb5bd;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0; /* Хаваем спасылку ў спакоі */
+  transition: opacity 0.3s ease;
+}
+
+/* Паказваем "VIEW CASE" толькі пры навядзенні */
+.projectRow:hover .rowAction {
+  opacity: 1;
+  color: #1a1a1a;
+}
+
+.loaderContainer {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -31,6 +31,20 @@ export interface ProjectCase {
   };
   analysis?: AnalysisData;
   solutions: SolutionData[];
+  labels: {
+    problem: string;
+    idea: string;
+    analysis: string;
+    riskMitigation: string;
+    techResource: string;
+    economy: string;
+  };
+  actions?: {
+    viewCase: string;
+    showSolution: string;
+    nextCase: string;
+    toList: string;
+  }
 }
 
 // І пакінем стары для labels

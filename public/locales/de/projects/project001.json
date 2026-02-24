@@ -1,6 +1,11 @@
 {
       "id": 1,
       "title": "Optimierung des Fördersystems",
+      "keyFactor": "Der Verschleiß von Tragrollen macht 40% der Wartungskosten aus, und Dreikörper-Abrasivverschleiß beschleunigt diesen Prozess erheblich.",
+      "analysis": {
+        "deduction": "Die Analyse ergab, dass Partikel die Rollen nicht nur abreiben; sie setzen sich zwischen Gurt und Rolle fest und erzeugen einen permanenten Schleifeffekt (Drittkörper).",
+        "physicsChain": ["Kontamination", "Partikeleinfang", "Fixierung", "Abrasives Schleifen"]
+      },
       "problem": {
         "image": "/images/projects/project001/problem.png",
         "description": "In Fördersystemen zum Transport von abrasiven Schüttgütern (z. B. Sand, Kies, Erz oder Zement) kommt es zu intensivem Verschleiß der Tragrollen (Idler) durch das Eindringen von Partikeln zwischen Gurt und Rolle. Dies verursacht eine Drei-Körper-Abrasion, die zu einem ständigen Oberflächenabtrag führt. Das Problem wird durch Materialrücktrag (Carryback), Rollenschräglauf oder hohe Bandgeschwindigkeiten verschärft. Die Folgen: Verkürzung der Rollenlebensdauer um 30–50 %, Erhöhung des Energieverbrauchs um 10–20 % durch Reibung, Havarierisiken (Blockaden, Gurtrisse) und teure Instandhaltung (bis zu 2–5 Tsd. EUR pro Sektion). In der Industrie macht der Rollenverschleiß bis zu 40 % der gesamten Wartungskosten von Förderanlagen aus."

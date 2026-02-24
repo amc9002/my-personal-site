@@ -6,5 +6,11 @@
     "riskMitigation": "Maßnahmen zur Risikominderung:",
     "techResource": "Technische Ressource:",
     "economy": "Auswirkungen:"
+  },
+    "actions": {
+      "viewCase": "Fallstudie ansehen",
+      "showSolution": "Lösung anzeigen",
+      "nextCase": "Nächster Fall",
+      "toList": "Zur Liste"
   }
 }

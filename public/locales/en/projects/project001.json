@@ -1,6 +1,12 @@
  {
       "id": 1,
       "title": "Conveyor System Optimization",
+      "category": "Industrial Engineering / TRIZ",
+      "keyFactor": "The wear of idlers accounts for 40% of maintenance costs, and three-body abrasion accelerates it.",
+      "analysis": {
+      "deduction": "Analysis showed that particles do not simply abrade the rollers; they get trapped between the belt and the roller, creating a constant grinding effect (third body).",
+      "physicsChain": ["Contamination", "Particle Capture", "Fixation", "Abrasive Grinding"]
+    },
       "problem": {
         "image": "/images/projects/project001/problem.png",
         "description": "In conveyor systems for transporting abrasive bulk materials (e.g., sand, gravel, ore, or cement), intensive wear of the idlers occurs due to particles trapping between the belt and the roller. This causes three-body abrasion, leading to constant surface grinding. The problem is exacerbated by material carryback, roller misalignment, or high belt speeds. Consequences include: 30–50% reduction in roller lifespan, 10–20% increase in energy consumption due to friction, risks of accidents (jamming, belt tears), and expensive maintenance (up to 2–5k EUR per section). In industry, roller wear accounts for up to 40% of total conveyor maintenance costs."

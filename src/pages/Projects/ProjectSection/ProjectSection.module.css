@@ -1,80 +1,107 @@
-/*ProjectSection.module.css*/
 .projectWrapper {
-  margin-bottom: 4rem;
-  padding: 2rem 0;
-  min-height: 100vh;
-}
-
-.problemBlock {
-  margin-bottom: 3rem;
-  display: block; /* Прыбіраем любыя grid/flex, каб працаваў float */
-}
-
-.problemHeader {
-  margin-bottom: 1.5rem;
-}
-
-.badge {
-  display: inline-block;
-  padding: 4px 12px;
-  background-color: #f0f0f0;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Кантэйнер для тэксту і малюнка */
-.descriptionWrapper {
-  display: block;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
   position: relative;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  animation: fadeIn 0.5s ease-out;
 }
 
-/* Малюнак будзе справа, тэкст пойдзе злева і пад яго */
-.problemImage {
-  float: right;
-  width: 45%;            /* Займае крыху менш за палову шырыні */
-  margin-left: 2rem;     /* Водступ тэксту ад краю малюнка */
-  margin-bottom: 1.5rem; /* Водступ тэксту, які будзе ісці пад малюнкам */
-}
-
-.problemImage img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-}
-
-.problemText p {
-  line-height: 1.6;
-  font-size: 1.1rem;
-  margin: 0;
-  text-align: justify;   /* Для роўнага абцякання */
-}
-
-/* Абавязковая ачыстка патоку пасля float */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.solutionsList {
+.projectsList {
+  max-width: 1000px;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 16px;
+  /* Дадаем анімацыю з'яўлення спіса */
+  animation: fadeInList 0.6s ease-out forwards;
 }
 
-/* Для мабільных вяртаем вертыкальны спіс */
-@media (max-width: 768px) {
-  .problemImage {
-    float: none;
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 1.5rem;
+@keyframes fadeInList {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  .problemText p {
-    text-align: left;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+} 
+/* Клас, які мы дадамо перад выхадам */
+.fadeOut {
+  opacity: 0;
+  transform: translateY(-20px); /* Злёгку падымаем пры знікненні */
+  pointer-events: none; /* Каб карыстальнік не націскаў кнопкі падчас анімацыі */
+}
+
+/* Прагрэс-бар */
+.progressBarContainer {
+  position: fixed; top: 0; left: 0; width: 100%; height: 4px;
+  background: rgba(0, 0, 0, 0.05); z-index: 1000;
+}
+.progressBar { height: 100%; background: #212529; transition: width 0.4s ease; }
+
+/* Блок праблемы */
+.problemBlock { margin-bottom: 2rem; }
+.badge {
+  display: inline-block; padding: 4px 12px; background: #f0f0f0;
+  border-radius: 4px; font-size: 0.85rem; margin-bottom: 1rem;
+}
+.problemImage {
+  float: right; width: 40%; margin-left: 1.5rem; margin-bottom: 1rem;
+}
+.problemImage img { width: 100%; border-radius: 6px; display: block; }
+.problemText p { line-height: 1.6; font-size: 1.1rem; text-align: justify; }
+
+.clearfix::after { content: ""; display: table; clear: both; }
+
+/* Мяккае разгортванне рашэнняў */
+.solutionItem {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.solutionItem.show {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-bottom: 2rem;
+}
+.solutionInner { min-height: 0; }
+
+/* Кнопкі */
+.controls {
+  margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #eee;
+  display: flex; justify-content: center;
+}
+.buttonGroup { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+.primaryBtn, .nextProjectBtn, .secondaryBtn {
+  padding: 0.8rem 1.8rem; font-size: 0.95rem; font-weight: 600;
+  cursor: pointer; border-radius: 4px; transition: 0.2s;
+}
+
+.primaryBtn { background: #212529; color: #fff; border: none; }
+.primaryBtn:hover { background: #000; }
+
+.nextProjectBtn, .secondaryBtn {
+  background: white; border: 1px solid #212529; color: #212529;
+}
+.nextProjectBtn:hover { background: #f8f9fa; transform: translateX(4px); }
+.secondaryBtn:hover { background: #f8f9fa; transform: translateX(-4px); }
+
+/* Кнопка "Назад" уверсе */
+.backButton {
+  background: none; border: none; color: #666; cursor: pointer;
+  display: flex; align-items: center; gap: 8px; margin-bottom: 1rem;
+  transition: 0.2s; font-weight: 500;
+}
+.backButton:hover { color: #000; }
+
+/* Пульсацыя */
+.pulse { animation: pulse-animation 2s infinite; }
+@keyframes pulse-animation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }

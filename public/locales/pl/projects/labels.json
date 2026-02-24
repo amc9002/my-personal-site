@@ -6,5 +6,11 @@
     "riskMitigation": "Środki łagodzenia ryzyka:",
     "techResource": "Zasoby techniczne:",
     "economy": "Efekty:"
+  }, 
+    "actions": {
+      "viewCase": "Zobacz studium przypadku",
+      "showSolution": "Pokaż rozwiązanie",
+      "nextCase": "Następny projekt",
+      "toList": "Do listy"
   }
 }

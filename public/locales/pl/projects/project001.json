@@ -1,6 +1,11 @@
 {
       "id": 1,
       "title": "Optymalizacja systemu przenośnikowego",
+      "keyFactor": "Zużycie krążników stanowi 40% kosztów konserwacji, a ścieranie trójciałowe (three-body abrasion) przyspiesza ten proces dwukrotnie.",
+      "analysis": {
+        "deduction": "Analiza wykazała, że cząstki nie tylko ścierają rolki; zostają one uwięzione między taśmą a krążnikiem, tworząc efekt ciągłego szlifowania (tzw. trzecie ciało).",
+        "physicsChain": ["Zanieczyszczenie", "Przechwycenie cząstki", "Unieruchomienie (Fiksacja)", "Szlifowanie ścierne"]
+      },
       "problem": {
         "image": "/images/projects/project001/problem.png",
         "description": "W systemach przenośnikowych do transportu sypkich materiałów ściernych (np. piasek, żwir, ruda lub cement) występuje intensywne zużycie krążników (rolek) z powodu przedostawania się cząstek między taśmę a rolkę. Powoduje to ścieranie trójciałowe (three-body abrasion), prowadzące do stałego szlifowania powierzchni. Problem pogłębia się przez tzw. carryback (materiał przyklejony do taśmy powrotnej), niewspółosiowość rolek lub wysoką prędkość taśmy. Rezultaty: skrócenie żywotności rolek o 30–50%, wzrost zużycia energii o 10–20% przez tarcie, ryzyko awarii (zablokowanie, rozdarcia taśmy) oraz kosztowne naprawy (do 2–5 tys. EUR na sekcję). W przemyśle zużycie rolek stanowi do 40% całkowitych kosztów konserwacji przenośników."

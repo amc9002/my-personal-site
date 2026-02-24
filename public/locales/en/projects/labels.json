@@ -1,10 +1,16 @@
 {
-    "labels": {
+  "labels": {
     "problem": "Problem Statement",
     "idea": "Solution Concept",
     "analysis": "Challenges",
     "riskMitigation": "Risk Mitigation Measures:",
     "techResource": "Technical Resource:",
     "economy": "Impact:"
+  },
+    "actions": {
+      "viewCase": "View case",
+      "showSolution": "Show solution",
+      "nextCase": "Next case",
+      "toList": "To list"
   }
 }
