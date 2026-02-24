@@ -1,36 +1,34 @@
+/* Агульная абгортка праекта */
 .projectWrapper {
   margin-bottom: 2rem;
   padding: 1rem 0;
   position: relative;
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  animation: fadeIn 0.5s ease-out;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
-.projectsList {
-  max-width: 1000px;
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  /* Дадаем анімацыю з'яўлення спіса */
-  animation: fadeInList 0.6s ease-out forwards;
+.projectWrapper.ready {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-@keyframes fadeInList {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} 
-/* Клас, які мы дадамо перад выхадам */
 .fadeOut {
   opacity: 0;
-  transform: translateY(-20px); /* Злёгку падымаем пры знікненні */
-  pointer-events: none; /* Каб карыстальнік не націскаў кнопкі падчас анімацыі */
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+/* Анімацыі */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Прагрэс-бар */
@@ -39,6 +37,16 @@
   background: rgba(0, 0, 0, 0.05); z-index: 1000;
 }
 .progressBar { height: 100%; background: #212529; transition: width 0.4s ease; }
+
+/* Хэдэр і кнопка Назад */
+.header { margin-bottom: 1.5rem; }
+.backButton {
+  background: none; border: none; color: #666; cursor: pointer;
+  display: flex; align-items: center; gap: 8px; margin-bottom: 1rem;
+  transition: 0.2s; font-weight: 500;
+}
+.backButton:hover { color: #000; }
+.title { font-size: 1.8rem; font-weight: 700; color: #212529; margin: 0; }
 
 /* Блок праблемы */
 .problemBlock { margin-bottom: 2rem; }
@@ -54,31 +62,62 @@
 
 .clearfix::after { content: ""; display: table; clear: both; }
 
-/* Мяккае разгортванне рашэнняў */
+/* Блок аналізу — прыбіраем ніжні водступ максімальна */
+.analysisWrapper {
+  margin-bottom: -1.5rem; /* Падцягваем кантэйнер кнопак вышэй */
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+/* Акардэон рашэнняў */
 .solutionItem {
   display: grid;
   grid-template-rows: 0fr;
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.4s ease, 
+              margin 0.4s ease;
   overflow: hidden;
+  margin-bottom: 0 !important;
 }
+
 .solutionItem.show {
   grid-template-rows: 1fr;
   opacity: 1;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
+
 .solutionInner { min-height: 0; }
 
-/* Кнопкі */
+/* Кантэйнер кнопак кіравання */
 .controls {
-  margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #eee;
-  display: flex; justify-content: center;
+  margin-top: 0.5rem; /* Мінімальны зазор пасля тэксту */
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  display: flex; 
+  justify-content: center;
 }
-.buttonGroup { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 
+.buttonGroup { 
+  display: flex; 
+  gap: 12px; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  width: 100%; 
+}
+
+/* Кнопкі — аднолькавы памер */
 .primaryBtn, .nextProjectBtn, .secondaryBtn {
-  padding: 0.8rem 1.8rem; font-size: 0.95rem; font-weight: 600;
-  cursor: pointer; border-radius: 4px; transition: 0.2s;
+  padding: 0.8rem 1.8rem; 
+  font-size: 0.95rem; 
+  font-weight: 600;
+  cursor: pointer; 
+  border-radius: 4px; 
+  transition: 0.2s;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .primaryBtn { background: #212529; color: #fff; border: none; }
@@ -90,18 +129,37 @@
 .nextProjectBtn:hover { background: #f8f9fa; transform: translateX(4px); }
 .secondaryBtn:hover { background: #f8f9fa; transform: translateX(-4px); }
 
-/* Кнопка "Назад" уверсе */
-.backButton {
-  background: none; border: none; color: #666; cursor: pointer;
-  display: flex; align-items: center; gap: 8px; margin-bottom: 1rem;
-  transition: 0.2s; font-weight: 500;
-}
-.backButton:hover { color: #000; }
-
-/* Пульсацыя */
+/* Пульсацыя для асноўнай кнопкі */
 .pulse { animation: pulse-animation 2s infinite; }
 @keyframes pulse-animation {
   0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  50% { transform: scale(1.02); }
   100% { transform: scale(1); }
+}
+
+/* МАБІЛЬНАЯ ВЕРСІЯ */
+@media (max-width: 768px) {
+  .problemImage { float: none; width: 100%; margin-left: 0; }
+  .problemText p { text-align: left; font-size: 1rem; }
+  
+  .analysisWrapper {
+    margin-bottom: -2rem; /* Яшчэ мацней сціскаем на мабільным */
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .primaryBtn, .nextProjectBtn, .secondaryBtn {
+    width: 100%;
+    max-width: 320px;
+    min-width: unset;
+  }
+  
+  .controls {
+    margin-top: 0;
+    padding-top: 1rem;
+  }
 }

@@ -19,12 +19,21 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
 }) => {
   const [visibleSolutionsCount, setVisibleSolutionsCount] = useState(0);
   const [isExiting, setIsExiting] = useState(false);
+  const [isReady, setIsReady] = useState(false); // Для пачатковай анімацыі ўсяго блока
   const lastSolutionRef = useRef<HTMLDivElement>(null);
 
   const totalSolutions = project.solutions?.length || 0;
   const progressPercent =
     totalSolutions > 0 ? (visibleSolutionsCount / totalSolutions) * 100 : 0;
 
+  // 1. Пачатковая анімацыя пры загрузцы
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const timer = setTimeout(() => setIsReady(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // 2. Скрол да новага рашэння
   useEffect(() => {
     if (visibleSolutionsCount > 0) {
       lastSolutionRef.current?.scrollIntoView({
@@ -34,10 +43,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
     }
   }, [visibleSolutionsCount]);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+  // Функцыя выхаду
   const handleBack = () => {
     setIsExiting(true);
     setTimeout(() => {
@@ -47,7 +53,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
 
   return (
     <div
-      className={`${styles.projectWrapper} ${isExiting ? styles.fadeOut : ""}`}
+      className={`${styles.projectWrapper} ${isExiting ? styles.fadeOut : ""} ${isReady ? styles.ready : ""}`}
     >
       <div className={styles.progressBarContainer}>
         <div
@@ -64,6 +70,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
         <h2 className={styles.title}>{project.title}</h2>
       </header>
 
+      {/* Секцыя праблемы (заўсёды бачная, але з анімацыяй з'яўлення) */}
       <section className={`${styles.problemBlock} ${styles.clearfix}`}>
         <div className={styles.badge}>{labels.problem || "Problem"}</div>
         <div className={styles.descriptionWrapper}>
@@ -78,12 +85,14 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
         </div>
       </section>
 
+      {/* Аналіз */}
       {project.analysis && (
-        <div className={styles.analysisSection}>
+        <div className={styles.analysisWrapper}>
           <AnalysisSection data={project.analysis} label={labels.analysis} />
         </div>
       )}
 
+      {/* Спіс рашэнняў (Акардэон) */}
       <div className={styles.solutionsList}>
         {project.solutions.map((sol, index) => {
           const isVisible = index < visibleSolutionsCount;
@@ -112,9 +121,11 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
               {totalSolutions})
             </button>
           )}
+
           <button className={styles.nextProjectBtn} onClick={onNextProject}>
             {labels.nextProject} →
           </button>
+
           <button className={styles.secondaryBtn} onClick={handleBack}>
             ← {labels.backToListShort}
           </button>
