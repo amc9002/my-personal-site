@@ -12,11 +12,23 @@ import AboutMe from "./pages/AboutMe/AboutMe";
 import Contacts from "./pages/Contacts/Contacts";
 import Projects from "./pages/Projects/Projects";
 import CTASection from "./components/layout/CTA/CTASection";
+import Admin from "./admin/AdminPage";
 
 function App() {
-  // 3. Атрымліваем бягучы шлях
   const location = useLocation();
-  // 4. Умова: паказваць усюды, апроч Галоўнай ("/") і Кантактаў ("/contact")
+  const isAdmin = location.pathname.startsWith("/admin");
+
+  if (isAdmin) {
+    return (
+      <>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+      </>
+    );
+  }
+
   const showCTA = location.pathname !== "/" && location.pathname !== "/contact";
 
   return (
@@ -24,7 +36,6 @@ function App() {
       <ScrollToTop />
       <Header />
       <Main>
-        {/* Абгортваем Routes у Suspense. Без гэтага Backend будзе ламаць старонкі */}
         <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -36,7 +47,6 @@ function App() {
           </Routes>
         </Suspense>
       </Main>
-      {/* 5. Устаўка блока перад футэрам */}
       {showCTA && <CTASection />}
       <Footer />
     </>

@@ -1,0 +1,39 @@
+{
+  "id": 3,
+  "title": "Magnetic Blood Clot Management",
+  "category": "Biomedical Engineering / TRIZ",
+  "keyFactor": "Mechanical filters damage vessel walls, and their placement requires complex invasive procedures.",
+  "analysis": {
+    "deduction": "Analysis showed that instead of creating a physical barrier, it is possible to use point binding of enzymes to the clot's fibrin and control it remotely via a magnetic field.",
+    "physicsChain": ["Particle injection", "Binding to fibrin", "Magnetic retention", "Dissolution and metabolism"]
+  },
+  "problem": {
+    "image": "/images/projects/project003/problem.png",
+    "description": "In modern vascular medicine, blood clots are dissolved by injecting specific anticoagulants into the blood. Vena cava filters are used to trap and hold the clots until they are dissolved. However, these rigid metal structures have a serious drawback: their sharp 'legs' often damage the walls of blood vessels. This leads to wall thickening and, consequently, reduced blood flow cross-section, which again increases the risk of clot formation. In addition, the processes of inserting and subsequently removing such filters are complex invasive operations. This creates risks of additional bleeding and vessel perforation, requiring highly skilled surgical intervention."
+  },
+  "solutions": [
+    {
+      "id": 301,
+      "title": "Solution: Nanoparticles and Magnetic Fixation",
+      "image": "/images/projects/project003/solution_01.png",
+      "idea": "Inject ferromagnetic nanoparticles coated with enzymes upstream into the bloodstream, which then stick to the fibrin (the base of the clot). Then, hold this clot in a safe place using an external or temporary internal magnet.",
+      "triz": "Principle 28 — Mechanics substitution (replacing a mechanical filter with the interaction of magnetic fields); Principle 24 — 'Intermediary' principle (particles with enzymes as a link between the clot and the magnet).",
+      "conclusion": "Need for high precision in particle synthesis, risk of error in calculating the magnetic field strength, and the need for biocompatibility research.",
+      "conclusionSolutions": [
+        "Use of biodegradable shells for nanoparticles that completely decompose into neutral elements for the body.",
+        "Application of dynamic regulation of the external magnetic field depending on the blood flow velocity.",
+        "Transformation of particles after dissolution of the clot into a source of iron for hemoglobin (extraction is not required)."
+      ],
+      "effect": [
+        {
+          "metrics": [
+            "Zero mechanical contact with vessel walls.",
+            "No surgical operation required for filter insertion and removal.",
+            "100% reduction in procedure invasiveness."
+          ],
+          "financial": ""
+        }
+      ]
+    }
+  ]
+}

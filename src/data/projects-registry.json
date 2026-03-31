@@ -8,5 +8,11 @@
     "id": "project002",
     "category": "hydraulic",
     "tags": ["TRIZ", "Hydraulic Engineering", "Vibration"]
+  },
+  {
+    "id": "project003",
+    "category": "magnetic",
+    "tags": ["TRIZ", "Magnetic Engineering", "Blood Clots"] 
   }
+
 ]

@@ -1,0 +1,39 @@
+{
+  "id": 3,
+  "title": "Magnetyczna stabilizacja skrzepów",
+  "category": "Biomedical Engineering / TRIZ",
+  "keyFactor": "Filtry mechaniczne uszkadzają ściany naczyń, a ich założenie wymaga skomplikowanych zabiegów inwazyjnych.",
+  "analysis": {
+    "deduction": "Analiza wykazała, że zamiast tworzenia fizycznej bariery można zastosować punktowe wiązanie enzymów z fibryną skrzepu i sterować nim zdalnie za pomocą pola magnetycznego.",
+    "physicsChain": ["Wstrzyknięcie cząstek", "Wiązanie z fibryną", "Utrzymanie magnetyczne", "Rozpuszczanie i metabolizm"]
+  },
+  "problem": {
+    "image": "/images/projects/project003/problem.png",
+    "description": "We współczesnej medycynie naczyniowej skrzepy krwi są rozpuszczane poprzez wstrzykiwanie do krwi specjalnych antykoagulantów. Do wychwytywania i zatrzymywania skrzepów do momentu ich rozpuszczenia stosuje się filtry do żyły głównej dolnej (filtry cava). Jednak te sztywne metalowe konstrukcje mają poważną wadę: ich ostre „nóżki” często uszkadzają ściany naczyń krwionośnych. Prowadzi to do pogrubienia ścian i w konsekwencji do zmniejszenia przekroju przepływu krwi, co ponownie zwiększa ryzyko powstawania skrzepów. Ponadto procesy zakładania i późniejszego usuwania takich filtrów to skomplikowane operacje inwazyjne. Stwarza to ryzyko dodatkowych krwawień, perforacji naczyń i wymaga wysoko wykwalifikowanej interwencji chirurgicznej."
+  },
+  "solutions": [
+    {
+      "id": 301,
+      "title": "Rozwiązanie: Nanocząstki i stabilizacja magnetyczna",
+      "image": "/images/projects/project003/solution_01.png",
+      "idea": "Wstrzykiwanie do krwobiegu (powyżej miejsca skrzepu) nanocząstek ferromagnetycznych pokrytych enzymami, które przyczepiają się do fibryny (szkieletu skrzepu). Następnie utrzymywanie tego skrzepu w bezpiecznym miejscu za pomocą zewnętrznego lub tymczasowego wewnętrznego magnesu.",
+      "triz": "Zasada 28 — Zastąpienie układu mechanicznego (zastąpienie filtru mechanicznego oddziaływaniem pól magnetycznych); Zasada 24 — Zasada „pośrednika” (cząsteczki z enzymami jako łącznik między skrzepem a magnesem).",
+      "conclusion": "Potrzeba wysokiej precyzji w syntezie cząstek, ryzyko błędu przy obliczaniu siły pola magnetycznego, konieczność badań nad biokompatybilnością.",
+      "conclusionSolutions": [
+        "Zastosowanie biodegradowalnych otoczek dla nanocząstek, które całkowicie rozpadają się na elementy neutralne dla organizmu.",
+        "Zastosowanie dynamicznej regulacji zewnętrznego pola magnetycznego w zależności od prędkości przepływu krwi.",
+        "Przekształcenie cząstek po rozpuszczeniu skrzepu w źródło żelaza dla hemoglobiny (usunięcie nie jest wymagane)."
+      ],
+      "effect": [
+        {
+          "metrics": [
+            "Zero kontaktu mechanicznego ze ścianami naczyń.",
+            "Brak konieczności operacji chirurgicznej w celu założenia i usunięcia filtra.",
+            "Redukcja inwazyjności procedury o 100%."
+          ],
+          "financial": ""
+        }
+      ]
+    }
+  ]
+}

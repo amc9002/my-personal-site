@@ -1,0 +1,26 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  width: auto;
+  align-self: flex-start;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.danger {
+  background: #7f1d1d;
+  color: white;
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid #333;
+  color: #ccc;
+}

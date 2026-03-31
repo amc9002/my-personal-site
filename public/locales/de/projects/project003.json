@@ -1,0 +1,39 @@
+{
+  "id": 3,
+  "title": "Magnetische Blutgerinnsel-Fixierung",
+  "category": "Biomedical Engineering / TRIZ",
+  "keyFactor": "Mechanische Filter beschädigen die Gefäßwände, und ihre Platzierung erfordert komplexe invasive Eingriffe.",
+  "analysis": {
+    "deduction": "Die Analyse zeigte, dass anstelle einer physischen Barriere eine punktuelle Bindung von Enzymen an das Fibrin des Gerinnsels genutzt und dieses über ein Magnetfeld ferngesteuert werden kann.",
+    "physicsChain": ["Partikelinjektion", "Bindung an Fibrin", "Magnetische Fixierung", "Auflösung und Metabolismus"]
+  },
+  "problem": {
+    "image": "/images/projects/project003/problem.png",
+    "description": "In der modernen Gefäßmedizin werden Blutgerinnsel durch die Injektion spezieller Antikoagulanzien in das Blut aufgelöst. Zur Filterung und Fixierung der Gerinnsel bis zu deren Auflösung werden Vena-cava-Filter eingesetzt. Diese starren Metallstrukturen haben jedoch einen gravierenden Nachteil: Ihre scharfen Krallen beschädigen häufig die Wände der Blutgefäße. Dies führt zu einer Wandverdickung und folglich zu einem verringerten Blutflussquerschnitt, was das Risiko einer erneuten Gerinnselbildung erhöht. Zudem sind das Einsetzen und die spätere Entfernung solcher Filter komplexe invasive Operationen. Dies birgt das Risiko zusätzlicher Blutungen sowie Gefäßperforationen und erfordert hochqualifizierte chirurgische Eingriffe."
+  },
+  "solutions": [
+    {
+      "id": 301,
+      "title": "Lösung: Nanopartikel und magnetische Fixierung",
+      "image": "/images/projects/project003/solution_01.png",
+      "idea": "Ferromagnetische Nanopartikel, die mit Enzymen beschichtet sind, stromaufwärts in den Blutkreislauf injizieren, damit sie am Fibrin (der Basis des Gerinnsels) haften. Anschließend wird dieses Gerinnsel mit einem externen oder temporären internen Magneten an einer sicheren Stelle fixiert.",
+      "triz": "Prinzip 28 — Ersatz mechanischer Systeme (Ersatz eines mechanischen Filters durch die Wechselwirkung magnetischer Felder); Prinzip 24 — Prinzip des 'Vermittlers' (Partikel mit Enzymen als Bindeglied zwischen Gerinnsel und Magnet).",
+      "conclusion": "Notwendigkeit hoher Präzision bei der Partikelsynthese, Risiko von Fehlern bei der Berechnung der Magnetfeldstärke und Bedarf an Biokompatibilitätsforschung.",
+      "conclusionSolutions": [
+        "Verwendung von biologisch abbaubaren Hüllen für Nanopartikel, die vollständig in für den Körper neutrale Elemente zerfallen.",
+        "Anwendung einer dynamischen Regulierung des externen Magnetfeldes in Abhängigkeit von der Blutflussgeschwindigkeit.",
+        "Umwandlung der Partikel nach Auflösung des Gerinnsels in eine Eisenquelle für Hämoglobin (keine Entfernung erforderlich)."
+      ],
+      "effect": [
+        {
+          "metrics": [
+            "Null mechanischer Kontakt mit den Gefäßwänden.",
+            "Keine chirurgische Operation für das Einsetzen und Entfernen des Filters erforderlich.",
+            "100%ige Reduzierung der Invasivität des Verfahrens."
+          ],
+          "financial": ""
+        }
+      ]
+    }
+  ]
+}
